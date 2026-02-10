@@ -1,6 +1,6 @@
 # Salary Predictor
 
-Predicts salary from job descriptions and structured features using a LinkedIn dataset.
+Predicts salary from job descriptions and structured features using Adzuna API.
 
 ## Setup
 
