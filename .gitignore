@@ -28,6 +28,15 @@ data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 
+# Chrome installer
+*.deb
+
+# Data outputs
+notebooks/*.txt
+notebooks/*.csv
+notebooks/*.json
+notebooks/*.xlsx
+
 # Trained models (too large for git)
 models/*
 !models/.gitkeep
