@@ -67,7 +67,7 @@ def save_progress(successful_results, failed_urls, current_index, total_urls):
     try:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
-        with open("redirect_progress.json", "w") as f:
+        with open("data/progress_tracking/redirect_progress.json", "w") as f:
             json.dump({
                 "last_processed": current_index,
                 "successful_results": successful_results,
@@ -76,7 +76,7 @@ def save_progress(successful_results, failed_urls, current_index, total_urls):
                 "total_urls": total_urls,
             }, f, indent=2)
 
-        with open(f"url_mapping_{timestamp}.csv", "w") as f:
+        with open(f"data/progress_tracking/url_mapping_{timestamp}.csv", "w") as f:
             f.write("Index,Original_URL,Final_URL,Processing_Time,Attempts,Timestamp\n")
             for r in successful_results:
                 orig = r["original_url"].replace(",", "%2C")
@@ -96,7 +96,7 @@ async def process_redirect_urls(redirect_urls, save_interval=50):
     failed_urls = []
     current_batch_start = 0
 
-    progress_file = "redirect_progress.json"
+    progress_file = "data/progress_tracking/redirect_progress.json"
     if os.path.exists(progress_file):
         try:
             with open(progress_file, "r") as f:
@@ -172,12 +172,17 @@ async def process_redirect_urls(redirect_urls, save_interval=50):
                 print(f"Elapsed: {elapsed_total}, est remaining: {remaining_hrs:.1f}h")
 
                 if url_number < total_urls:
-                    break_time = random.uniform(120, 180)
+                    if "/details/" in current_url:
+                        break_time = 0
+                    else:
+                        break_time = random.uniform(120, 180)
                     print(f"Break: {break_time/60:.1f} min...")
                     await asyncio.sleep(break_time)
             else:
                 if url_number < total_urls:
-                    delay = random.uniform(15, 30)
+                    if "/details/" in current_url:
+                        delay = 0
+                    else: delay = random.uniform(15, 30)
                     print(f"Next in {delay:.0f}s...")
                     await asyncio.sleep(delay)
 
@@ -199,12 +204,12 @@ async def process_redirect_urls(redirect_urls, save_interval=50):
 
 
 if __name__ == "__main__":
-    urls_file = "notebooks/redirect_urls.json"
+    urls_file = "data/processed/redirect_urls.json"
     if not os.path.exists(urls_file):
         print(f"URL file not found: {urls_file}")
         print("Save your redirect_urls list as JSON first:")
         print("  import json")
-        print("  with open('notebooks/redirect_urls.json', 'w') as f:")
+        print("  with open('data/processed/redirect_urls.json', 'w') as f:")
         print("      json.dump(redirect_urls, f)")
         exit(1)
 
