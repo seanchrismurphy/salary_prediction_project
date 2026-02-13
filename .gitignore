@@ -37,6 +37,13 @@ notebooks/*.csv
 notebooks/*.json
 notebooks/*.xlsx
 
+data/**/*.txt
+data/**/*.csv
+data/**/*.json
+data/**/*.xlsx
+
+
+
 # Trained models (too large for git)
 models/*
 !models/.gitkeep
