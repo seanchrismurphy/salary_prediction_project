@@ -58,3 +58,5 @@ Thumbs.db
 resolve_log.txt
 .gitignore
 .gitignore
+scrape_log.txt
+notebooks/models/salary_pipeline.joblib
