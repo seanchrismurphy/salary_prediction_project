@@ -65,23 +65,14 @@ class RedirectResolver:
 
 def save_progress(successful_results, failed_urls, current_index, total_urls):
     try:
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-
         with open("data/progress_tracking/redirect_progress.json", "w") as f:
             json.dump({
                 "last_processed": current_index,
                 "successful_results": successful_results,
                 "failed_urls": failed_urls,
-                "timestamp": timestamp,
+                "timestamp": datetime.now().isoformat(),
                 "total_urls": total_urls,
             }, f, indent=2)
-
-        with open(f"data/progress_tracking/url_mapping_{timestamp}.csv", "w") as f:
-            f.write("Index,Original_URL,Final_URL,Processing_Time,Attempts,Timestamp\n")
-            for r in successful_results:
-                orig = r["original_url"].replace(",", "%2C")
-                final = r["final_url"].replace(",", "%2C")
-                f.write(f"{r['index']+1},{orig},{final},{r['processing_time']:.1f},{r['attempts']},{r['timestamp']}\n")
 
         print(f"Progress saved: {len(successful_results)} successful, {len(failed_urls)} failed")
 

@@ -1,0 +1,1381 @@
+nohup: ignoring input
+Loaded 11460 /details/ URLs from /home/seancm/code/salary_prediction_project/data/processed/redirect_urls.json
+Skipping 2400 already-scraped URLs, 9446 remaining
+[1/9446] ok: https://www.adzuna.com.au/details/3246331622?utm_medium=api&utm_source
+[2/9446] ok: https://www.adzuna.com.au/details/3286368077?utm_medium=api&utm_source
+[3/9446] ok: https://www.adzuna.com.au/details/3367412272?utm_medium=api&utm_source
+[4/9446] ok: https://www.adzuna.com.au/details/3374061252?utm_medium=api&utm_source
+[5/9446] ok: https://www.adzuna.com.au/details/3669131567?utm_medium=api&utm_source
+[6/9446] ok: https://www.adzuna.com.au/details/4125614419?utm_medium=api&utm_source
+[7/9446] ok: https://www.adzuna.com.au/details/4304635466?utm_medium=api&utm_source
+[8/9446] ok: https://www.adzuna.com.au/details/4422051816?utm_medium=api&utm_source
+[9/9446] ok: https://www.adzuna.com.au/details/4488129600?utm_medium=api&utm_source
+[10/9446] ok: https://www.adzuna.com.au/details/4488129607?utm_medium=api&utm_source
+[11/9446] ok: https://www.adzuna.com.au/details/4574728370?utm_medium=api&utm_source
+[12/9446] ok: https://www.adzuna.com.au/details/4574728371?utm_medium=api&utm_source
+[13/9446] ok: https://www.adzuna.com.au/details/4574728406?utm_medium=api&utm_source
+[14/9446] ok: https://www.adzuna.com.au/details/4575950549?utm_medium=api&utm_source
+[15/9446] ok: https://www.adzuna.com.au/details/4577997828?utm_medium=api&utm_source
+[16/9446] ok: https://www.adzuna.com.au/details/4577997833?utm_medium=api&utm_source
+[17/9446] ok: https://www.adzuna.com.au/details/4583214649?utm_medium=api&utm_source
+[18/9446] ok: https://www.adzuna.com.au/details/4592409712?utm_medium=api&utm_source
+[19/9446] ok: https://www.adzuna.com.au/details/4607719705?utm_medium=api&utm_source
+[20/9446] ok: https://www.adzuna.com.au/details/4608479579?utm_medium=api&utm_source
+[21/9446] ok: https://www.adzuna.com.au/details/4616374564?utm_medium=api&utm_source
+[22/9446] ok: https://www.adzuna.com.au/details/4616374574?utm_medium=api&utm_source
+[23/9446] ok: https://www.adzuna.com.au/details/4710176377?utm_medium=api&utm_source
+[24/9446] ok: https://www.adzuna.com.au/details/4725863765?utm_medium=api&utm_source
+[25/9446] ok: https://www.adzuna.com.au/details/4725863775?utm_medium=api&utm_source
+[26/9446] ok: https://www.adzuna.com.au/details/4725863820?utm_medium=api&utm_source
+[27/9446] ok: https://www.adzuna.com.au/details/4725863884?utm_medium=api&utm_source
+[28/9446] ok: https://www.adzuna.com.au/details/4725864558?utm_medium=api&utm_source
+[29/9446] ok: https://www.adzuna.com.au/details/4725864628?utm_medium=api&utm_source
+[30/9446] ok: https://www.adzuna.com.au/details/4725865001?utm_medium=api&utm_source
+[31/9446] ok: https://www.adzuna.com.au/details/4750808976?utm_medium=api&utm_source
+[32/9446] ok: https://www.adzuna.com.au/details/4801297495?utm_medium=api&utm_source
+[33/9446] ok: https://www.adzuna.com.au/details/4801298693?utm_medium=api&utm_source
+[34/9446] ok: https://www.adzuna.com.au/details/4801315981?utm_medium=api&utm_source
+[35/9446] ok: https://www.adzuna.com.au/details/4801322583?utm_medium=api&utm_source
+[36/9446] ok: https://www.adzuna.com.au/details/4801332662?utm_medium=api&utm_source
+[37/9446] ok: https://www.adzuna.com.au/details/4803143823?utm_medium=api&utm_source
+[38/9446] ok: https://www.adzuna.com.au/details/4810316537?utm_medium=api&utm_source
+[39/9446] ok: https://www.adzuna.com.au/details/4851573491?utm_medium=api&utm_source
+[40/9446] ok: https://www.adzuna.com.au/details/4857677945?utm_medium=api&utm_source
+[41/9446] ok: https://www.adzuna.com.au/details/4866561549?utm_medium=api&utm_source
+[42/9446] ok: https://www.adzuna.com.au/details/4870123311?utm_medium=api&utm_source
+[43/9446] ok: https://www.adzuna.com.au/details/4877650315?utm_medium=api&utm_source
+[44/9446] ok: https://www.adzuna.com.au/details/4885090348?utm_medium=api&utm_source
+[45/9446] ok: https://www.adzuna.com.au/details/4899806110?utm_medium=api&utm_source
+[46/9446] ok: https://www.adzuna.com.au/details/4899808350?utm_medium=api&utm_source
+[47/9446] ok: https://www.adzuna.com.au/details/4910154264?utm_medium=api&utm_source
+[48/9446] ok: https://www.adzuna.com.au/details/4912010661?utm_medium=api&utm_source
+[49/9446] ok: https://www.adzuna.com.au/details/4912010669?utm_medium=api&utm_source
+[50/9446] ok: https://www.adzuna.com.au/details/4921582884?utm_medium=api&utm_source
+Saved. 0:03:50.986727 elapsed, ~12.1h remaining
+[51/9446] ok: https://www.adzuna.com.au/details/4925586428?utm_medium=api&utm_source
+[52/9446] ok: https://www.adzuna.com.au/details/4925597996?utm_medium=api&utm_source
+[53/9446] ok: https://www.adzuna.com.au/details/4935810545?utm_medium=api&utm_source
+[54/9446] ok: https://www.adzuna.com.au/details/4946529318?utm_medium=api&utm_source
+[55/9446] ok: https://www.adzuna.com.au/details/4971228901?utm_medium=api&utm_source
+[56/9446] ok: https://www.adzuna.com.au/details/4978893572?utm_medium=api&utm_source
+[57/9446] ok: https://www.adzuna.com.au/details/4982790428?utm_medium=api&utm_source
+[58/9446] ok: https://www.adzuna.com.au/details/4985460473?utm_medium=api&utm_source
+[59/9446] ok: https://www.adzuna.com.au/details/4987894181?utm_medium=api&utm_source
+[60/9446] ok: https://www.adzuna.com.au/details/4990262378?utm_medium=api&utm_source
+[61/9446] ok: https://www.adzuna.com.au/details/4992106028?utm_medium=api&utm_source
+[62/9446] ok: https://www.adzuna.com.au/details/5002776958?utm_medium=api&utm_source
+[63/9446] ok: https://www.adzuna.com.au/details/5014216584?utm_medium=api&utm_source
+[64/9446] ok: https://www.adzuna.com.au/details/5014219216?utm_medium=api&utm_source
+[65/9446] ok: https://www.adzuna.com.au/details/5017325009?utm_medium=api&utm_source
+[66/9446] ok: https://www.adzuna.com.au/details/5025366831?utm_medium=api&utm_source
+[67/9446] ok: https://www.adzuna.com.au/details/5032646829?utm_medium=api&utm_source
+[68/9446] ok: https://www.adzuna.com.au/details/5032648700?utm_medium=api&utm_source
+[69/9446] ok: https://www.adzuna.com.au/details/5038185363?utm_medium=api&utm_source
+[70/9446] ok: https://www.adzuna.com.au/details/5038185398?utm_medium=api&utm_source
+[71/9446] ok: https://www.adzuna.com.au/details/5040913620?utm_medium=api&utm_source
+[72/9446] ok: https://www.adzuna.com.au/details/5044348368?utm_medium=api&utm_source
+[73/9446] ok: https://www.adzuna.com.au/details/5044726659?utm_medium=api&utm_source
+[74/9446] ok: https://www.adzuna.com.au/details/5047211475?utm_medium=api&utm_source
+[75/9446] ok: https://www.adzuna.com.au/details/5051936745?utm_medium=api&utm_source
+[76/9446] ok: https://www.adzuna.com.au/details/5051959969?utm_medium=api&utm_source
+[77/9446] ok: https://www.adzuna.com.au/details/5054630561?utm_medium=api&utm_source
+[78/9446] ok: https://www.adzuna.com.au/details/5054964875?utm_medium=api&utm_source
+[79/9446] ok: https://www.adzuna.com.au/details/5054965005?utm_medium=api&utm_source
+[80/9446] ok: https://www.adzuna.com.au/details/5058602371?utm_medium=api&utm_source
+[81/9446] ok: https://www.adzuna.com.au/details/5058602547?utm_medium=api&utm_source
+[82/9446] ok: https://www.adzuna.com.au/details/5062769697?utm_medium=api&utm_source
+[83/9446] ok: https://www.adzuna.com.au/details/5063929978?utm_medium=api&utm_source
+[84/9446] ok: https://www.adzuna.com.au/details/5066536311?utm_medium=api&utm_source
+[85/9446] ok: https://www.adzuna.com.au/details/5066536317?utm_medium=api&utm_source
+[86/9446] ok: https://www.adzuna.com.au/details/5074204677?utm_medium=api&utm_source
+[87/9446] ok: https://www.adzuna.com.au/details/5076834488?utm_medium=api&utm_source
+[88/9446] ok: https://www.adzuna.com.au/details/5076844934?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5079206264?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5079206264?utm_medium=api&utm_source=4e892bd2
+[89/9446] no description: https://www.adzuna.com.au/details/5079206264?utm_medium=api&utm_source
+[90/9446] ok: https://www.adzuna.com.au/details/5080118173?utm_medium=api&utm_source
+[91/9446] ok: https://www.adzuna.com.au/details/5082215958?utm_medium=api&utm_source
+[92/9446] ok: https://www.adzuna.com.au/details/5082215970?utm_medium=api&utm_source
+[93/9446] ok: https://www.adzuna.com.au/details/5084976928?utm_medium=api&utm_source
+[94/9446] ok: https://www.adzuna.com.au/details/5084977951?utm_medium=api&utm_source
+[95/9446] ok: https://www.adzuna.com.au/details/5084980419?utm_medium=api&utm_source
+[96/9446] ok: https://www.adzuna.com.au/details/5088740570?utm_medium=api&utm_source
+[97/9446] ok: https://www.adzuna.com.au/details/5088740757?utm_medium=api&utm_source
+[98/9446] ok: https://www.adzuna.com.au/details/5088741460?utm_medium=api&utm_source
+[99/9446] ok: https://www.adzuna.com.au/details/5088744333?utm_medium=api&utm_source
+[100/9446] ok: https://www.adzuna.com.au/details/5088744919?utm_medium=api&utm_source
+Saved. 0:07:20.012682 elapsed, ~11.4h remaining
+[101/9446] ok: https://www.adzuna.com.au/details/5088745950?utm_medium=api&utm_source
+[102/9446] ok: https://www.adzuna.com.au/details/5088746732?utm_medium=api&utm_source
+[103/9446] ok: https://www.adzuna.com.au/details/5088751544?utm_medium=api&utm_source
+[104/9446] ok: https://www.adzuna.com.au/details/5088755294?utm_medium=api&utm_source
+[105/9446] ok: https://www.adzuna.com.au/details/5088755395?utm_medium=api&utm_source
+[106/9446] ok: https://www.adzuna.com.au/details/5088756290?utm_medium=api&utm_source
+[107/9446] ok: https://www.adzuna.com.au/details/5091423040?utm_medium=api&utm_source
+[108/9446] ok: https://www.adzuna.com.au/details/5091423631?utm_medium=api&utm_source
+[109/9446] ok: https://www.adzuna.com.au/details/5091430526?utm_medium=api&utm_source
+[110/9446] ok: https://www.adzuna.com.au/details/5091492115?utm_medium=api&utm_source
+[111/9446] ok: https://www.adzuna.com.au/details/5100743197?utm_medium=api&utm_source
+[112/9446] ok: https://www.adzuna.com.au/details/5104714712?utm_medium=api&utm_source
+[113/9446] ok: https://www.adzuna.com.au/details/5108640678?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5108641409?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5108641409?utm_medium=api&utm_source=4e892bd2
+[114/9446] no description: https://www.adzuna.com.au/details/5108641409?utm_medium=api&utm_source
+[115/9446] ok: https://www.adzuna.com.au/details/5111946818?utm_medium=api&utm_source
+[116/9446] ok: https://www.adzuna.com.au/details/5113250648?utm_medium=api&utm_source
+[117/9446] ok: https://www.adzuna.com.au/details/5118196130?utm_medium=api&utm_source
+[118/9446] ok: https://www.adzuna.com.au/details/5118239184?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5120326820?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5120326820?utm_medium=api&utm_source=4e892bd2
+[119/9446] no description: https://www.adzuna.com.au/details/5120326820?utm_medium=api&utm_source
+[120/9446] ok: https://www.adzuna.com.au/details/5120328108?utm_medium=api&utm_source
+[121/9446] ok: https://www.adzuna.com.au/details/5120328435?utm_medium=api&utm_source
+[122/9446] ok: https://www.adzuna.com.au/details/5123734161?utm_medium=api&utm_source
+[123/9446] ok: https://www.adzuna.com.au/details/5126023203?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5131434504?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5131434504?utm_medium=api&utm_source=4e892bd2
+[124/9446] no description: https://www.adzuna.com.au/details/5131434504?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5134067708?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5134067708?utm_medium=api&utm_source=4e892bd2
+[125/9446] no description: https://www.adzuna.com.au/details/5134067708?utm_medium=api&utm_source
+[126/9446] ok: https://www.adzuna.com.au/details/5134121686?utm_medium=api&utm_source
+[127/9446] ok: https://www.adzuna.com.au/details/5134122218?utm_medium=api&utm_source
+[128/9446] ok: https://www.adzuna.com.au/details/5135162168?utm_medium=api&utm_source
+[129/9446] ok: https://www.adzuna.com.au/details/5141911814?utm_medium=api&utm_source
+[130/9446] ok: https://www.adzuna.com.au/details/5142988937?utm_medium=api&utm_source
+[131/9446] ok: https://www.adzuna.com.au/details/5152340174?utm_medium=api&utm_source
+[132/9446] ok: https://www.adzuna.com.au/details/5152355473?utm_medium=api&utm_source
+[133/9446] ok: https://www.adzuna.com.au/details/5155630453?utm_medium=api&utm_source
+[134/9446] ok: https://www.adzuna.com.au/details/5155632630?utm_medium=api&utm_source
+[135/9446] ok: https://www.adzuna.com.au/details/5160973064?utm_medium=api&utm_source
+[136/9446] ok: https://www.adzuna.com.au/details/5164845732?utm_medium=api&utm_source
+[137/9446] ok: https://www.adzuna.com.au/details/5177254959?utm_medium=api&utm_source
+[138/9446] ok: https://www.adzuna.com.au/details/5183866227?utm_medium=api&utm_source
+[139/9446] ok: https://www.adzuna.com.au/details/5183866759?utm_medium=api&utm_source
+[140/9446] ok: https://www.adzuna.com.au/details/5183878058?utm_medium=api&utm_source
+[141/9446] ok: https://www.adzuna.com.au/details/5183888902?utm_medium=api&utm_source
+[142/9446] ok: https://www.adzuna.com.au/details/5192861699?utm_medium=api&utm_source
+[143/9446] ok: https://www.adzuna.com.au/details/5192863292?utm_medium=api&utm_source
+[144/9446] ok: https://www.adzuna.com.au/details/5200650330?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5202448275?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5202448275?utm_medium=api&utm_source=4e892bd2
+[145/9446] no description: https://www.adzuna.com.au/details/5202448275?utm_medium=api&utm_source
+[146/9446] ok: https://www.adzuna.com.au/details/5203100647?utm_medium=api&utm_source
+[147/9446] ok: https://www.adzuna.com.au/details/5206615558?utm_medium=api&utm_source
+[148/9446] ok: https://www.adzuna.com.au/details/5206617909?utm_medium=api&utm_source
+[149/9446] ok: https://www.adzuna.com.au/details/5210502388?utm_medium=api&utm_source
+[150/9446] ok: https://www.adzuna.com.au/details/5213227979?utm_medium=api&utm_source
+Saved. 0:10:51.464270 elapsed, ~11.2h remaining
+[151/9446] ok: https://www.adzuna.com.au/details/5213238308?utm_medium=api&utm_source
+[152/9446] ok: https://www.adzuna.com.au/details/5213241019?utm_medium=api&utm_source
+[153/9446] ok: https://www.adzuna.com.au/details/5213242673?utm_medium=api&utm_source
+[154/9446] ok: https://www.adzuna.com.au/details/5215042947?utm_medium=api&utm_source
+[155/9446] ok: https://www.adzuna.com.au/details/5217374348?utm_medium=api&utm_source
+[156/9446] ok: https://www.adzuna.com.au/details/5217376395?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5224131286?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5224131286?utm_medium=api&utm_source=4e892bd2
+[157/9446] no description: https://www.adzuna.com.au/details/5224131286?utm_medium=api&utm_source
+[158/9446] ok: https://www.adzuna.com.au/details/5224131629?utm_medium=api&utm_source
+[159/9446] ok: https://www.adzuna.com.au/details/5224149624?utm_medium=api&utm_source
+[160/9446] ok: https://www.adzuna.com.au/details/5227601824?utm_medium=api&utm_source
+[161/9446] ok: https://www.adzuna.com.au/details/5230618726?utm_medium=api&utm_source
+[162/9446] ok: https://www.adzuna.com.au/details/5231364538?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5231402620?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5231402620?utm_medium=api&utm_source=4e892bd2
+[163/9446] no description: https://www.adzuna.com.au/details/5231402620?utm_medium=api&utm_source
+[164/9446] ok: https://www.adzuna.com.au/details/5233506274?utm_medium=api&utm_source
+[165/9446] ok: https://www.adzuna.com.au/details/5233508052?utm_medium=api&utm_source
+[166/9446] ok: https://www.adzuna.com.au/details/5233529428?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5236984166?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5236984166?utm_medium=api&utm_source=4e892bd2
+[167/9446] no description: https://www.adzuna.com.au/details/5236984166?utm_medium=api&utm_source
+[168/9446] ok: https://www.adzuna.com.au/details/5239452370?utm_medium=api&utm_source
+[169/9446] ok: https://www.adzuna.com.au/details/5242208166?utm_medium=api&utm_source
+[170/9446] ok: https://www.adzuna.com.au/details/5248036800?utm_medium=api&utm_source
+[171/9446] ok: https://www.adzuna.com.au/details/5248040603?utm_medium=api&utm_source
+[172/9446] ok: https://www.adzuna.com.au/details/5248043681?utm_medium=api&utm_source
+[173/9446] ok: https://www.adzuna.com.au/details/5255927005?utm_medium=api&utm_source
+[174/9446] ok: https://www.adzuna.com.au/details/5255930773?utm_medium=api&utm_source
+[175/9446] ok: https://www.adzuna.com.au/details/5257591023?utm_medium=api&utm_source
+[176/9446] ok: https://www.adzuna.com.au/details/5257591026?utm_medium=api&utm_source
+[177/9446] ok: https://www.adzuna.com.au/details/5261215051?utm_medium=api&utm_source
+[178/9446] ok: https://www.adzuna.com.au/details/5261215296?utm_medium=api&utm_source
+[179/9446] ok: https://www.adzuna.com.au/details/5261215384?utm_medium=api&utm_source
+[180/9446] ok: https://www.adzuna.com.au/details/5261215400?utm_medium=api&utm_source
+[181/9446] ok: https://www.adzuna.com.au/details/5261216354?utm_medium=api&utm_source
+[182/9446] ok: https://www.adzuna.com.au/details/5261216480?utm_medium=api&utm_source
+[183/9446] ok: https://www.adzuna.com.au/details/5261227242?utm_medium=api&utm_source
+[184/9446] ok: https://www.adzuna.com.au/details/5261245758?utm_medium=api&utm_source
+[185/9446] ok: https://www.adzuna.com.au/details/5261246503?utm_medium=api&utm_source
+[186/9446] ok: https://www.adzuna.com.au/details/5261247549?utm_medium=api&utm_source
+[187/9446] ok: https://www.adzuna.com.au/details/5262671133?utm_medium=api&utm_source
+[188/9446] ok: https://www.adzuna.com.au/details/5265262329?utm_medium=api&utm_source
+[189/9446] ok: https://www.adzuna.com.au/details/5267450883?utm_medium=api&utm_source
+[190/9446] ok: https://www.adzuna.com.au/details/5269095654?utm_medium=api&utm_source
+[191/9446] ok: https://www.adzuna.com.au/details/5271082581?utm_medium=api&utm_source
+[192/9446] ok: https://www.adzuna.com.au/details/5275215163?utm_medium=api&utm_source
+[193/9446] ok: https://www.adzuna.com.au/details/5277932561?utm_medium=api&utm_source
+[194/9446] ok: https://www.adzuna.com.au/details/5281048532?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5281107186?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5281107186?utm_medium=api&utm_source=4e892bd2
+[195/9446] no description: https://www.adzuna.com.au/details/5281107186?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5281107499?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5281107499?utm_medium=api&utm_source=4e892bd2
+[196/9446] no description: https://www.adzuna.com.au/details/5281107499?utm_medium=api&utm_source
+[197/9446] ok: https://www.adzuna.com.au/details/5281107621?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5281108002?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5281108002?utm_medium=api&utm_source=4e892bd2
+[198/9446] no description: https://www.adzuna.com.au/details/5281108002?utm_medium=api&utm_source
+[199/9446] ok: https://www.adzuna.com.au/details/5281108015?utm_medium=api&utm_source
+[200/9446] ok: https://www.adzuna.com.au/details/5281108084?utm_medium=api&utm_source
+Saved. 0:14:24.495887 elapsed, ~11.1h remaining
+[201/9446] ok: https://www.adzuna.com.au/details/5281108264?utm_medium=api&utm_source
+[202/9446] ok: https://www.adzuna.com.au/details/5281109103?utm_medium=api&utm_source
+[203/9446] ok: https://www.adzuna.com.au/details/5281109255?utm_medium=api&utm_source
+[204/9446] ok: https://www.adzuna.com.au/details/5281112915?utm_medium=api&utm_source
+[205/9446] ok: https://www.adzuna.com.au/details/5283036746?utm_medium=api&utm_source
+[206/9446] ok: https://www.adzuna.com.au/details/5283559142?utm_medium=api&utm_source
+[207/9446] ok: https://www.adzuna.com.au/details/5284216658?utm_medium=api&utm_source
+[208/9446] ok: https://www.adzuna.com.au/details/5284221806?utm_medium=api&utm_source
+[209/9446] ok: https://www.adzuna.com.au/details/5284226205?utm_medium=api&utm_source
+[210/9446] ok: https://www.adzuna.com.au/details/5286347906?utm_medium=api&utm_source
+[211/9446] ok: https://www.adzuna.com.au/details/5287145144?utm_medium=api&utm_source
+[212/9446] ok: https://www.adzuna.com.au/details/5287145617?utm_medium=api&utm_source
+[213/9446] ok: https://www.adzuna.com.au/details/5287155370?utm_medium=api&utm_source
+[214/9446] ok: https://www.adzuna.com.au/details/5288768034?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5289908700?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5289908700?utm_medium=api&utm_source=4e892bd2
+[215/9446] no description: https://www.adzuna.com.au/details/5289908700?utm_medium=api&utm_source
+[216/9446] ok: https://www.adzuna.com.au/details/5291596064?utm_medium=api&utm_source
+[217/9446] ok: https://www.adzuna.com.au/details/5296082147?utm_medium=api&utm_source
+[218/9446] ok: https://www.adzuna.com.au/details/5297133236?utm_medium=api&utm_source
+[219/9446] ok: https://www.adzuna.com.au/details/5297134411?utm_medium=api&utm_source
+[220/9446] ok: https://www.adzuna.com.au/details/5297142006?utm_medium=api&utm_source
+[221/9446] ok: https://www.adzuna.com.au/details/5298898007?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5301484360?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5301484360?utm_medium=api&utm_source=4e892bd2
+[222/9446] no description: https://www.adzuna.com.au/details/5301484360?utm_medium=api&utm_source
+[223/9446] ok: https://www.adzuna.com.au/details/5302957172?utm_medium=api&utm_source
+[224/9446] ok: https://www.adzuna.com.au/details/5303429522?utm_medium=api&utm_source
+[225/9446] ok: https://www.adzuna.com.au/details/5309300328?utm_medium=api&utm_source
+[226/9446] ok: https://www.adzuna.com.au/details/5309470304?utm_medium=api&utm_source
+[227/9446] ok: https://www.adzuna.com.au/details/5309578811?utm_medium=api&utm_source
+[228/9446] ok: https://www.adzuna.com.au/details/5309578818?utm_medium=api&utm_source
+[229/9446] ok: https://www.adzuna.com.au/details/5314033422?utm_medium=api&utm_source
+[230/9446] ok: https://www.adzuna.com.au/details/5315885286?utm_medium=api&utm_source
+[231/9446] ok: https://www.adzuna.com.au/details/5322802440?utm_medium=api&utm_source
+[232/9446] ok: https://www.adzuna.com.au/details/5326451444?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5326452761?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5326452761?utm_medium=api&utm_source=4e892bd2
+[233/9446] no description: https://www.adzuna.com.au/details/5326452761?utm_medium=api&utm_source
+[234/9446] ok: https://www.adzuna.com.au/details/5326453718?utm_medium=api&utm_source
+[235/9446] ok: https://www.adzuna.com.au/details/5327685166?utm_medium=api&utm_source
+[236/9446] ok: https://www.adzuna.com.au/details/5328149720?utm_medium=api&utm_source
+[237/9446] ok: https://www.adzuna.com.au/details/5329280625?utm_medium=api&utm_source
+[238/9446] ok: https://www.adzuna.com.au/details/5329628724?utm_medium=api&utm_source
+[239/9446] ok: https://www.adzuna.com.au/details/5329630043?utm_medium=api&utm_source
+[240/9446] ok: https://www.adzuna.com.au/details/5329630224?utm_medium=api&utm_source
+[241/9446] ok: https://www.adzuna.com.au/details/5329634920?utm_medium=api&utm_source
+[242/9446] ok: https://www.adzuna.com.au/details/5329636561?utm_medium=api&utm_source
+[243/9446] ok: https://www.adzuna.com.au/details/5331394472?utm_medium=api&utm_source
+[244/9446] ok: https://www.adzuna.com.au/details/5331783059?utm_medium=api&utm_source
+[245/9446] ok: https://www.adzuna.com.au/details/5331791878?utm_medium=api&utm_source
+[246/9446] ok: https://www.adzuna.com.au/details/5334290512?utm_medium=api&utm_source
+[247/9446] ok: https://www.adzuna.com.au/details/5335909509?utm_medium=api&utm_source
+[248/9446] ok: https://www.adzuna.com.au/details/5335911375?utm_medium=api&utm_source
+[249/9446] ok: https://www.adzuna.com.au/details/5335911654?utm_medium=api&utm_source
+[250/9446] ok: https://www.adzuna.com.au/details/5337281945?utm_medium=api&utm_source
+Saved. 0:17:59.113191 elapsed, ~11.0h remaining
+[251/9446] ok: https://www.adzuna.com.au/details/5338130007?utm_medium=api&utm_source
+[252/9446] ok: https://www.adzuna.com.au/details/5341421564?utm_medium=api&utm_source
+[253/9446] ok: https://www.adzuna.com.au/details/5341706902?utm_medium=api&utm_source
+[254/9446] ok: https://www.adzuna.com.au/details/5341711176?utm_medium=api&utm_source
+[255/9446] ok: https://www.adzuna.com.au/details/5341719349?utm_medium=api&utm_source
+[256/9446] ok: https://www.adzuna.com.au/details/5343183412?utm_medium=api&utm_source
+[257/9446] ok: https://www.adzuna.com.au/details/5343541337?utm_medium=api&utm_source
+[258/9446] ok: https://www.adzuna.com.au/details/5345285719?utm_medium=api&utm_source
+[259/9446] ok: https://www.adzuna.com.au/details/5345286386?utm_medium=api&utm_source
+[260/9446] ok: https://www.adzuna.com.au/details/5346678607?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5346679666?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5346679666?utm_medium=api&utm_source=4e892bd2
+[261/9446] no description: https://www.adzuna.com.au/details/5346679666?utm_medium=api&utm_source
+[262/9446] ok: https://www.adzuna.com.au/details/5346680055?utm_medium=api&utm_source
+[263/9446] ok: https://www.adzuna.com.au/details/5348921892?utm_medium=api&utm_source
+[264/9446] ok: https://www.adzuna.com.au/details/5350348118?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5352201911?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5352201911?utm_medium=api&utm_source=4e892bd2
+[265/9446] no description: https://www.adzuna.com.au/details/5352201911?utm_medium=api&utm_source
+[266/9446] ok: https://www.adzuna.com.au/details/5355170595?utm_medium=api&utm_source
+[267/9446] ok: https://www.adzuna.com.au/details/5355172214?utm_medium=api&utm_source
+[268/9446] ok: https://www.adzuna.com.au/details/5355173478?utm_medium=api&utm_source
+[269/9446] ok: https://www.adzuna.com.au/details/5356389938?utm_medium=api&utm_source
+[270/9446] ok: https://www.adzuna.com.au/details/5358583535?utm_medium=api&utm_source
+[271/9446] ok: https://www.adzuna.com.au/details/5358583929?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5358584369?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5358584369?utm_medium=api&utm_source=4e892bd2
+[272/9446] no description: https://www.adzuna.com.au/details/5358584369?utm_medium=api&utm_source
+[273/9446] ok: https://www.adzuna.com.au/details/5360017432?utm_medium=api&utm_source
+[274/9446] ok: https://www.adzuna.com.au/details/5363264506?utm_medium=api&utm_source
+[275/9446] ok: https://www.adzuna.com.au/details/5363420577?utm_medium=api&utm_source
+[276/9446] ok: https://www.adzuna.com.au/details/5363427406?utm_medium=api&utm_source
+[277/9446] ok: https://www.adzuna.com.au/details/5365234594?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5370146104?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5370146104?utm_medium=api&utm_source=4e892bd2
+[278/9446] no description: https://www.adzuna.com.au/details/5370146104?utm_medium=api&utm_source
+[279/9446] ok: https://www.adzuna.com.au/details/5371252057?utm_medium=api&utm_source
+[280/9446] ok: https://www.adzuna.com.au/details/5373286020?utm_medium=api&utm_source
+[281/9446] ok: https://www.adzuna.com.au/details/5375042257?utm_medium=api&utm_source
+[282/9446] ok: https://www.adzuna.com.au/details/5379206469?utm_medium=api&utm_source
+[283/9446] ok: https://www.adzuna.com.au/details/5380953416?utm_medium=api&utm_source
+[284/9446] ok: https://www.adzuna.com.au/details/5381061386?utm_medium=api&utm_source
+[285/9446] ok: https://www.adzuna.com.au/details/5381230703?utm_medium=api&utm_source
+[286/9446] ok: https://www.adzuna.com.au/details/5382362328?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5382831259?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5382831259?utm_medium=api&utm_source=4e892bd2
+[287/9446] no description: https://www.adzuna.com.au/details/5382831259?utm_medium=api&utm_source
+[288/9446] ok: https://www.adzuna.com.au/details/5384033375?utm_medium=api&utm_source
+[289/9446] ok: https://www.adzuna.com.au/details/5384033378?utm_medium=api&utm_source
+[290/9446] ok: https://www.adzuna.com.au/details/5384033379?utm_medium=api&utm_source
+[291/9446] ok: https://www.adzuna.com.au/details/5384592602?utm_medium=api&utm_source
+[292/9446] ok: https://www.adzuna.com.au/details/5388166808?utm_medium=api&utm_source
+[293/9446] ok: https://www.adzuna.com.au/details/5388166851?utm_medium=api&utm_source
+[294/9446] ok: https://www.adzuna.com.au/details/5389253378?utm_medium=api&utm_source
+[295/9446] ok: https://www.adzuna.com.au/details/5390293998?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5391946570?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5391946570?utm_medium=api&utm_source=4e892bd2
+[296/9446] no description: https://www.adzuna.com.au/details/5391946570?utm_medium=api&utm_source
+[297/9446] ok: https://www.adzuna.com.au/details/5396017475?utm_medium=api&utm_source
+[298/9446] ok: https://www.adzuna.com.au/details/5396018002?utm_medium=api&utm_source
+[299/9446] ok: https://www.adzuna.com.au/details/5396019898?utm_medium=api&utm_source
+[300/9446] ok: https://www.adzuna.com.au/details/5399184245?utm_medium=api&utm_source
+Saved. 0:21:49.240604 elapsed, ~11.1h remaining
+[301/9446] ok: https://www.adzuna.com.au/details/5400046626?utm_medium=api&utm_source
+[302/9446] ok: https://www.adzuna.com.au/details/5401559434?utm_medium=api&utm_source
+[303/9446] ok: https://www.adzuna.com.au/details/5401561649?utm_medium=api&utm_source
+[304/9446] ok: https://www.adzuna.com.au/details/5401568750?utm_medium=api&utm_source
+[305/9446] ok: https://www.adzuna.com.au/details/5401570947?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5401571006?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5401571006?utm_medium=api&utm_source=4e892bd2
+[306/9446] no description: https://www.adzuna.com.au/details/5401571006?utm_medium=api&utm_source
+[307/9446] ok: https://www.adzuna.com.au/details/5401574458?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5402868609?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5402868609?utm_medium=api&utm_source=4e892bd2
+[308/9446] no description: https://www.adzuna.com.au/details/5402868609?utm_medium=api&utm_source
+[309/9446] ok: https://www.adzuna.com.au/details/5403274635?utm_medium=api&utm_source
+[310/9446] ok: https://www.adzuna.com.au/details/5403275883?utm_medium=api&utm_source
+[311/9446] ok: https://www.adzuna.com.au/details/5404468851?utm_medium=api&utm_source
+[312/9446] ok: https://www.adzuna.com.au/details/5404895405?utm_medium=api&utm_source
+[313/9446] ok: https://www.adzuna.com.au/details/5404936870?utm_medium=api&utm_source
+[314/9446] ok: https://www.adzuna.com.au/details/5404937679?utm_medium=api&utm_source
+[315/9446] ok: https://www.adzuna.com.au/details/5407050985?utm_medium=api&utm_source
+[316/9446] ok: https://www.adzuna.com.au/details/5407075101?utm_medium=api&utm_source
+[317/9446] ok: https://www.adzuna.com.au/details/5407081812?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5408547100?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5408547100?utm_medium=api&utm_source=4e892bd2
+[318/9446] no description: https://www.adzuna.com.au/details/5408547100?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5408576258?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5408576258?utm_medium=api&utm_source=4e892bd2
+[319/9446] no description: https://www.adzuna.com.au/details/5408576258?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5408578022?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5408578022?utm_medium=api&utm_source=4e892bd2
+[320/9446] no description: https://www.adzuna.com.au/details/5408578022?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5408580859?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5408580859?utm_medium=api&utm_source=4e892bd2
+[321/9446] no description: https://www.adzuna.com.au/details/5408580859?utm_medium=api&utm_source
+[322/9446] ok: https://www.adzuna.com.au/details/5408587233?utm_medium=api&utm_source
+[323/9446] ok: https://www.adzuna.com.au/details/5408592015?utm_medium=api&utm_source
+[324/9446] ok: https://www.adzuna.com.au/details/5409611578?utm_medium=api&utm_source
+[325/9446] ok: https://www.adzuna.com.au/details/5409726988?utm_medium=api&utm_source
+[326/9446] ok: https://www.adzuna.com.au/details/5410577526?utm_medium=api&utm_source
+[327/9446] ok: https://www.adzuna.com.au/details/5413791546?utm_medium=api&utm_source
+[328/9446] ok: https://www.adzuna.com.au/details/5413791606?utm_medium=api&utm_source
+[329/9446] ok: https://www.adzuna.com.au/details/5413791757?utm_medium=api&utm_source
+[330/9446] ok: https://www.adzuna.com.au/details/5413792165?utm_medium=api&utm_source
+[331/9446] ok: https://www.adzuna.com.au/details/5414060773?utm_medium=api&utm_source
+[332/9446] ok: https://www.adzuna.com.au/details/5414060783?utm_medium=api&utm_source
+[333/9446] ok: https://www.adzuna.com.au/details/5414060784?utm_medium=api&utm_source
+[334/9446] ok: https://www.adzuna.com.au/details/5414060785?utm_medium=api&utm_source
+[335/9446] ok: https://www.adzuna.com.au/details/5414060786?utm_medium=api&utm_source
+[336/9446] ok: https://www.adzuna.com.au/details/5414060787?utm_medium=api&utm_source
+[337/9446] ok: https://www.adzuna.com.au/details/5414060788?utm_medium=api&utm_source
+[338/9446] ok: https://www.adzuna.com.au/details/5414060789?utm_medium=api&utm_source
+[339/9446] ok: https://www.adzuna.com.au/details/5414060790?utm_medium=api&utm_source
+[340/9446] ok: https://www.adzuna.com.au/details/5414060791?utm_medium=api&utm_source
+[341/9446] ok: https://www.adzuna.com.au/details/5414060792?utm_medium=api&utm_source
+[342/9446] ok: https://www.adzuna.com.au/details/5414060793?utm_medium=api&utm_source
+[343/9446] ok: https://www.adzuna.com.au/details/5414060794?utm_medium=api&utm_source
+[344/9446] ok: https://www.adzuna.com.au/details/5414060795?utm_medium=api&utm_source
+[345/9446] ok: https://www.adzuna.com.au/details/5414060796?utm_medium=api&utm_source
+[346/9446] ok: https://www.adzuna.com.au/details/5414106920?utm_medium=api&utm_source
+[347/9446] ok: https://www.adzuna.com.au/details/5414106921?utm_medium=api&utm_source
+[348/9446] ok: https://www.adzuna.com.au/details/5414106923?utm_medium=api&utm_source
+[349/9446] ok: https://www.adzuna.com.au/details/5414106925?utm_medium=api&utm_source
+[350/9446] ok: https://www.adzuna.com.au/details/5414127817?utm_medium=api&utm_source
+Saved. 0:25:24.422854 elapsed, ~11.0h remaining
+[351/9446] no description: https://www.adzuna.com.au/details/5414133595?utm_medium=api&utm_source
+[352/9446] no description: https://www.adzuna.com.au/details/5414133599?utm_medium=api&utm_source
+[353/9446] no description: https://www.adzuna.com.au/details/5414133601?utm_medium=api&utm_source
+[354/9446] ok: https://www.adzuna.com.au/details/5414437734?utm_medium=api&utm_source
+[355/9446] ok: https://www.adzuna.com.au/details/5414438138?utm_medium=api&utm_source
+[356/9446] ok: https://www.adzuna.com.au/details/5415353185?utm_medium=api&utm_source
+[357/9446] ok: https://www.adzuna.com.au/details/5416063744?utm_medium=api&utm_source
+[358/9446] ok: https://www.adzuna.com.au/details/5416064474?utm_medium=api&utm_source
+[359/9446] ok: https://www.adzuna.com.au/details/5416070181?utm_medium=api&utm_source
+[360/9446] ok: https://www.adzuna.com.au/details/5418232446?utm_medium=api&utm_source
+[361/9446] ok: https://www.adzuna.com.au/details/5419667359?utm_medium=api&utm_source
+[362/9446] ok: https://www.adzuna.com.au/details/5420408621?utm_medium=api&utm_source
+[363/9446] ok: https://www.adzuna.com.au/details/5420408665?utm_medium=api&utm_source
+[364/9446] ok: https://www.adzuna.com.au/details/5420409009?utm_medium=api&utm_source
+[365/9446] ok: https://www.adzuna.com.au/details/5420409431?utm_medium=api&utm_source
+[366/9446] ok: https://www.adzuna.com.au/details/5420409700?utm_medium=api&utm_source
+[367/9446] ok: https://www.adzuna.com.au/details/5420409893?utm_medium=api&utm_source
+[368/9446] ok: https://www.adzuna.com.au/details/5420409942?utm_medium=api&utm_source
+[369/9446] ok: https://www.adzuna.com.au/details/5420410148?utm_medium=api&utm_source
+[370/9446] ok: https://www.adzuna.com.au/details/5420410312?utm_medium=api&utm_source
+[371/9446] ok: https://www.adzuna.com.au/details/5420410916?utm_medium=api&utm_source
+[372/9446] ok: https://www.adzuna.com.au/details/5420411087?utm_medium=api&utm_source
+[373/9446] ok: https://www.adzuna.com.au/details/5420411153?utm_medium=api&utm_source
+[374/9446] ok: https://www.adzuna.com.au/details/5420411293?utm_medium=api&utm_source
+[375/9446] ok: https://www.adzuna.com.au/details/5420411299?utm_medium=api&utm_source
+[376/9446] ok: https://www.adzuna.com.au/details/5420411324?utm_medium=api&utm_source
+[377/9446] ok: https://www.adzuna.com.au/details/5420411476?utm_medium=api&utm_source
+[378/9446] ok: https://www.adzuna.com.au/details/5420896354?utm_medium=api&utm_source
+[379/9446] ok: https://www.adzuna.com.au/details/5422414082?utm_medium=api&utm_source
+[380/9446] ok: https://www.adzuna.com.au/details/5422699215?utm_medium=api&utm_source
+[381/9446] ok: https://www.adzuna.com.au/details/5422699220?utm_medium=api&utm_source
+[382/9446] ok: https://www.adzuna.com.au/details/5422699242?utm_medium=api&utm_source
+[383/9446] ok: https://www.adzuna.com.au/details/5424756573?utm_medium=api&utm_source
+[384/9446] ok: https://www.adzuna.com.au/details/5426008607?utm_medium=api&utm_source
+[385/9446] ok: https://www.adzuna.com.au/details/5426053014?utm_medium=api&utm_source
+[386/9446] ok: https://www.adzuna.com.au/details/5426053032?utm_medium=api&utm_source
+[387/9446] ok: https://www.adzuna.com.au/details/5427271276?utm_medium=api&utm_source
+[388/9446] ok: https://www.adzuna.com.au/details/5427271701?utm_medium=api&utm_source
+[389/9446] ok: https://www.adzuna.com.au/details/5429086282?utm_medium=api&utm_source
+[390/9446] ok: https://www.adzuna.com.au/details/5429709424?utm_medium=api&utm_source
+[391/9446] ok: https://www.adzuna.com.au/details/5429713492?utm_medium=api&utm_source
+[392/9446] ok: https://www.adzuna.com.au/details/5430005775?utm_medium=api&utm_source
+[393/9446] ok: https://www.adzuna.com.au/details/5433032666?utm_medium=api&utm_source
+[394/9446] ok: https://www.adzuna.com.au/details/5435372147?utm_medium=api&utm_source
+[395/9446] ok: https://www.adzuna.com.au/details/5435372204?utm_medium=api&utm_source
+[396/9446] ok: https://www.adzuna.com.au/details/5437076274?utm_medium=api&utm_source
+[397/9446] ok: https://www.adzuna.com.au/details/5437580953?utm_medium=api&utm_source
+[398/9446] ok: https://www.adzuna.com.au/details/5438396388?utm_medium=api&utm_source
+[399/9446] ok: https://www.adzuna.com.au/details/5438556353?utm_medium=api&utm_source
+[400/9446] ok: https://www.adzuna.com.au/details/5438828410?utm_medium=api&utm_source
+Saved. 0:28:55.583906 elapsed, ~10.9h remaining
+[401/9446] ok: https://www.adzuna.com.au/details/5439936724?utm_medium=api&utm_source
+[402/9446] ok: https://www.adzuna.com.au/details/5441504987?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5441513502?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5441513502?utm_medium=api&utm_source=4e892bd2
+[403/9446] no description: https://www.adzuna.com.au/details/5441513502?utm_medium=api&utm_source
+[404/9446] ok: https://www.adzuna.com.au/details/5441515990?utm_medium=api&utm_source
+[405/9446] ok: https://www.adzuna.com.au/details/5443235975?utm_medium=api&utm_source
+[406/9446] ok: https://www.adzuna.com.au/details/5443244503?utm_medium=api&utm_source
+[407/9446] ok: https://www.adzuna.com.au/details/5443251820?utm_medium=api&utm_source
+[408/9446] ok: https://www.adzuna.com.au/details/5443259546?utm_medium=api&utm_source
+[409/9446] ok: https://www.adzuna.com.au/details/5443259749?utm_medium=api&utm_source
+[410/9446] ok: https://www.adzuna.com.au/details/5444505457?utm_medium=api&utm_source
+[411/9446] ok: https://www.adzuna.com.au/details/5444586560?utm_medium=api&utm_source
+[412/9446] ok: https://www.adzuna.com.au/details/5445013701?utm_medium=api&utm_source
+[413/9446] ok: https://www.adzuna.com.au/details/5445859336?utm_medium=api&utm_source
+[414/9446] ok: https://www.adzuna.com.au/details/5445990141?utm_medium=api&utm_source
+[415/9446] ok: https://www.adzuna.com.au/details/5446482130?utm_medium=api&utm_source
+[416/9446] ok: https://www.adzuna.com.au/details/5448831843?utm_medium=api&utm_source
+[417/9446] ok: https://www.adzuna.com.au/details/5449656622?utm_medium=api&utm_source
+[418/9446] ok: https://www.adzuna.com.au/details/5450080567?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5450623405?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5450623405?utm_medium=api&utm_source=4e892bd2
+[419/9446] no description: https://www.adzuna.com.au/details/5450623405?utm_medium=api&utm_source
+[420/9446] ok: https://www.adzuna.com.au/details/5450623728?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5451088518?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5451088518?utm_medium=api&utm_source=4e892bd2
+[421/9446] no description: https://www.adzuna.com.au/details/5451088518?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5451088541?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5451088541?utm_medium=api&utm_source=4e892bd2
+[422/9446] no description: https://www.adzuna.com.au/details/5451088541?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5451088582?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5451088582?utm_medium=api&utm_source=4e892bd2
+[423/9446] no description: https://www.adzuna.com.au/details/5451088582?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5451088637?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5451088637?utm_medium=api&utm_source=4e892bd2
+[424/9446] no description: https://www.adzuna.com.au/details/5451088637?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5451088671?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5451088671?utm_medium=api&utm_source=4e892bd2
+[425/9446] no description: https://www.adzuna.com.au/details/5451088671?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5451088679?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5451088679?utm_medium=api&utm_source=4e892bd2
+[426/9446] no description: https://www.adzuna.com.au/details/5451088679?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5451088685?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5451088685?utm_medium=api&utm_source=4e892bd2
+[427/9446] no description: https://www.adzuna.com.au/details/5451088685?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5451088687?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5451088687?utm_medium=api&utm_source=4e892bd2
+[428/9446] no description: https://www.adzuna.com.au/details/5451088687?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5451088711?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5451088711?utm_medium=api&utm_source=4e892bd2
+[429/9446] no description: https://www.adzuna.com.au/details/5451088711?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5451088794?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5451088794?utm_medium=api&utm_source=4e892bd2
+[430/9446] no description: https://www.adzuna.com.au/details/5451088794?utm_medium=api&utm_source
+[431/9446] ok: https://www.adzuna.com.au/details/5451488610?utm_medium=api&utm_source
+[432/9446] ok: https://www.adzuna.com.au/details/5452524073?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5453115000?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5453115000?utm_medium=api&utm_source=4e892bd2
+[433/9446] no description: https://www.adzuna.com.au/details/5453115000?utm_medium=api&utm_source
+[434/9446] ok: https://www.adzuna.com.au/details/5454280022?utm_medium=api&utm_source
+[435/9446] ok: https://www.adzuna.com.au/details/5454280226?utm_medium=api&utm_source
+[436/9446] ok: https://www.adzuna.com.au/details/5455447784?utm_medium=api&utm_source
+[437/9446] ok: https://www.adzuna.com.au/details/5455447999?utm_medium=api&utm_source
+[438/9446] ok: https://www.adzuna.com.au/details/5455451930?utm_medium=api&utm_source
+[439/9446] ok: https://www.adzuna.com.au/details/5456463067?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5456463297?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5456463297?utm_medium=api&utm_source=4e892bd2
+[440/9446] no description: https://www.adzuna.com.au/details/5456463297?utm_medium=api&utm_source
+[441/9446] ok: https://www.adzuna.com.au/details/5456463486?utm_medium=api&utm_source
+[442/9446] ok: https://www.adzuna.com.au/details/5456464474?utm_medium=api&utm_source
+[443/9446] ok: https://www.adzuna.com.au/details/5457721295?utm_medium=api&utm_source
+[444/9446] ok: https://www.adzuna.com.au/details/5457721501?utm_medium=api&utm_source
+[445/9446] ok: https://www.adzuna.com.au/details/5459611526?utm_medium=api&utm_source
+[446/9446] ok: https://www.adzuna.com.au/details/5459614150?utm_medium=api&utm_source
+[447/9446] ok: https://www.adzuna.com.au/details/5460170188?utm_medium=api&utm_source
+[448/9446] ok: https://www.adzuna.com.au/details/5461218654?utm_medium=api&utm_source
+[449/9446] ok: https://www.adzuna.com.au/details/5461267314?utm_medium=api&utm_source
+[450/9446] ok: https://www.adzuna.com.au/details/5461267699?utm_medium=api&utm_source
+Saved. 0:32:37.788725 elapsed, ~10.9h remaining
+[451/9446] ok: https://www.adzuna.com.au/details/5461268405?utm_medium=api&utm_source
+[452/9446] ok: https://www.adzuna.com.au/details/5461797213?utm_medium=api&utm_source
+[453/9446] ok: https://www.adzuna.com.au/details/5461873272?utm_medium=api&utm_source
+[454/9446] ok: https://www.adzuna.com.au/details/5462957419?utm_medium=api&utm_source
+[455/9446] ok: https://www.adzuna.com.au/details/5462957515?utm_medium=api&utm_source
+[456/9446] ok: https://www.adzuna.com.au/details/5464472156?utm_medium=api&utm_source
+[457/9446] ok: https://www.adzuna.com.au/details/5464472935?utm_medium=api&utm_source
+[458/9446] ok: https://www.adzuna.com.au/details/5465499537?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5465873263?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5465873263?utm_medium=api&utm_source=4e892bd2
+[459/9446] no description: https://www.adzuna.com.au/details/5465873263?utm_medium=api&utm_source
+[460/9446] ok: https://www.adzuna.com.au/details/5465947987?utm_medium=api&utm_source
+[461/9446] ok: https://www.adzuna.com.au/details/5468418170?utm_medium=api&utm_source
+[462/9446] ok: https://www.adzuna.com.au/details/5469007276?utm_medium=api&utm_source
+[463/9446] ok: https://www.adzuna.com.au/details/5469187806?utm_medium=api&utm_source
+[464/9446] ok: https://www.adzuna.com.au/details/5469864901?utm_medium=api&utm_source
+[465/9446] ok: https://www.adzuna.com.au/details/5470411111?utm_medium=api&utm_source
+[466/9446] ok: https://www.adzuna.com.au/details/5470411117?utm_medium=api&utm_source
+[467/9446] ok: https://www.adzuna.com.au/details/5470411135?utm_medium=api&utm_source
+[468/9446] ok: https://www.adzuna.com.au/details/5470411225?utm_medium=api&utm_source
+[469/9446] ok: https://www.adzuna.com.au/details/5470411262?utm_medium=api&utm_source
+[470/9446] ok: https://www.adzuna.com.au/details/5470434966?utm_medium=api&utm_source
+[471/9446] ok: https://www.adzuna.com.au/details/5471459162?utm_medium=api&utm_source
+[472/9446] ok: https://www.adzuna.com.au/details/5472281925?utm_medium=api&utm_source
+[473/9446] ok: https://www.adzuna.com.au/details/5472412435?utm_medium=api&utm_source
+[474/9446] ok: https://www.adzuna.com.au/details/5472412440?utm_medium=api&utm_source
+[475/9446] ok: https://www.adzuna.com.au/details/5472412446?utm_medium=api&utm_source
+[476/9446] ok: https://www.adzuna.com.au/details/5472453671?utm_medium=api&utm_source
+[477/9446] ok: https://www.adzuna.com.au/details/5473074330?utm_medium=api&utm_source
+[478/9446] ok: https://www.adzuna.com.au/details/5473082156?utm_medium=api&utm_source
+[479/9446] ok: https://www.adzuna.com.au/details/5473299313?utm_medium=api&utm_source
+[480/9446] ok: https://www.adzuna.com.au/details/5473676577?utm_medium=api&utm_source
+[481/9446] ok: https://www.adzuna.com.au/details/5473676605?utm_medium=api&utm_source
+[482/9446] ok: https://www.adzuna.com.au/details/5475526802?utm_medium=api&utm_source
+[483/9446] ok: https://www.adzuna.com.au/details/5475526947?utm_medium=api&utm_source
+[484/9446] ok: https://www.adzuna.com.au/details/5475527344?utm_medium=api&utm_source
+[485/9446] ok: https://www.adzuna.com.au/details/5475527668?utm_medium=api&utm_source
+[486/9446] ok: https://www.adzuna.com.au/details/5475527783?utm_medium=api&utm_source
+[487/9446] ok: https://www.adzuna.com.au/details/5475527921?utm_medium=api&utm_source
+[488/9446] ok: https://www.adzuna.com.au/details/5477680915?utm_medium=api&utm_source
+[489/9446] ok: https://www.adzuna.com.au/details/5479160346?utm_medium=api&utm_source
+[490/9446] ok: https://www.adzuna.com.au/details/5479160386?utm_medium=api&utm_source
+[491/9446] ok: https://www.adzuna.com.au/details/5479257344?utm_medium=api&utm_source
+[492/9446] ok: https://www.adzuna.com.au/details/5479259776?utm_medium=api&utm_source
+[493/9446] ok: https://www.adzuna.com.au/details/5479485359?utm_medium=api&utm_source
+[494/9446] ok: https://www.adzuna.com.au/details/5480117300?utm_medium=api&utm_source
+[495/9446] ok: https://www.adzuna.com.au/details/5481022792?utm_medium=api&utm_source
+[496/9446] ok: https://www.adzuna.com.au/details/5481862013?utm_medium=api&utm_source
+[497/9446] ok: https://www.adzuna.com.au/details/5482258222?utm_medium=api&utm_source
+[498/9446] ok: https://www.adzuna.com.au/details/5482274191?utm_medium=api&utm_source
+[499/9446] ok: https://www.adzuna.com.au/details/5483084254?utm_medium=api&utm_source
+[500/9446] ok: https://www.adzuna.com.au/details/5483499002?utm_medium=api&utm_source
+Saved. 0:36:03.745444 elapsed, ~10.8h remaining
+[501/9446] ok: https://www.adzuna.com.au/details/5483931665?utm_medium=api&utm_source
+[502/9446] ok: https://www.adzuna.com.au/details/5484071348?utm_medium=api&utm_source
+[503/9446] ok: https://www.adzuna.com.au/details/5484071365?utm_medium=api&utm_source
+[504/9446] ok: https://www.adzuna.com.au/details/5484359204?utm_medium=api&utm_source
+[505/9446] ok: https://www.adzuna.com.au/details/5484359238?utm_medium=api&utm_source
+[506/9446] ok: https://www.adzuna.com.au/details/5484631558?utm_medium=api&utm_source
+[507/9446] ok: https://www.adzuna.com.au/details/5484675268?utm_medium=api&utm_source
+[508/9446] ok: https://www.adzuna.com.au/details/5485442716?utm_medium=api&utm_source
+[509/9446] ok: https://www.adzuna.com.au/details/5485529363?utm_medium=api&utm_source
+[510/9446] ok: https://www.adzuna.com.au/details/5485549328?utm_medium=api&utm_source
+[511/9446] ok: https://www.adzuna.com.au/details/5487282032?utm_medium=api&utm_source
+[512/9446] ok: https://www.adzuna.com.au/details/5487282082?utm_medium=api&utm_source
+[513/9446] ok: https://www.adzuna.com.au/details/5487294897?utm_medium=api&utm_source
+[514/9446] ok: https://www.adzuna.com.au/details/5487312955?utm_medium=api&utm_source
+[515/9446] ok: https://www.adzuna.com.au/details/5487313006?utm_medium=api&utm_source
+[516/9446] ok: https://www.adzuna.com.au/details/5487338193?utm_medium=api&utm_source
+[517/9446] ok: https://www.adzuna.com.au/details/5488512888?utm_medium=api&utm_source
+[518/9446] ok: https://www.adzuna.com.au/details/5488838722?utm_medium=api&utm_source
+[519/9446] ok: https://www.adzuna.com.au/details/5489451065?utm_medium=api&utm_source
+[520/9446] ok: https://www.adzuna.com.au/details/5489468049?utm_medium=api&utm_source
+[521/9446] ok: https://www.adzuna.com.au/details/5489476061?utm_medium=api&utm_source
+[522/9446] ok: https://www.adzuna.com.au/details/5489818240?utm_medium=api&utm_source
+[523/9446] ok: https://www.adzuna.com.au/details/5490154590?utm_medium=api&utm_source
+[524/9446] ok: https://www.adzuna.com.au/details/5490791303?utm_medium=api&utm_source
+[525/9446] ok: https://www.adzuna.com.au/details/5490791326?utm_medium=api&utm_source
+[526/9446] ok: https://www.adzuna.com.au/details/5490849158?utm_medium=api&utm_source
+[527/9446] ok: https://www.adzuna.com.au/details/5491126701?utm_medium=api&utm_source
+[528/9446] ok: https://www.adzuna.com.au/details/5491126705?utm_medium=api&utm_source
+[529/9446] ok: https://www.adzuna.com.au/details/5491126708?utm_medium=api&utm_source
+[530/9446] ok: https://www.adzuna.com.au/details/5491126721?utm_medium=api&utm_source
+[531/9446] ok: https://www.adzuna.com.au/details/5491126774?utm_medium=api&utm_source
+[532/9446] ok: https://www.adzuna.com.au/details/5491126793?utm_medium=api&utm_source
+[533/9446] ok: https://www.adzuna.com.au/details/5491126804?utm_medium=api&utm_source
+[534/9446] ok: https://www.adzuna.com.au/details/5491126806?utm_medium=api&utm_source
+[535/9446] ok: https://www.adzuna.com.au/details/5491126808?utm_medium=api&utm_source
+[536/9446] ok: https://www.adzuna.com.au/details/5491126812?utm_medium=api&utm_source
+[537/9446] ok: https://www.adzuna.com.au/details/5492316854?utm_medium=api&utm_source
+[538/9446] ok: https://www.adzuna.com.au/details/5492316945?utm_medium=api&utm_source
+[539/9446] ok: https://www.adzuna.com.au/details/5492317083?utm_medium=api&utm_source
+[540/9446] ok: https://www.adzuna.com.au/details/5492317136?utm_medium=api&utm_source
+[541/9446] ok: https://www.adzuna.com.au/details/5492735232?utm_medium=api&utm_source
+[542/9446] ok: https://www.adzuna.com.au/details/5492873515?utm_medium=api&utm_source
+[543/9446] ok: https://www.adzuna.com.au/details/5492873534?utm_medium=api&utm_source
+[544/9446] ok: https://www.adzuna.com.au/details/5492873544?utm_medium=api&utm_source
+[545/9446] ok: https://www.adzuna.com.au/details/5492873545?utm_medium=api&utm_source
+[546/9446] ok: https://www.adzuna.com.au/details/5492908886?utm_medium=api&utm_source
+[547/9446] ok: https://www.adzuna.com.au/details/5493888372?utm_medium=api&utm_source
+[548/9446] ok: https://www.adzuna.com.au/details/5493888883?utm_medium=api&utm_source
+[549/9446] ok: https://www.adzuna.com.au/details/5493970301?utm_medium=api&utm_source
+[550/9446] ok: https://www.adzuna.com.au/details/5494029663?utm_medium=api&utm_source
+Saved. 0:39:30.837192 elapsed, ~10.7h remaining
+[551/9446] ok: https://www.adzuna.com.au/details/5494030822?utm_medium=api&utm_source
+[552/9446] ok: https://www.adzuna.com.au/details/5494041056?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5494057108?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5494057108?utm_medium=api&utm_source=4e892bd2
+[553/9446] no description: https://www.adzuna.com.au/details/5494057108?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5494064135?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5494064135?utm_medium=api&utm_source=4e892bd2
+[554/9446] no description: https://www.adzuna.com.au/details/5494064135?utm_medium=api&utm_source
+[555/9446] ok: https://www.adzuna.com.au/details/5494064258?utm_medium=api&utm_source
+[556/9446] ok: https://www.adzuna.com.au/details/5495159121?utm_medium=api&utm_source
+[557/9446] ok: https://www.adzuna.com.au/details/5496062955?utm_medium=api&utm_source
+[558/9446] ok: https://www.adzuna.com.au/details/5496062959?utm_medium=api&utm_source
+[559/9446] ok: https://www.adzuna.com.au/details/5496101013?utm_medium=api&utm_source
+[560/9446] ok: https://www.adzuna.com.au/details/5496117911?utm_medium=api&utm_source
+[561/9446] ok: https://www.adzuna.com.au/details/5498341157?utm_medium=api&utm_source
+[562/9446] ok: https://www.adzuna.com.au/details/5499113990?utm_medium=api&utm_source
+[563/9446] ok: https://www.adzuna.com.au/details/5499516200?utm_medium=api&utm_source
+[564/9446] ok: https://www.adzuna.com.au/details/5499516321?utm_medium=api&utm_source
+[565/9446] ok: https://www.adzuna.com.au/details/5499533020?utm_medium=api&utm_source
+[566/9446] ok: https://www.adzuna.com.au/details/5499733019?utm_medium=api&utm_source
+[567/9446] ok: https://www.adzuna.com.au/details/5499733023?utm_medium=api&utm_source
+[568/9446] ok: https://www.adzuna.com.au/details/5499946396?utm_medium=api&utm_source
+[569/9446] ok: https://www.adzuna.com.au/details/5500255120?utm_medium=api&utm_source
+[570/9446] ok: https://www.adzuna.com.au/details/5500687123?utm_medium=api&utm_source
+[571/9446] ok: https://www.adzuna.com.au/details/5500714259?utm_medium=api&utm_source
+[572/9446] ok: https://www.adzuna.com.au/details/5500715718?utm_medium=api&utm_source
+[573/9446] ok: https://www.adzuna.com.au/details/5500722193?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5500816790?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5500816790?utm_medium=api&utm_source=4e892bd2
+[574/9446] no description: https://www.adzuna.com.au/details/5500816790?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5500816815?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5500816815?utm_medium=api&utm_source=4e892bd2
+[575/9446] no description: https://www.adzuna.com.au/details/5500816815?utm_medium=api&utm_source
+[576/9446] ok: https://www.adzuna.com.au/details/5501110094?utm_medium=api&utm_source
+[577/9446] ok: https://www.adzuna.com.au/details/5501235398?utm_medium=api&utm_source
+[578/9446] ok: https://www.adzuna.com.au/details/5501279730?utm_medium=api&utm_source
+[579/9446] ok: https://www.adzuna.com.au/details/5501286817?utm_medium=api&utm_source
+[580/9446] ok: https://www.adzuna.com.au/details/5502282799?utm_medium=api&utm_source
+[581/9446] ok: https://www.adzuna.com.au/details/5502283330?utm_medium=api&utm_source
+[582/9446] ok: https://www.adzuna.com.au/details/5502291744?utm_medium=api&utm_source
+[583/9446] ok: https://www.adzuna.com.au/details/5502291755?utm_medium=api&utm_source
+[584/9446] ok: https://www.adzuna.com.au/details/5502292417?utm_medium=api&utm_source
+[585/9446] ok: https://www.adzuna.com.au/details/5502296123?utm_medium=api&utm_source
+[586/9446] ok: https://www.adzuna.com.au/details/5502296382?utm_medium=api&utm_source
+[587/9446] ok: https://www.adzuna.com.au/details/5502296429?utm_medium=api&utm_source
+[588/9446] ok: https://www.adzuna.com.au/details/5502298760?utm_medium=api&utm_source
+[589/9446] ok: https://www.adzuna.com.au/details/5502299296?utm_medium=api&utm_source
+[590/9446] ok: https://www.adzuna.com.au/details/5502299436?utm_medium=api&utm_source
+[591/9446] ok: https://www.adzuna.com.au/details/5502302935?utm_medium=api&utm_source
+[592/9446] ok: https://www.adzuna.com.au/details/5502307744?utm_medium=api&utm_source
+[593/9446] ok: https://www.adzuna.com.au/details/5502309080?utm_medium=api&utm_source
+[594/9446] ok: https://www.adzuna.com.au/details/5502313090?utm_medium=api&utm_source
+[595/9446] ok: https://www.adzuna.com.au/details/5502313093?utm_medium=api&utm_source
+[596/9446] ok: https://www.adzuna.com.au/details/5502313194?utm_medium=api&utm_source
+[597/9446] ok: https://www.adzuna.com.au/details/5502345375?utm_medium=api&utm_source
+[598/9446] ok: https://www.adzuna.com.au/details/5502830547?utm_medium=api&utm_source
+[599/9446] ok: https://www.adzuna.com.au/details/5502830548?utm_medium=api&utm_source
+[600/9446] ok: https://www.adzuna.com.au/details/5502935252?utm_medium=api&utm_source
+Saved. 0:42:55.668190 elapsed, ~10.5h remaining
+[601/9446] ok: https://www.adzuna.com.au/details/5502935257?utm_medium=api&utm_source
+[602/9446] ok: https://www.adzuna.com.au/details/5502935292?utm_medium=api&utm_source
+[603/9446] ok: https://www.adzuna.com.au/details/5503150300?utm_medium=api&utm_source
+[604/9446] ok: https://www.adzuna.com.au/details/5503150301?utm_medium=api&utm_source
+[605/9446] ok: https://www.adzuna.com.au/details/5503760744?utm_medium=api&utm_source
+[606/9446] ok: https://www.adzuna.com.au/details/5503777025?utm_medium=api&utm_source
+[607/9446] ok: https://www.adzuna.com.au/details/5503782368?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5503783093?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5503783093?utm_medium=api&utm_source=4e892bd2
+[608/9446] no description: https://www.adzuna.com.au/details/5503783093?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5504498375?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5504498375?utm_medium=api&utm_source=4e892bd2
+[609/9446] no description: https://www.adzuna.com.au/details/5504498375?utm_medium=api&utm_source
+[610/9446] ok: https://www.adzuna.com.au/details/5505842840?utm_medium=api&utm_source
+[611/9446] ok: https://www.adzuna.com.au/details/5505904895?utm_medium=api&utm_source
+[612/9446] ok: https://www.adzuna.com.au/details/5505974704?utm_medium=api&utm_source
+[613/9446] ok: https://www.adzuna.com.au/details/5505997573?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5506829664?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5506829664?utm_medium=api&utm_source=4e892bd2
+[614/9446] no description: https://www.adzuna.com.au/details/5506829664?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5506829916?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5506829916?utm_medium=api&utm_source=4e892bd2
+[615/9446] no description: https://www.adzuna.com.au/details/5506829916?utm_medium=api&utm_source
+[616/9446] ok: https://www.adzuna.com.au/details/5507306555?utm_medium=api&utm_source
+[617/9446] ok: https://www.adzuna.com.au/details/5507306556?utm_medium=api&utm_source
+[618/9446] ok: https://www.adzuna.com.au/details/5507306557?utm_medium=api&utm_source
+[619/9446] ok: https://www.adzuna.com.au/details/5508391865?utm_medium=api&utm_source
+[620/9446] ok: https://www.adzuna.com.au/details/5508393415?utm_medium=api&utm_source
+[621/9446] ok: https://www.adzuna.com.au/details/5509024423?utm_medium=api&utm_source
+[622/9446] ok: https://www.adzuna.com.au/details/5509744671?utm_medium=api&utm_source
+[623/9446] ok: https://www.adzuna.com.au/details/5509774514?utm_medium=api&utm_source
+[624/9446] ok: https://www.adzuna.com.au/details/5509842855?utm_medium=api&utm_source
+[625/9446] ok: https://www.adzuna.com.au/details/5509848790?utm_medium=api&utm_source
+[626/9446] ok: https://www.adzuna.com.au/details/5509848979?utm_medium=api&utm_source
+[627/9446] ok: https://www.adzuna.com.au/details/5510682082?utm_medium=api&utm_source
+[628/9446] ok: https://www.adzuna.com.au/details/5510812156?utm_medium=api&utm_source
+[629/9446] ok: https://www.adzuna.com.au/details/5510828606?utm_medium=api&utm_source
+[630/9446] ok: https://www.adzuna.com.au/details/5510850579?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5510992312?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5510992312?utm_medium=api&utm_source=4e892bd2
+[631/9446] no description: https://www.adzuna.com.au/details/5510992312?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5510992313?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5510992313?utm_medium=api&utm_source=4e892bd2
+[632/9446] no description: https://www.adzuna.com.au/details/5510992313?utm_medium=api&utm_source
+[633/9446] ok: https://www.adzuna.com.au/details/5511001603?utm_medium=api&utm_source
+[634/9446] ok: https://www.adzuna.com.au/details/5511083256?utm_medium=api&utm_source
+[635/9446] ok: https://www.adzuna.com.au/details/5512051130?utm_medium=api&utm_source
+[636/9446] ok: https://www.adzuna.com.au/details/5512207738?utm_medium=api&utm_source
+[637/9446] ok: https://www.adzuna.com.au/details/5512207739?utm_medium=api&utm_source
+[638/9446] ok: https://www.adzuna.com.au/details/5512417638?utm_medium=api&utm_source
+[639/9446] ok: https://www.adzuna.com.au/details/5512417640?utm_medium=api&utm_source
+[640/9446] ok: https://www.adzuna.com.au/details/5512417648?utm_medium=api&utm_source
+[641/9446] ok: https://www.adzuna.com.au/details/5512417669?utm_medium=api&utm_source
+[642/9446] ok: https://www.adzuna.com.au/details/5512417696?utm_medium=api&utm_source
+[643/9446] ok: https://www.adzuna.com.au/details/5512417698?utm_medium=api&utm_source
+[644/9446] ok: https://www.adzuna.com.au/details/5514200735?utm_medium=api&utm_source
+[645/9446] ok: https://www.adzuna.com.au/details/5514200739?utm_medium=api&utm_source
+[646/9446] ok: https://www.adzuna.com.au/details/5514200744?utm_medium=api&utm_source
+[647/9446] ok: https://www.adzuna.com.au/details/5514200752?utm_medium=api&utm_source
+[648/9446] ok: https://www.adzuna.com.au/details/5514200755?utm_medium=api&utm_source
+[649/9446] ok: https://www.adzuna.com.au/details/5514200757?utm_medium=api&utm_source
+[650/9446] ok: https://www.adzuna.com.au/details/5514200762?utm_medium=api&utm_source
+Saved. 0:46:16.782405 elapsed, ~10.4h remaining
+[651/9446] ok: https://www.adzuna.com.au/details/5514200764?utm_medium=api&utm_source
+[652/9446] ok: https://www.adzuna.com.au/details/5514272391?utm_medium=api&utm_source
+[653/9446] ok: https://www.adzuna.com.au/details/5515180690?utm_medium=api&utm_source
+[654/9446] ok: https://www.adzuna.com.au/details/5515181199?utm_medium=api&utm_source
+[655/9446] ok: https://www.adzuna.com.au/details/5515319458?utm_medium=api&utm_source
+[656/9446] ok: https://www.adzuna.com.au/details/5515319492?utm_medium=api&utm_source
+[657/9446] ok: https://www.adzuna.com.au/details/5515319499?utm_medium=api&utm_source
+[658/9446] ok: https://www.adzuna.com.au/details/5515320242?utm_medium=api&utm_source
+[659/9446] ok: https://www.adzuna.com.au/details/5515320246?utm_medium=api&utm_source
+[660/9446] ok: https://www.adzuna.com.au/details/5515696004?utm_medium=api&utm_source
+[661/9446] ok: https://www.adzuna.com.au/details/5516036778?utm_medium=api&utm_source
+[662/9446] ok: https://www.adzuna.com.au/details/5516674937?utm_medium=api&utm_source
+[663/9446] ok: https://www.adzuna.com.au/details/5516675083?utm_medium=api&utm_source
+[664/9446] ok: https://www.adzuna.com.au/details/5516676732?utm_medium=api&utm_source
+[665/9446] ok: https://www.adzuna.com.au/details/5517273371?utm_medium=api&utm_source
+[666/9446] ok: https://www.adzuna.com.au/details/5517416171?utm_medium=api&utm_source
+[667/9446] ok: https://www.adzuna.com.au/details/5517417069?utm_medium=api&utm_source
+[668/9446] ok: https://www.adzuna.com.au/details/5517446795?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5518308797?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5518308797?utm_medium=api&utm_source=4e892bd2
+[669/9446] no description: https://www.adzuna.com.au/details/5518308797?utm_medium=api&utm_source
+[670/9446] ok: https://www.adzuna.com.au/details/5518315298?utm_medium=api&utm_source
+[671/9446] ok: https://www.adzuna.com.au/details/5518315445?utm_medium=api&utm_source
+[672/9446] ok: https://www.adzuna.com.au/details/5519620583?utm_medium=api&utm_source
+[673/9446] ok: https://www.adzuna.com.au/details/5519622416?utm_medium=api&utm_source
+[674/9446] ok: https://www.adzuna.com.au/details/5519760493?utm_medium=api&utm_source
+[675/9446] ok: https://www.adzuna.com.au/details/5519760496?utm_medium=api&utm_source
+[676/9446] ok: https://www.adzuna.com.au/details/5520452527?utm_medium=api&utm_source
+[677/9446] ok: https://www.adzuna.com.au/details/5520455796?utm_medium=api&utm_source
+[678/9446] ok: https://www.adzuna.com.au/details/5520455900?utm_medium=api&utm_source
+[679/9446] ok: https://www.adzuna.com.au/details/5520724000?utm_medium=api&utm_source
+[680/9446] ok: https://www.adzuna.com.au/details/5523441727?utm_medium=api&utm_source
+[681/9446] ok: https://www.adzuna.com.au/details/5523481804?utm_medium=api&utm_source
+[682/9446] ok: https://www.adzuna.com.au/details/5524626644?utm_medium=api&utm_source
+[683/9446] ok: https://www.adzuna.com.au/details/5524641398?utm_medium=api&utm_source
+[684/9446] ok: https://www.adzuna.com.au/details/5524894703?utm_medium=api&utm_source
+[685/9446] ok: https://www.adzuna.com.au/details/5524894709?utm_medium=api&utm_source
+[686/9446] ok: https://www.adzuna.com.au/details/5525353421?utm_medium=api&utm_source
+[687/9446] ok: https://www.adzuna.com.au/details/5526417008?utm_medium=api&utm_source
+[688/9446] ok: https://www.adzuna.com.au/details/5526417364?utm_medium=api&utm_source
+[689/9446] ok: https://www.adzuna.com.au/details/5527048328?utm_medium=api&utm_source
+[690/9446] ok: https://www.adzuna.com.au/details/5527267385?utm_medium=api&utm_source
+[691/9446] ok: https://www.adzuna.com.au/details/5528813715?utm_medium=api&utm_source
+[692/9446] ok: https://www.adzuna.com.au/details/5528813718?utm_medium=api&utm_source
+[693/9446] ok: https://www.adzuna.com.au/details/5528876845?utm_medium=api&utm_source
+[694/9446] ok: https://www.adzuna.com.au/details/5529780848?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5529781333?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5529781333?utm_medium=api&utm_source=4e892bd2
+[695/9446] no description: https://www.adzuna.com.au/details/5529781333?utm_medium=api&utm_source
+[696/9446] ok: https://www.adzuna.com.au/details/5529782275?utm_medium=api&utm_source
+[697/9446] ok: https://www.adzuna.com.au/details/5529782344?utm_medium=api&utm_source
+[698/9446] ok: https://www.adzuna.com.au/details/5529782395?utm_medium=api&utm_source
+[699/9446] ok: https://www.adzuna.com.au/details/5529782938?utm_medium=api&utm_source
+[700/9446] ok: https://www.adzuna.com.au/details/5529783070?utm_medium=api&utm_source
+Saved. 0:49:36.611604 elapsed, ~10.3h remaining
+[701/9446] ok: https://www.adzuna.com.au/details/5529827940?utm_medium=api&utm_source
+[702/9446] ok: https://www.adzuna.com.au/details/5530727918?utm_medium=api&utm_source
+[703/9446] ok: https://www.adzuna.com.au/details/5531579230?utm_medium=api&utm_source
+[704/9446] ok: https://www.adzuna.com.au/details/5531579470?utm_medium=api&utm_source
+[705/9446] ok: https://www.adzuna.com.au/details/5531581590?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5531584371?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5531584371?utm_medium=api&utm_source=4e892bd2
+[706/9446] no description: https://www.adzuna.com.au/details/5531584371?utm_medium=api&utm_source
+[707/9446] ok: https://www.adzuna.com.au/details/5531584401?utm_medium=api&utm_source
+[708/9446] ok: https://www.adzuna.com.au/details/5533940375?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5534160198?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5534160198?utm_medium=api&utm_source=4e892bd2
+[709/9446] no description: https://www.adzuna.com.au/details/5534160198?utm_medium=api&utm_source
+[710/9446] ok: https://www.adzuna.com.au/details/5534252521?utm_medium=api&utm_source
+[711/9446] ok: https://www.adzuna.com.au/details/5534485490?utm_medium=api&utm_source
+[712/9446] ok: https://www.adzuna.com.au/details/5535123606?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5535182639?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5535182639?utm_medium=api&utm_source=4e892bd2
+[713/9446] no description: https://www.adzuna.com.au/details/5535182639?utm_medium=api&utm_source
+[714/9446] ok: https://www.adzuna.com.au/details/5535287748?utm_medium=api&utm_source
+[715/9446] ok: https://www.adzuna.com.au/details/5535359184?utm_medium=api&utm_source
+[716/9446] ok: https://www.adzuna.com.au/details/5535685652?utm_medium=api&utm_source
+[717/9446] ok: https://www.adzuna.com.au/details/5535712040?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5535712047?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5535712047?utm_medium=api&utm_source=4e892bd2
+[718/9446] no description: https://www.adzuna.com.au/details/5535712047?utm_medium=api&utm_source
+[719/9446] ok: https://www.adzuna.com.au/details/5535768663?utm_medium=api&utm_source
+[720/9446] ok: https://www.adzuna.com.au/details/5535768670?utm_medium=api&utm_source
+[721/9446] ok: https://www.adzuna.com.au/details/5535915566?utm_medium=api&utm_source
+[722/9446] ok: https://www.adzuna.com.au/details/5536825245?utm_medium=api&utm_source
+[723/9446] ok: https://www.adzuna.com.au/details/5536831571?utm_medium=api&utm_source
+[724/9446] ok: https://www.adzuna.com.au/details/5536833712?utm_medium=api&utm_source
+[725/9446] ok: https://www.adzuna.com.au/details/5536843120?utm_medium=api&utm_source
+[726/9446] ok: https://www.adzuna.com.au/details/5536867531?utm_medium=api&utm_source
+[727/9446] ok: https://www.adzuna.com.au/details/5536880586?utm_medium=api&utm_source
+[728/9446] ok: https://www.adzuna.com.au/details/5536886074?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5537373379?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5537373379?utm_medium=api&utm_source=4e892bd2
+[729/9446] no description: https://www.adzuna.com.au/details/5537373379?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5537373446?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5537373446?utm_medium=api&utm_source=4e892bd2
+[730/9446] no description: https://www.adzuna.com.au/details/5537373446?utm_medium=api&utm_source
+[731/9446] ok: https://www.adzuna.com.au/details/5537603341?utm_medium=api&utm_source
+[732/9446] ok: https://www.adzuna.com.au/details/5537703820?utm_medium=api&utm_source
+[733/9446] ok: https://www.adzuna.com.au/details/5538334313?utm_medium=api&utm_source
+[734/9446] ok: https://www.adzuna.com.au/details/5538372183?utm_medium=api&utm_source
+[735/9446] ok: https://www.adzuna.com.au/details/5538433093?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5538448028?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5538448028?utm_medium=api&utm_source=4e892bd2
+[736/9446] no description: https://www.adzuna.com.au/details/5538448028?utm_medium=api&utm_source
+[737/9446] ok: https://www.adzuna.com.au/details/5539508492?utm_medium=api&utm_source
+[738/9446] ok: https://www.adzuna.com.au/details/5540203852?utm_medium=api&utm_source
+[739/9446] ok: https://www.adzuna.com.au/details/5540204108?utm_medium=api&utm_source
+[740/9446] ok: https://www.adzuna.com.au/details/5540204153?utm_medium=api&utm_source
+[741/9446] ok: https://www.adzuna.com.au/details/5540211554?utm_medium=api&utm_source
+[742/9446] ok: https://www.adzuna.com.au/details/5540217148?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5540217168?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5540217168?utm_medium=api&utm_source=4e892bd2
+[743/9446] no description: https://www.adzuna.com.au/details/5540217168?utm_medium=api&utm_source
+[744/9446] ok: https://www.adzuna.com.au/details/5540219313?utm_medium=api&utm_source
+[745/9446] ok: https://www.adzuna.com.au/details/5540222377?utm_medium=api&utm_source
+[746/9446] ok: https://www.adzuna.com.au/details/5540226215?utm_medium=api&utm_source
+[747/9446] ok: https://www.adzuna.com.au/details/5540228544?utm_medium=api&utm_source
+[748/9446] ok: https://www.adzuna.com.au/details/5541495163?utm_medium=api&utm_source
+[749/9446] ok: https://www.adzuna.com.au/details/5541496898?utm_medium=api&utm_source
+[750/9446] ok: https://www.adzuna.com.au/details/5541513020?utm_medium=api&utm_source
+Saved. 0:53:07.328848 elapsed, ~10.3h remaining
+[751/9446] ok: https://www.adzuna.com.au/details/5541513170?utm_medium=api&utm_source
+[752/9446] ok: https://www.adzuna.com.au/details/5541518156?utm_medium=api&utm_source
+[753/9446] ok: https://www.adzuna.com.au/details/5541527218?utm_medium=api&utm_source
+[754/9446] ok: https://www.adzuna.com.au/details/5542137276?utm_medium=api&utm_source
+[755/9446] ok: https://www.adzuna.com.au/details/5542412943?utm_medium=api&utm_source
+[756/9446] ok: https://www.adzuna.com.au/details/5542451625?utm_medium=api&utm_source
+[757/9446] ok: https://www.adzuna.com.au/details/5542452508?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5543104627?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5543104627?utm_medium=api&utm_source=4e892bd2
+[758/9446] no description: https://www.adzuna.com.au/details/5543104627?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5543104628?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5543104628?utm_medium=api&utm_source=4e892bd2
+[759/9446] no description: https://www.adzuna.com.au/details/5543104628?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5543104630?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5543104630?utm_medium=api&utm_source=4e892bd2
+[760/9446] no description: https://www.adzuna.com.au/details/5543104630?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5543104632?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5543104632?utm_medium=api&utm_source=4e892bd2
+[761/9446] no description: https://www.adzuna.com.au/details/5543104632?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5543104633?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5543104633?utm_medium=api&utm_source=4e892bd2
+[762/9446] no description: https://www.adzuna.com.au/details/5543104633?utm_medium=api&utm_source
+[763/9446] ok: https://www.adzuna.com.au/details/5543405579?utm_medium=api&utm_source
+[764/9446] ok: https://www.adzuna.com.au/details/5543541893?utm_medium=api&utm_source
+[765/9446] ok: https://www.adzuna.com.au/details/5543543473?utm_medium=api&utm_source
+[766/9446] ok: https://www.adzuna.com.au/details/5544746540?utm_medium=api&utm_source
+[767/9446] ok: https://www.adzuna.com.au/details/5544898582?utm_medium=api&utm_source
+[768/9446] ok: https://www.adzuna.com.au/details/5544898587?utm_medium=api&utm_source
+[769/9446] ok: https://www.adzuna.com.au/details/5544963074?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5546202735?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5546202735?utm_medium=api&utm_source=4e892bd2
+[770/9446] no description: https://www.adzuna.com.au/details/5546202735?utm_medium=api&utm_source
+[771/9446] ok: https://www.adzuna.com.au/details/5546203522?utm_medium=api&utm_source
+[772/9446] ok: https://www.adzuna.com.au/details/5546208389?utm_medium=api&utm_source
+[773/9446] ok: https://www.adzuna.com.au/details/5546209840?utm_medium=api&utm_source
+[774/9446] ok: https://www.adzuna.com.au/details/5546215867?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5546223904?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5546223904?utm_medium=api&utm_source=4e892bd2
+[775/9446] no description: https://www.adzuna.com.au/details/5546223904?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5546225716?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5546225716?utm_medium=api&utm_source=4e892bd2
+[776/9446] no description: https://www.adzuna.com.au/details/5546225716?utm_medium=api&utm_source
+[777/9446] ok: https://www.adzuna.com.au/details/5546230047?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5546491695?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5546491695?utm_medium=api&utm_source=4e892bd2
+[778/9446] no description: https://www.adzuna.com.au/details/5546491695?utm_medium=api&utm_source
+[779/9446] ok: https://www.adzuna.com.au/details/5547096171?utm_medium=api&utm_source
+[780/9446] ok: https://www.adzuna.com.au/details/5547685843?utm_medium=api&utm_source
+[781/9446] ok: https://www.adzuna.com.au/details/5547699595?utm_medium=api&utm_source
+[782/9446] ok: https://www.adzuna.com.au/details/5547723105?utm_medium=api&utm_source
+[783/9446] ok: https://www.adzuna.com.au/details/5547725835?utm_medium=api&utm_source
+[784/9446] ok: https://www.adzuna.com.au/details/5548074277?utm_medium=api&utm_source
+[785/9446] ok: https://www.adzuna.com.au/details/5548074288?utm_medium=api&utm_source
+[786/9446] ok: https://www.adzuna.com.au/details/5548074292?utm_medium=api&utm_source
+[787/9446] ok: https://www.adzuna.com.au/details/5548074425?utm_medium=api&utm_source
+[788/9446] ok: https://www.adzuna.com.au/details/5548087118?utm_medium=api&utm_source
+[789/9446] ok: https://www.adzuna.com.au/details/5548087121?utm_medium=api&utm_source
+[790/9446] ok: https://www.adzuna.com.au/details/5548087122?utm_medium=api&utm_source
+[791/9446] ok: https://www.adzuna.com.au/details/5548202316?utm_medium=api&utm_source
+[792/9446] ok: https://www.adzuna.com.au/details/5549132821?utm_medium=api&utm_source
+[793/9446] ok: https://www.adzuna.com.au/details/5549140269?utm_medium=api&utm_source
+[794/9446] ok: https://www.adzuna.com.au/details/5549173368?utm_medium=api&utm_source
+[795/9446] ok: https://www.adzuna.com.au/details/5550406267?utm_medium=api&utm_source
+[796/9446] ok: https://www.adzuna.com.au/details/5550434169?utm_medium=api&utm_source
+[797/9446] ok: https://www.adzuna.com.au/details/5550435403?utm_medium=api&utm_source
+[798/9446] ok: https://www.adzuna.com.au/details/5550442915?utm_medium=api&utm_source
+[799/9446] ok: https://www.adzuna.com.au/details/5550444895?utm_medium=api&utm_source
+[800/9446] ok: https://www.adzuna.com.au/details/5550725046?utm_medium=api&utm_source
+Saved. 0:56:39.053085 elapsed, ~10.2h remaining
+[801/9446] ok: https://www.adzuna.com.au/details/5550725047?utm_medium=api&utm_source
+[802/9446] ok: https://www.adzuna.com.au/details/5550725049?utm_medium=api&utm_source
+[803/9446] ok: https://www.adzuna.com.au/details/5551252214?utm_medium=api&utm_source
+[804/9446] ok: https://www.adzuna.com.au/details/5551281636?utm_medium=api&utm_source
+[805/9446] ok: https://www.adzuna.com.au/details/5551283651?utm_medium=api&utm_source
+[806/9446] ok: https://www.adzuna.com.au/details/5551646251?utm_medium=api&utm_source
+[807/9446] ok: https://www.adzuna.com.au/details/5551646255?utm_medium=api&utm_source
+[808/9446] ok: https://www.adzuna.com.au/details/5551646258?utm_medium=api&utm_source
+[809/9446] ok: https://www.adzuna.com.au/details/5551646270?utm_medium=api&utm_source
+[810/9446] ok: https://www.adzuna.com.au/details/5551801225?utm_medium=api&utm_source
+[811/9446] ok: https://www.adzuna.com.au/details/5551849977?utm_medium=api&utm_source
+[812/9446] ok: https://www.adzuna.com.au/details/5551849981?utm_medium=api&utm_source
+[813/9446] ok: https://www.adzuna.com.au/details/5552273038?utm_medium=api&utm_source
+[814/9446] ok: https://www.adzuna.com.au/details/5552349995?utm_medium=api&utm_source
+[815/9446] ok: https://www.adzuna.com.au/details/5552946268?utm_medium=api&utm_source
+[816/9446] ok: https://www.adzuna.com.au/details/5552946281?utm_medium=api&utm_source
+[817/9446] ok: https://www.adzuna.com.au/details/5553015652?utm_medium=api&utm_source
+[818/9446] ok: https://www.adzuna.com.au/details/5553015653?utm_medium=api&utm_source
+[819/9446] ok: https://www.adzuna.com.au/details/5553015658?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5553537134?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5553537134?utm_medium=api&utm_source=4e892bd2
+[820/9446] no description: https://www.adzuna.com.au/details/5553537134?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5553557917?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5553557917?utm_medium=api&utm_source=4e892bd2
+[821/9446] no description: https://www.adzuna.com.au/details/5553557917?utm_medium=api&utm_source
+[822/9446] ok: https://www.adzuna.com.au/details/5553559571?utm_medium=api&utm_source
+[823/9446] ok: https://www.adzuna.com.au/details/5553569474?utm_medium=api&utm_source
+[824/9446] ok: https://www.adzuna.com.au/details/5553859562?utm_medium=api&utm_source
+[825/9446] ok: https://www.adzuna.com.au/details/5554157083?utm_medium=api&utm_source
+[826/9446] ok: https://www.adzuna.com.au/details/5554782637?utm_medium=api&utm_source
+[827/9446] ok: https://www.adzuna.com.au/details/5554783063?utm_medium=api&utm_source
+[828/9446] ok: https://www.adzuna.com.au/details/5554783393?utm_medium=api&utm_source
+[829/9446] ok: https://www.adzuna.com.au/details/5554783437?utm_medium=api&utm_source
+[830/9446] ok: https://www.adzuna.com.au/details/5554807712?utm_medium=api&utm_source
+[831/9446] ok: https://www.adzuna.com.au/details/5554821661?utm_medium=api&utm_source
+[832/9446] ok: https://www.adzuna.com.au/details/5555143306?utm_medium=api&utm_source
+[833/9446] ok: https://www.adzuna.com.au/details/5555884103?utm_medium=api&utm_source
+[834/9446] ok: https://www.adzuna.com.au/details/5555885085?utm_medium=api&utm_source
+[835/9446] ok: https://www.adzuna.com.au/details/5555931263?utm_medium=api&utm_source
+[836/9446] ok: https://www.adzuna.com.au/details/5555932984?utm_medium=api&utm_source
+[837/9446] ok: https://www.adzuna.com.au/details/5555935273?utm_medium=api&utm_source
+[838/9446] ok: https://www.adzuna.com.au/details/5558068241?utm_medium=api&utm_source
+[839/9446] ok: https://www.adzuna.com.au/details/5558241322?utm_medium=api&utm_source
+[840/9446] ok: https://www.adzuna.com.au/details/5559437018?utm_medium=api&utm_source
+[841/9446] ok: https://www.adzuna.com.au/details/5559448748?utm_medium=api&utm_source
+[842/9446] ok: https://www.adzuna.com.au/details/5559465655?utm_medium=api&utm_source
+[843/9446] ok: https://www.adzuna.com.au/details/5559913513?utm_medium=api&utm_source
+[844/9446] ok: https://www.adzuna.com.au/details/5559913515?utm_medium=api&utm_source
+[845/9446] ok: https://www.adzuna.com.au/details/5559913517?utm_medium=api&utm_source
+[846/9446] ok: https://www.adzuna.com.au/details/5559913519?utm_medium=api&utm_source
+[847/9446] ok: https://www.adzuna.com.au/details/5559913521?utm_medium=api&utm_source
+[848/9446] ok: https://www.adzuna.com.au/details/5559913522?utm_medium=api&utm_source
+[849/9446] ok: https://www.adzuna.com.au/details/5559952826?utm_medium=api&utm_source
+[850/9446] ok: https://www.adzuna.com.au/details/5560500636?utm_medium=api&utm_source
+Saved. 1:00:19.891403 elapsed, ~10.2h remaining
+[851/9446] ok: https://www.adzuna.com.au/details/5560894264?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5562051675?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5562051675?utm_medium=api&utm_source=4e892bd2
+[852/9446] no description: https://www.adzuna.com.au/details/5562051675?utm_medium=api&utm_source
+[853/9446] ok: https://www.adzuna.com.au/details/5564294669?utm_medium=api&utm_source
+[854/9446] ok: https://www.adzuna.com.au/details/5564294730?utm_medium=api&utm_source
+[855/9446] ok: https://www.adzuna.com.au/details/5565243046?utm_medium=api&utm_source
+[856/9446] ok: https://www.adzuna.com.au/details/5565358332?utm_medium=api&utm_source
+[857/9446] ok: https://www.adzuna.com.au/details/5565358657?utm_medium=api&utm_source
+[858/9446] ok: https://www.adzuna.com.au/details/5565462598?utm_medium=api&utm_source
+[859/9446] ok: https://www.adzuna.com.au/details/5565462601?utm_medium=api&utm_source
+[860/9446] ok: https://www.adzuna.com.au/details/5565462615?utm_medium=api&utm_source
+[861/9446] ok: https://www.adzuna.com.au/details/5565462643?utm_medium=api&utm_source
+[862/9446] ok: https://www.adzuna.com.au/details/5565462652?utm_medium=api&utm_source
+[863/9446] ok: https://www.adzuna.com.au/details/5565462655?utm_medium=api&utm_source
+[864/9446] ok: https://www.adzuna.com.au/details/5565462663?utm_medium=api&utm_source
+[865/9446] ok: https://www.adzuna.com.au/details/5565462666?utm_medium=api&utm_source
+[866/9446] ok: https://www.adzuna.com.au/details/5565462684?utm_medium=api&utm_source
+[867/9446] ok: https://www.adzuna.com.au/details/5565462687?utm_medium=api&utm_source
+[868/9446] ok: https://www.adzuna.com.au/details/5565462688?utm_medium=api&utm_source
+[869/9446] ok: https://www.adzuna.com.au/details/5565462698?utm_medium=api&utm_source
+[870/9446] ok: https://www.adzuna.com.au/details/5565462704?utm_medium=api&utm_source
+[871/9446] ok: https://www.adzuna.com.au/details/5565462804?utm_medium=api&utm_source
+[872/9446] ok: https://www.adzuna.com.au/details/5565462831?utm_medium=api&utm_source
+[873/9446] ok: https://www.adzuna.com.au/details/5565462833?utm_medium=api&utm_source
+[874/9446] ok: https://www.adzuna.com.au/details/5565462834?utm_medium=api&utm_source
+[875/9446] ok: https://www.adzuna.com.au/details/5565462838?utm_medium=api&utm_source
+[876/9446] ok: https://www.adzuna.com.au/details/5565462841?utm_medium=api&utm_source
+[877/9446] ok: https://www.adzuna.com.au/details/5565905882?utm_medium=api&utm_source
+[878/9446] ok: https://www.adzuna.com.au/details/5566494343?utm_medium=api&utm_source
+[879/9446] ok: https://www.adzuna.com.au/details/5566494622?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5566496200?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5566496200?utm_medium=api&utm_source=4e892bd2
+[880/9446] no description: https://www.adzuna.com.au/details/5566496200?utm_medium=api&utm_source
+[881/9446] ok: https://www.adzuna.com.au/details/5567514627?utm_medium=api&utm_source
+[882/9446] ok: https://www.adzuna.com.au/details/5567515671?utm_medium=api&utm_source
+[883/9446] ok: https://www.adzuna.com.au/details/5567520228?utm_medium=api&utm_source
+[884/9446] ok: https://www.adzuna.com.au/details/5567543221?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5567574123?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5567574123?utm_medium=api&utm_source=4e892bd2
+[885/9446] no description: https://www.adzuna.com.au/details/5567574123?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5567591397?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5567591397?utm_medium=api&utm_source=4e892bd2
+[886/9446] no description: https://www.adzuna.com.au/details/5567591397?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5567645040?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5567645040?utm_medium=api&utm_source=4e892bd2
+[887/9446] no description: https://www.adzuna.com.au/details/5567645040?utm_medium=api&utm_source
+[888/9446] ok: https://www.adzuna.com.au/details/5567724135?utm_medium=api&utm_source
+[889/9446] ok: https://www.adzuna.com.au/details/5567751819?utm_medium=api&utm_source
+[890/9446] ok: https://www.adzuna.com.au/details/5567853563?utm_medium=api&utm_source
+[891/9446] ok: https://www.adzuna.com.au/details/5567941427?utm_medium=api&utm_source
+[892/9446] ok: https://www.adzuna.com.au/details/5568226780?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5568958406?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5568958406?utm_medium=api&utm_source=4e892bd2
+[893/9446] no description: https://www.adzuna.com.au/details/5568958406?utm_medium=api&utm_source
+[894/9446] ok: https://www.adzuna.com.au/details/5569345987?utm_medium=api&utm_source
+[895/9446] ok: https://www.adzuna.com.au/details/5569355021?utm_medium=api&utm_source
+[896/9446] ok: https://www.adzuna.com.au/details/5569401119?utm_medium=api&utm_source
+[897/9446] ok: https://www.adzuna.com.au/details/5569516833?utm_medium=api&utm_source
+[898/9446] ok: https://www.adzuna.com.au/details/5569644762?utm_medium=api&utm_source
+[899/9446] ok: https://www.adzuna.com.au/details/5569644767?utm_medium=api&utm_source
+[900/9446] ok: https://www.adzuna.com.au/details/5569644770?utm_medium=api&utm_source
+Saved. 1:03:45.885926 elapsed, ~10.1h remaining
+[901/9446] ok: https://www.adzuna.com.au/details/5569771523?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5570442966?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5570442966?utm_medium=api&utm_source=4e892bd2
+[902/9446] no description: https://www.adzuna.com.au/details/5570442966?utm_medium=api&utm_source
+[903/9446] ok: https://www.adzuna.com.au/details/5570444043?utm_medium=api&utm_source
+[904/9446] ok: https://www.adzuna.com.au/details/5570459797?utm_medium=api&utm_source
+[905/9446] ok: https://www.adzuna.com.au/details/5570463524?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5570495583?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5570495583?utm_medium=api&utm_source=4e892bd2
+[906/9446] no description: https://www.adzuna.com.au/details/5570495583?utm_medium=api&utm_source
+[907/9446] ok: https://www.adzuna.com.au/details/5570652784?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5570818094?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5570818094?utm_medium=api&utm_source=4e892bd2
+[908/9446] no description: https://www.adzuna.com.au/details/5570818094?utm_medium=api&utm_source
+[909/9446] ok: https://www.adzuna.com.au/details/5570979260?utm_medium=api&utm_source
+[910/9446] ok: https://www.adzuna.com.au/details/5571056476?utm_medium=api&utm_source
+[911/9446] ok: https://www.adzuna.com.au/details/5571197820?utm_medium=api&utm_source
+[912/9446] ok: https://www.adzuna.com.au/details/5571197830?utm_medium=api&utm_source
+[913/9446] ok: https://www.adzuna.com.au/details/5571408972?utm_medium=api&utm_source
+[914/9446] ok: https://www.adzuna.com.au/details/5572563223?utm_medium=api&utm_source
+[915/9446] ok: https://www.adzuna.com.au/details/5572571254?utm_medium=api&utm_source
+[916/9446] ok: https://www.adzuna.com.au/details/5572572230?utm_medium=api&utm_source
+[917/9446] ok: https://www.adzuna.com.au/details/5572574893?utm_medium=api&utm_source
+[918/9446] ok: https://www.adzuna.com.au/details/5572577642?utm_medium=api&utm_source
+[919/9446] ok: https://www.adzuna.com.au/details/5572578625?utm_medium=api&utm_source
+[920/9446] ok: https://www.adzuna.com.au/details/5572583814?utm_medium=api&utm_source
+[921/9446] ok: https://www.adzuna.com.au/details/5572583926?utm_medium=api&utm_source
+[922/9446] ok: https://www.adzuna.com.au/details/5572592419?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5572667838?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5572667838?utm_medium=api&utm_source=4e892bd2
+[923/9446] no description: https://www.adzuna.com.au/details/5572667838?utm_medium=api&utm_source
+[924/9446] ok: https://www.adzuna.com.au/details/5572954164?utm_medium=api&utm_source
+[925/9446] ok: https://www.adzuna.com.au/details/5572982269?utm_medium=api&utm_source
+[926/9446] ok: https://www.adzuna.com.au/details/5573168770?utm_medium=api&utm_source
+[927/9446] ok: https://www.adzuna.com.au/details/5573467334?utm_medium=api&utm_source
+[928/9446] ok: https://www.adzuna.com.au/details/5573467359?utm_medium=api&utm_source
+[929/9446] ok: https://www.adzuna.com.au/details/5573467393?utm_medium=api&utm_source
+[930/9446] ok: https://www.adzuna.com.au/details/5573467399?utm_medium=api&utm_source
+[931/9446] ok: https://www.adzuna.com.au/details/5573467420?utm_medium=api&utm_source
+[932/9446] ok: https://www.adzuna.com.au/details/5573467424?utm_medium=api&utm_source
+[933/9446] ok: https://www.adzuna.com.au/details/5573467449?utm_medium=api&utm_source
+[934/9446] ok: https://www.adzuna.com.au/details/5573467485?utm_medium=api&utm_source
+[935/9446] ok: https://www.adzuna.com.au/details/5573467487?utm_medium=api&utm_source
+[936/9446] ok: https://www.adzuna.com.au/details/5573467495?utm_medium=api&utm_source
+[937/9446] ok: https://www.adzuna.com.au/details/5573467514?utm_medium=api&utm_source
+[938/9446] ok: https://www.adzuna.com.au/details/5573467516?utm_medium=api&utm_source
+[939/9446] ok: https://www.adzuna.com.au/details/5573467518?utm_medium=api&utm_source
+[940/9446] ok: https://www.adzuna.com.au/details/5573467520?utm_medium=api&utm_source
+[941/9446] ok: https://www.adzuna.com.au/details/5573467529?utm_medium=api&utm_source
+[942/9446] ok: https://www.adzuna.com.au/details/5573467542?utm_medium=api&utm_source
+[943/9446] ok: https://www.adzuna.com.au/details/5573467544?utm_medium=api&utm_source
+[944/9446] ok: https://www.adzuna.com.au/details/5573467565?utm_medium=api&utm_source
+[945/9446] ok: https://www.adzuna.com.au/details/5573467573?utm_medium=api&utm_source
+[946/9446] ok: https://www.adzuna.com.au/details/5573467582?utm_medium=api&utm_source
+[947/9446] ok: https://www.adzuna.com.au/details/5573467588?utm_medium=api&utm_source
+[948/9446] ok: https://www.adzuna.com.au/details/5573467604?utm_medium=api&utm_source
+[949/9446] ok: https://www.adzuna.com.au/details/5573467616?utm_medium=api&utm_source
+[950/9446] ok: https://www.adzuna.com.au/details/5573467617?utm_medium=api&utm_source
+Saved. 1:07:09.762990 elapsed, ~10.0h remaining
+[951/9446] ok: https://www.adzuna.com.au/details/5573467619?utm_medium=api&utm_source
+[952/9446] ok: https://www.adzuna.com.au/details/5573467631?utm_medium=api&utm_source
+[953/9446] ok: https://www.adzuna.com.au/details/5573467640?utm_medium=api&utm_source
+[954/9446] ok: https://www.adzuna.com.au/details/5573467643?utm_medium=api&utm_source
+[955/9446] ok: https://www.adzuna.com.au/details/5573467644?utm_medium=api&utm_source
+[956/9446] ok: https://www.adzuna.com.au/details/5573467649?utm_medium=api&utm_source
+[957/9446] ok: https://www.adzuna.com.au/details/5573467650?utm_medium=api&utm_source
+[958/9446] ok: https://www.adzuna.com.au/details/5573467654?utm_medium=api&utm_source
+[959/9446] ok: https://www.adzuna.com.au/details/5573467665?utm_medium=api&utm_source
+[960/9446] ok: https://www.adzuna.com.au/details/5573467677?utm_medium=api&utm_source
+[961/9446] ok: https://www.adzuna.com.au/details/5573467678?utm_medium=api&utm_source
+[962/9446] ok: https://www.adzuna.com.au/details/5573467696?utm_medium=api&utm_source
+[963/9446] ok: https://www.adzuna.com.au/details/5573467699?utm_medium=api&utm_source
+[964/9446] ok: https://www.adzuna.com.au/details/5573467703?utm_medium=api&utm_source
+[965/9446] ok: https://www.adzuna.com.au/details/5573467709?utm_medium=api&utm_source
+[966/9446] ok: https://www.adzuna.com.au/details/5573467720?utm_medium=api&utm_source
+[967/9446] ok: https://www.adzuna.com.au/details/5573467748?utm_medium=api&utm_source
+[968/9446] ok: https://www.adzuna.com.au/details/5573467756?utm_medium=api&utm_source
+[969/9446] ok: https://www.adzuna.com.au/details/5573467777?utm_medium=api&utm_source
+[970/9446] ok: https://www.adzuna.com.au/details/5573467784?utm_medium=api&utm_source
+[971/9446] ok: https://www.adzuna.com.au/details/5573467789?utm_medium=api&utm_source
+[972/9446] ok: https://www.adzuna.com.au/details/5573467802?utm_medium=api&utm_source
+[973/9446] ok: https://www.adzuna.com.au/details/5573467807?utm_medium=api&utm_source
+[974/9446] ok: https://www.adzuna.com.au/details/5573467811?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5573467818?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5573467818?utm_medium=api&utm_source=4e892bd2
+[975/9446] no description: https://www.adzuna.com.au/details/5573467818?utm_medium=api&utm_source
+[976/9446] ok: https://www.adzuna.com.au/details/5573467823?utm_medium=api&utm_source
+[977/9446] ok: https://www.adzuna.com.au/details/5573467836?utm_medium=api&utm_source
+[978/9446] ok: https://www.adzuna.com.au/details/5573467837?utm_medium=api&utm_source
+[979/9446] ok: https://www.adzuna.com.au/details/5573467871?utm_medium=api&utm_source
+[980/9446] ok: https://www.adzuna.com.au/details/5573467877?utm_medium=api&utm_source
+[981/9446] ok: https://www.adzuna.com.au/details/5573467880?utm_medium=api&utm_source
+[982/9446] ok: https://www.adzuna.com.au/details/5573467881?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5573467885?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5573467885?utm_medium=api&utm_source=4e892bd2
+[983/9446] no description: https://www.adzuna.com.au/details/5573467885?utm_medium=api&utm_source
+[984/9446] ok: https://www.adzuna.com.au/details/5573467893?utm_medium=api&utm_source
+[985/9446] ok: https://www.adzuna.com.au/details/5573467904?utm_medium=api&utm_source
+[986/9446] ok: https://www.adzuna.com.au/details/5573467911?utm_medium=api&utm_source
+[987/9446] ok: https://www.adzuna.com.au/details/5573467921?utm_medium=api&utm_source
+[988/9446] ok: https://www.adzuna.com.au/details/5573467922?utm_medium=api&utm_source
+[989/9446] ok: https://www.adzuna.com.au/details/5573467928?utm_medium=api&utm_source
+[990/9446] ok: https://www.adzuna.com.au/details/5573467930?utm_medium=api&utm_source
+[991/9446] ok: https://www.adzuna.com.au/details/5573467937?utm_medium=api&utm_source
+[992/9446] ok: https://www.adzuna.com.au/details/5573467941?utm_medium=api&utm_source
+[993/9446] ok: https://www.adzuna.com.au/details/5573467951?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5573467955?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5573467955?utm_medium=api&utm_source=4e892bd2
+[994/9446] no description: https://www.adzuna.com.au/details/5573467955?utm_medium=api&utm_source
+[995/9446] ok: https://www.adzuna.com.au/details/5573467961?utm_medium=api&utm_source
+[996/9446] ok: https://www.adzuna.com.au/details/5573467967?utm_medium=api&utm_source
+[997/9446] ok: https://www.adzuna.com.au/details/5573467974?utm_medium=api&utm_source
+[998/9446] ok: https://www.adzuna.com.au/details/5573467975?utm_medium=api&utm_source
+[999/9446] ok: https://www.adzuna.com.au/details/5573467987?utm_medium=api&utm_source
+[1000/9446] ok: https://www.adzuna.com.au/details/5573467993?utm_medium=api&utm_source
+Saved. 1:10:33.650281 elapsed, ~9.9h remaining
+[1001/9446] ok: https://www.adzuna.com.au/details/5573467995?utm_medium=api&utm_source
+[1002/9446] ok: https://www.adzuna.com.au/details/5573467997?utm_medium=api&utm_source
+[1003/9446] ok: https://www.adzuna.com.au/details/5573468015?utm_medium=api&utm_source
+[1004/9446] ok: https://www.adzuna.com.au/details/5573468019?utm_medium=api&utm_source
+[1005/9446] ok: https://www.adzuna.com.au/details/5573468033?utm_medium=api&utm_source
+[1006/9446] ok: https://www.adzuna.com.au/details/5573468034?utm_medium=api&utm_source
+[1007/9446] ok: https://www.adzuna.com.au/details/5573468048?utm_medium=api&utm_source
+[1008/9446] ok: https://www.adzuna.com.au/details/5573468049?utm_medium=api&utm_source
+[1009/9446] ok: https://www.adzuna.com.au/details/5573468051?utm_medium=api&utm_source
+[1010/9446] ok: https://www.adzuna.com.au/details/5573468055?utm_medium=api&utm_source
+[1011/9446] ok: https://www.adzuna.com.au/details/5573468056?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5573468065?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5573468065?utm_medium=api&utm_source=4e892bd2
+[1012/9446] no description: https://www.adzuna.com.au/details/5573468065?utm_medium=api&utm_source
+[1013/9446] ok: https://www.adzuna.com.au/details/5573468067?utm_medium=api&utm_source
+[1014/9446] ok: https://www.adzuna.com.au/details/5573468075?utm_medium=api&utm_source
+[1015/9446] ok: https://www.adzuna.com.au/details/5573468085?utm_medium=api&utm_source
+[1016/9446] ok: https://www.adzuna.com.au/details/5573468086?utm_medium=api&utm_source
+[1017/9446] ok: https://www.adzuna.com.au/details/5573468090?utm_medium=api&utm_source
+[1018/9446] ok: https://www.adzuna.com.au/details/5573468091?utm_medium=api&utm_source
+[1019/9446] ok: https://www.adzuna.com.au/details/5573468097?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5573468102?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5573468102?utm_medium=api&utm_source=4e892bd2
+[1020/9446] no description: https://www.adzuna.com.au/details/5573468102?utm_medium=api&utm_source
+[1021/9446] ok: https://www.adzuna.com.au/details/5573468117?utm_medium=api&utm_source
+[1022/9446] ok: https://www.adzuna.com.au/details/5573468118?utm_medium=api&utm_source
+[1023/9446] ok: https://www.adzuna.com.au/details/5573468122?utm_medium=api&utm_source
+[1024/9446] ok: https://www.adzuna.com.au/details/5573468128?utm_medium=api&utm_source
+[1025/9446] ok: https://www.adzuna.com.au/details/5573468129?utm_medium=api&utm_source
+[1026/9446] ok: https://www.adzuna.com.au/details/5573468132?utm_medium=api&utm_source
+[1027/9446] ok: https://www.adzuna.com.au/details/5573468139?utm_medium=api&utm_source
+[1028/9446] ok: https://www.adzuna.com.au/details/5573468143?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5573468149?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5573468149?utm_medium=api&utm_source=4e892bd2
+[1029/9446] no description: https://www.adzuna.com.au/details/5573468149?utm_medium=api&utm_source
+[1030/9446] ok: https://www.adzuna.com.au/details/5573468158?utm_medium=api&utm_source
+[1031/9446] ok: https://www.adzuna.com.au/details/5573468160?utm_medium=api&utm_source
+[1032/9446] ok: https://www.adzuna.com.au/details/5573468161?utm_medium=api&utm_source
+[1033/9446] ok: https://www.adzuna.com.au/details/5573468165?utm_medium=api&utm_source
+[1034/9446] ok: https://www.adzuna.com.au/details/5573468171?utm_medium=api&utm_source
+[1035/9446] ok: https://www.adzuna.com.au/details/5573468185?utm_medium=api&utm_source
+[1036/9446] ok: https://www.adzuna.com.au/details/5573468194?utm_medium=api&utm_source
+[1037/9446] ok: https://www.adzuna.com.au/details/5573468195?utm_medium=api&utm_source
+[1038/9446] ok: https://www.adzuna.com.au/details/5573468199?utm_medium=api&utm_source
+[1039/9446] ok: https://www.adzuna.com.au/details/5573468200?utm_medium=api&utm_source
+[1040/9446] ok: https://www.adzuna.com.au/details/5573468221?utm_medium=api&utm_source
+[1041/9446] ok: https://www.adzuna.com.au/details/5573468228?utm_medium=api&utm_source
+[1042/9446] ok: https://www.adzuna.com.au/details/5573468246?utm_medium=api&utm_source
+[1043/9446] ok: https://www.adzuna.com.au/details/5573468250?utm_medium=api&utm_source
+[1044/9446] ok: https://www.adzuna.com.au/details/5573468251?utm_medium=api&utm_source
+[1045/9446] ok: https://www.adzuna.com.au/details/5573468259?utm_medium=api&utm_source
+[1046/9446] ok: https://www.adzuna.com.au/details/5573468271?utm_medium=api&utm_source
+[1047/9446] ok: https://www.adzuna.com.au/details/5573468275?utm_medium=api&utm_source
+[1048/9446] ok: https://www.adzuna.com.au/details/5573468279?utm_medium=api&utm_source
+[1049/9446] ok: https://www.adzuna.com.au/details/5573468288?utm_medium=api&utm_source
+[1050/9446] ok: https://www.adzuna.com.au/details/5573468303?utm_medium=api&utm_source
+Saved. 1:13:55.071358 elapsed, ~9.9h remaining
+[1051/9446] ok: https://www.adzuna.com.au/details/5573468306?utm_medium=api&utm_source
+[1052/9446] ok: https://www.adzuna.com.au/details/5573468311?utm_medium=api&utm_source
+[1053/9446] ok: https://www.adzuna.com.au/details/5573468312?utm_medium=api&utm_source
+[1054/9446] ok: https://www.adzuna.com.au/details/5573468316?utm_medium=api&utm_source
+[1055/9446] ok: https://www.adzuna.com.au/details/5573468318?utm_medium=api&utm_source
+[1056/9446] ok: https://www.adzuna.com.au/details/5573468324?utm_medium=api&utm_source
+[1057/9446] ok: https://www.adzuna.com.au/details/5573468349?utm_medium=api&utm_source
+[1058/9446] ok: https://www.adzuna.com.au/details/5573468360?utm_medium=api&utm_source
+[1059/9446] ok: https://www.adzuna.com.au/details/5573468367?utm_medium=api&utm_source
+[1060/9446] ok: https://www.adzuna.com.au/details/5573468368?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5573468383?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5573468383?utm_medium=api&utm_source=4e892bd2
+[1061/9446] no description: https://www.adzuna.com.au/details/5573468383?utm_medium=api&utm_source
+[1062/9446] ok: https://www.adzuna.com.au/details/5573468387?utm_medium=api&utm_source
+[1063/9446] ok: https://www.adzuna.com.au/details/5573468393?utm_medium=api&utm_source
+[1064/9446] ok: https://www.adzuna.com.au/details/5573468651?utm_medium=api&utm_source
+[1065/9446] ok: https://www.adzuna.com.au/details/5573468718?utm_medium=api&utm_source
+[1066/9446] ok: https://www.adzuna.com.au/details/5573526090?utm_medium=api&utm_source
+[1067/9446] ok: https://www.adzuna.com.au/details/5573556914?utm_medium=api&utm_source
+[1068/9446] ok: https://www.adzuna.com.au/details/5573556924?utm_medium=api&utm_source
+[1069/9446] ok: https://www.adzuna.com.au/details/5573556933?utm_medium=api&utm_source
+[1070/9446] ok: https://www.adzuna.com.au/details/5573748072?utm_medium=api&utm_source
+[1071/9446] ok: https://www.adzuna.com.au/details/5573748073?utm_medium=api&utm_source
+[1072/9446] ok: https://www.adzuna.com.au/details/5573748684?utm_medium=api&utm_source
+[1073/9446] ok: https://www.adzuna.com.au/details/5573748687?utm_medium=api&utm_source
+[1074/9446] ok: https://www.adzuna.com.au/details/5573749024?utm_medium=api&utm_source
+[1075/9446] ok: https://www.adzuna.com.au/details/5573749026?utm_medium=api&utm_source
+[1076/9446] ok: https://www.adzuna.com.au/details/5573749033?utm_medium=api&utm_source
+[1077/9446] ok: https://www.adzuna.com.au/details/5573749034?utm_medium=api&utm_source
+[1078/9446] ok: https://www.adzuna.com.au/details/5573749044?utm_medium=api&utm_source
+[1079/9446] ok: https://www.adzuna.com.au/details/5574591197?utm_medium=api&utm_source
+[1080/9446] ok: https://www.adzuna.com.au/details/5574591209?utm_medium=api&utm_source
+[1081/9446] ok: https://www.adzuna.com.au/details/5574611096?utm_medium=api&utm_source
+[1082/9446] ok: https://www.adzuna.com.au/details/5574622712?utm_medium=api&utm_source
+[1083/9446] ok: https://www.adzuna.com.au/details/5574632123?utm_medium=api&utm_source
+[1084/9446] ok: https://www.adzuna.com.au/details/5574634176?utm_medium=api&utm_source
+[1085/9446] ok: https://www.adzuna.com.au/details/5574636505?utm_medium=api&utm_source
+[1086/9446] ok: https://www.adzuna.com.au/details/5574638775?utm_medium=api&utm_source
+[1087/9446] ok: https://www.adzuna.com.au/details/5574685806?utm_medium=api&utm_source
+[1088/9446] ok: https://www.adzuna.com.au/details/5575350785?utm_medium=api&utm_source
+[1089/9446] ok: https://www.adzuna.com.au/details/5575522684?utm_medium=api&utm_source
+[1090/9446] ok: https://www.adzuna.com.au/details/5575802634?utm_medium=api&utm_source
+[1091/9446] ok: https://www.adzuna.com.au/details/5575802637?utm_medium=api&utm_source
+[1092/9446] ok: https://www.adzuna.com.au/details/5575803258?utm_medium=api&utm_source
+[1093/9446] ok: https://www.adzuna.com.au/details/5575803259?utm_medium=api&utm_source
+[1094/9446] ok: https://www.adzuna.com.au/details/5575803260?utm_medium=api&utm_source
+[1095/9446] ok: https://www.adzuna.com.au/details/5575803262?utm_medium=api&utm_source
+[1096/9446] ok: https://www.adzuna.com.au/details/5575803332?utm_medium=api&utm_source
+[1097/9446] ok: https://www.adzuna.com.au/details/5575803378?utm_medium=api&utm_source
+[1098/9446] ok: https://www.adzuna.com.au/details/5576736095?utm_medium=api&utm_source
+[1099/9446] ok: https://www.adzuna.com.au/details/5576740979?utm_medium=api&utm_source
+[1100/9446] ok: https://www.adzuna.com.au/details/5576741031?utm_medium=api&utm_source
+Saved. 1:17:23.036481 elapsed, ~9.8h remaining
+Error fetching https://www.adzuna.com.au/details/5576741570?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5576741570?utm_medium=api&utm_source=4e892bd2
+[1101/9446] no description: https://www.adzuna.com.au/details/5576741570?utm_medium=api&utm_source
+[1102/9446] ok: https://www.adzuna.com.au/details/5576743235?utm_medium=api&utm_source
+[1103/9446] ok: https://www.adzuna.com.au/details/5576744126?utm_medium=api&utm_source
+[1104/9446] ok: https://www.adzuna.com.au/details/5576745282?utm_medium=api&utm_source
+[1105/9446] ok: https://www.adzuna.com.au/details/5576749230?utm_medium=api&utm_source
+[1106/9446] ok: https://www.adzuna.com.au/details/5576752121?utm_medium=api&utm_source
+[1107/9446] ok: https://www.adzuna.com.au/details/5576756614?utm_medium=api&utm_source
+[1108/9446] ok: https://www.adzuna.com.au/details/5576767656?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5576857948?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5576857948?utm_medium=api&utm_source=4e892bd2
+[1109/9446] no description: https://www.adzuna.com.au/details/5576857948?utm_medium=api&utm_source
+[1110/9446] ok: https://www.adzuna.com.au/details/5576858418?utm_medium=api&utm_source
+[1111/9446] ok: https://www.adzuna.com.au/details/5576869569?utm_medium=api&utm_source
+[1112/9446] ok: https://www.adzuna.com.au/details/5576869573?utm_medium=api&utm_source
+[1113/9446] ok: https://www.adzuna.com.au/details/5577662063?utm_medium=api&utm_source
+[1114/9446] ok: https://www.adzuna.com.au/details/5577662064?utm_medium=api&utm_source
+[1115/9446] ok: https://www.adzuna.com.au/details/5577662117?utm_medium=api&utm_source
+[1116/9446] ok: https://www.adzuna.com.au/details/5577662137?utm_medium=api&utm_source
+[1117/9446] ok: https://www.adzuna.com.au/details/5578517906?utm_medium=api&utm_source
+[1118/9446] ok: https://www.adzuna.com.au/details/5578520945?utm_medium=api&utm_source
+[1119/9446] ok: https://www.adzuna.com.au/details/5578524661?utm_medium=api&utm_source
+[1120/9446] ok: https://www.adzuna.com.au/details/5578525888?utm_medium=api&utm_source
+[1121/9446] ok: https://www.adzuna.com.au/details/5578549544?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5578554186?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5578554186?utm_medium=api&utm_source=4e892bd2
+[1122/9446] no description: https://www.adzuna.com.au/details/5578554186?utm_medium=api&utm_source
+[1123/9446] ok: https://www.adzuna.com.au/details/5578554303?utm_medium=api&utm_source
+[1124/9446] ok: https://www.adzuna.com.au/details/5578562107?utm_medium=api&utm_source
+[1125/9446] ok: https://www.adzuna.com.au/details/5579235785?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5579760950?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5579760950?utm_medium=api&utm_source=4e892bd2
+[1126/9446] no description: https://www.adzuna.com.au/details/5579760950?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5579762653?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5579762653?utm_medium=api&utm_source=4e892bd2
+[1127/9446] no description: https://www.adzuna.com.au/details/5579762653?utm_medium=api&utm_source
+[1128/9446] ok: https://www.adzuna.com.au/details/5579830050?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5579838419?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5579838419?utm_medium=api&utm_source=4e892bd2
+[1129/9446] no description: https://www.adzuna.com.au/details/5579838419?utm_medium=api&utm_source
+[1130/9446] ok: https://www.adzuna.com.au/details/5579838439?utm_medium=api&utm_source
+[1131/9446] ok: https://www.adzuna.com.au/details/5579840258?utm_medium=api&utm_source
+[1132/9446] ok: https://www.adzuna.com.au/details/5579840357?utm_medium=api&utm_source
+[1133/9446] ok: https://www.adzuna.com.au/details/5580060316?utm_medium=api&utm_source
+[1134/9446] ok: https://www.adzuna.com.au/details/5580126270?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5580445109?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5580445109?utm_medium=api&utm_source=4e892bd2
+[1135/9446] no description: https://www.adzuna.com.au/details/5580445109?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5580445139?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5580445139?utm_medium=api&utm_source=4e892bd2
+[1136/9446] no description: https://www.adzuna.com.au/details/5580445139?utm_medium=api&utm_source
+[1137/9446] ok: https://www.adzuna.com.au/details/5580445145?utm_medium=api&utm_source
+[1138/9446] ok: https://www.adzuna.com.au/details/5580445506?utm_medium=api&utm_source
+[1139/9446] ok: https://www.adzuna.com.au/details/5580445507?utm_medium=api&utm_source
+[1140/9446] ok: https://www.adzuna.com.au/details/5580445530?utm_medium=api&utm_source
+[1141/9446] ok: https://www.adzuna.com.au/details/5580445552?utm_medium=api&utm_source
+[1142/9446] ok: https://www.adzuna.com.au/details/5580445553?utm_medium=api&utm_source
+[1143/9446] ok: https://www.adzuna.com.au/details/5580445554?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5580445612?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5580445612?utm_medium=api&utm_source=4e892bd2
+[1144/9446] no description: https://www.adzuna.com.au/details/5580445612?utm_medium=api&utm_source
+[1145/9446] ok: https://www.adzuna.com.au/details/5580445678?utm_medium=api&utm_source
+[1146/9446] ok: https://www.adzuna.com.au/details/5580445686?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5580445783?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5580445783?utm_medium=api&utm_source=4e892bd2
+[1147/9446] no description: https://www.adzuna.com.au/details/5580445783?utm_medium=api&utm_source
+[1148/9446] ok: https://www.adzuna.com.au/details/5580445853?utm_medium=api&utm_source
+[1149/9446] ok: https://www.adzuna.com.au/details/5580445877?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5580445988?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5580445988?utm_medium=api&utm_source=4e892bd2
+[1150/9446] no description: https://www.adzuna.com.au/details/5580445988?utm_medium=api&utm_source
+Saved. 1:20:50.937912 elapsed, ~9.7h remaining
+Error fetching https://www.adzuna.com.au/details/5580911844?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5580911844?utm_medium=api&utm_source=4e892bd2
+[1151/9446] no description: https://www.adzuna.com.au/details/5580911844?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5580911856?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5580911856?utm_medium=api&utm_source=4e892bd2
+[1152/9446] no description: https://www.adzuna.com.au/details/5580911856?utm_medium=api&utm_source
+[1153/9446] ok: https://www.adzuna.com.au/details/5581020986?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581023652?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581023652?utm_medium=api&utm_source=4e892bd2
+[1154/9446] no description: https://www.adzuna.com.au/details/5581023652?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581023653?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581023653?utm_medium=api&utm_source=4e892bd2
+[1155/9446] no description: https://www.adzuna.com.au/details/5581023653?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581023655?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581023655?utm_medium=api&utm_source=4e892bd2
+[1156/9446] no description: https://www.adzuna.com.au/details/5581023655?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581023656?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581023656?utm_medium=api&utm_source=4e892bd2
+[1157/9446] no description: https://www.adzuna.com.au/details/5581023656?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581023658?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581023658?utm_medium=api&utm_source=4e892bd2
+[1158/9446] no description: https://www.adzuna.com.au/details/5581023658?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581023659?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581023659?utm_medium=api&utm_source=4e892bd2
+[1159/9446] no description: https://www.adzuna.com.au/details/5581023659?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581100538?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581100538?utm_medium=api&utm_source=4e892bd2
+[1160/9446] no description: https://www.adzuna.com.au/details/5581100538?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581524750?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581524750?utm_medium=api&utm_source=4e892bd2
+[1161/9446] no description: https://www.adzuna.com.au/details/5581524750?utm_medium=api&utm_source
+[1162/9446] ok: https://www.adzuna.com.au/details/5581539965?utm_medium=api&utm_source
+[1163/9446] ok: https://www.adzuna.com.au/details/5581539966?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581632345?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581632345?utm_medium=api&utm_source=4e892bd2
+[1164/9446] no description: https://www.adzuna.com.au/details/5581632345?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581632605?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581632605?utm_medium=api&utm_source=4e892bd2
+[1165/9446] no description: https://www.adzuna.com.au/details/5581632605?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581650549?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581650549?utm_medium=api&utm_source=4e892bd2
+[1166/9446] no description: https://www.adzuna.com.au/details/5581650549?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581744862?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581744862?utm_medium=api&utm_source=4e892bd2
+[1167/9446] no description: https://www.adzuna.com.au/details/5581744862?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581744879?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581744879?utm_medium=api&utm_source=4e892bd2
+[1168/9446] no description: https://www.adzuna.com.au/details/5581744879?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581744881?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581744881?utm_medium=api&utm_source=4e892bd2
+[1169/9446] no description: https://www.adzuna.com.au/details/5581744881?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581744887?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581744887?utm_medium=api&utm_source=4e892bd2
+[1170/9446] no description: https://www.adzuna.com.au/details/5581744887?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581744903?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581744903?utm_medium=api&utm_source=4e892bd2
+[1171/9446] no description: https://www.adzuna.com.au/details/5581744903?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581744907?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581744907?utm_medium=api&utm_source=4e892bd2
+[1172/9446] no description: https://www.adzuna.com.au/details/5581744907?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581744917?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581744917?utm_medium=api&utm_source=4e892bd2
+[1173/9446] no description: https://www.adzuna.com.au/details/5581744917?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581744938?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581744938?utm_medium=api&utm_source=4e892bd2
+[1174/9446] no description: https://www.adzuna.com.au/details/5581744938?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581744962?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581744962?utm_medium=api&utm_source=4e892bd2
+[1175/9446] no description: https://www.adzuna.com.au/details/5581744962?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581745008?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581745008?utm_medium=api&utm_source=4e892bd2
+[1176/9446] no description: https://www.adzuna.com.au/details/5581745008?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581745035?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581745035?utm_medium=api&utm_source=4e892bd2
+[1177/9446] no description: https://www.adzuna.com.au/details/5581745035?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581745044?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581745044?utm_medium=api&utm_source=4e892bd2
+[1178/9446] no description: https://www.adzuna.com.au/details/5581745044?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581745050?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581745050?utm_medium=api&utm_source=4e892bd2
+[1179/9446] no description: https://www.adzuna.com.au/details/5581745050?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581764453?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581764453?utm_medium=api&utm_source=4e892bd2
+[1180/9446] no description: https://www.adzuna.com.au/details/5581764453?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581764539?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581764539?utm_medium=api&utm_source=4e892bd2
+[1181/9446] no description: https://www.adzuna.com.au/details/5581764539?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581764580?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581764580?utm_medium=api&utm_source=4e892bd2
+[1182/9446] no description: https://www.adzuna.com.au/details/5581764580?utm_medium=api&utm_source
+[1183/9446] ok: https://www.adzuna.com.au/details/5581858772?utm_medium=api&utm_source
+[1184/9446] ok: https://www.adzuna.com.au/details/5581858781?utm_medium=api&utm_source
+[1185/9446] ok: https://www.adzuna.com.au/details/5581858784?utm_medium=api&utm_source
+[1186/9446] ok: https://www.adzuna.com.au/details/5581858785?utm_medium=api&utm_source
+[1187/9446] ok: https://www.adzuna.com.au/details/5581858792?utm_medium=api&utm_source
+[1188/9446] ok: https://www.adzuna.com.au/details/5581858810?utm_medium=api&utm_source
+[1189/9446] ok: https://www.adzuna.com.au/details/5581858821?utm_medium=api&utm_source
+[1190/9446] ok: https://www.adzuna.com.au/details/5581858822?utm_medium=api&utm_source
+[1191/9446] ok: https://www.adzuna.com.au/details/5581858827?utm_medium=api&utm_source
+[1192/9446] ok: https://www.adzuna.com.au/details/5581858841?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581858847?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581858847?utm_medium=api&utm_source=4e892bd2
+[1193/9446] no description: https://www.adzuna.com.au/details/5581858847?utm_medium=api&utm_source
+[1194/9446] ok: https://www.adzuna.com.au/details/5581858851?utm_medium=api&utm_source
+[1195/9446] ok: https://www.adzuna.com.au/details/5581858855?utm_medium=api&utm_source
+[1196/9446] ok: https://www.adzuna.com.au/details/5581858859?utm_medium=api&utm_source
+[1197/9446] ok: https://www.adzuna.com.au/details/5581858867?utm_medium=api&utm_source
+[1198/9446] ok: https://www.adzuna.com.au/details/5581858869?utm_medium=api&utm_source
+[1199/9446] ok: https://www.adzuna.com.au/details/5581858900?utm_medium=api&utm_source
+[1200/9446] ok: https://www.adzuna.com.au/details/5581858903?utm_medium=api&utm_source
+Saved. 1:24:25.864798 elapsed, ~9.7h remaining
+[1201/9446] ok: https://www.adzuna.com.au/details/5581858911?utm_medium=api&utm_source
+[1202/9446] ok: https://www.adzuna.com.au/details/5581858912?utm_medium=api&utm_source
+[1203/9446] ok: https://www.adzuna.com.au/details/5581858914?utm_medium=api&utm_source
+[1204/9446] ok: https://www.adzuna.com.au/details/5581858915?utm_medium=api&utm_source
+[1205/9446] ok: https://www.adzuna.com.au/details/5581858918?utm_medium=api&utm_source
+[1206/9446] ok: https://www.adzuna.com.au/details/5581858921?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581858922?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581858922?utm_medium=api&utm_source=4e892bd2
+[1207/9446] no description: https://www.adzuna.com.au/details/5581858922?utm_medium=api&utm_source
+[1208/9446] ok: https://www.adzuna.com.au/details/5581858936?utm_medium=api&utm_source
+[1209/9446] ok: https://www.adzuna.com.au/details/5581858945?utm_medium=api&utm_source
+[1210/9446] ok: https://www.adzuna.com.au/details/5581858950?utm_medium=api&utm_source
+Error fetching https://www.adzuna.com.au/details/5581858966?utm_medium=api&utm_source: 404 Client Error: Not Found for url: https://www.adzuna.com.au/details/5581858966?utm_medium=api&utm_source=4e892bd2
+[1211/9446] no description: https://www.adzuna.com.au/details/5581858966?utm_medium=api&utm_source
+[1212/9446] ok: https://www.adzuna.com.au/details/5581858997?utm_medium=api&utm_source
+[1213/9446] ok: https://www.adzuna.com.au/details/5581859000?utm_medium=api&utm_source
+[1214/9446] ok: https://www.adzuna.com.au/details/5581859002?utm_medium=api&utm_source
+[1215/9446] ok: https://www.adzuna.com.au/details/5581859005?utm_medium=api&utm_source
+[1216/9446] ok: https://www.adzuna.com.au/details/5581859014?utm_medium=api&utm_source
+[1217/9446] ok: https://www.adzuna.com.au/details/5581859016?utm_medium=api&utm_source
+[1218/9446] ok: https://www.adzuna.com.au/details/5581859021?utm_medium=api&utm_source
+[1219/9446] ok: https://www.adzuna.com.au/details/5581859023?utm_medium=api&utm_source
+[1220/9446] ok: https://www.adzuna.com.au/details/5581859029?utm_medium=api&utm_source
+[1221/9446] ok: https://www.adzuna.com.au/details/5581859034?utm_medium=api&utm_source
