@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AU Salary Predictor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #111118;
+    --surface2: #1a1a24;
+    --border: #2a2a3a;
+    --border-bright: #3d3d55;
+    --text: #e8e8f0;
+    --muted: #6a6a8a;
+    --accent: #c8a96e;
+    --accent2: #7c6fff;
+    --success: #4ecca3;
+    --error: #ff6b6b;
+    --font-display: 'Syne', sans-serif;
+    --font-body: 'IBM Plex Sans', sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.5;
+  }
+
+  header {
+    position: relative;
+    z-index: 1;
+    padding: 2rem 2.5rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+  }
+
+  .header-title {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .header-sub {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+  }
+
+  .header-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--success);
+    margin-left: auto;
+    box-shadow: 0 0 8px var(--success);
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  main {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 0;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 3rem 2.5rem;
+    align-items: start;
+  }
+
+  .form-section {
+    padding-right: 3rem;
+    border-right: 1px solid var(--border);
+  }
+
+  .section-label {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--muted);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .section-label::before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 1px;
+    background: var(--accent);
+  }
+
+  .field-group {
+    margin-bottom: 2rem;
+  }
+
+  .field-group-title {
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .field-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .field.full { grid-column: 1 / -1; }
+
+  label {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  textarea,
+  select {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    padding: 0.65rem 0.85rem;
+    border-radius: 3px;
+    outline: none;
+    transition: border-color 0.15s, background 0.15s;
+    width: 100%;
+    -webkit-appearance: none;
+  }
+
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  textarea:focus,
+  select:focus {
+    border-color: var(--accent2);
+    background: var(--surface2);
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 90px;
+    line-height: 1.5;
+  }
+
+  select {
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236a6a8a' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.85rem center;
+    padding-right: 2.5rem;
+  }
+
+  select option { background: #1a1a24; }
+
+  .location-presets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .preset-btn {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.05em;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .preset-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: rgba(200, 169, 110, 0.06);
+  }
+
+  .preset-btn.active {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: rgba(200, 169, 110, 0.1);
+  }
+
+  .submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 1rem;
+    background: var(--accent);
+    color: #0a0a0f;
+    border: none;
+    border-radius: 3px;
+    font-family: var(--font-display);
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 0.5rem;
+  }
+
+  .submit-btn:hover:not(:disabled) {
+    background: #d4b87a;
+    transform: translateY(-1px);
+  }
+
+  .submit-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  .spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(10,10,15,0.3);
+    border-top-color: #0a0a0f;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    display: none;
+  }
+
+  .submit-btn.loading .spinner { display: block; }
+  .submit-btn.loading .btn-text { opacity: 0.7; }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .result-panel {
+    padding-left: 3rem;
+    position: sticky;
+    top: 3rem;
+  }
+
+  .result-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 2rem;
+    margin-top: 1.5rem;
+    display: none;
+    animation: fadeUp 0.3s ease;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .result-card.visible { display: block; }
+
+  .result-label {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    color: var(--muted);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+
+  .result-amount {
+    font-family: var(--font-display);
+    font-size: 2.6rem;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--accent);
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+  }
+
+  .result-currency {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+  }
+
+  .result-meta {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--muted);
+    line-height: 1.8;
+  }
+
+  .result-meta span { color: var(--text); font-weight: 500; }
+
+  .error-card {
+    background: rgba(255, 107, 107, 0.05);
+    border: 1px solid rgba(255, 107, 107, 0.3);
+    border-radius: 4px;
+    padding: 1.25rem;
+    margin-top: 1.5rem;
+    display: none;
+    animation: fadeUp 0.3s ease;
+  }
+
+  .error-card.visible { display: block; }
+
+  .error-title {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--error);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
+
+  .error-msg {
+    font-size: 0.8rem;
+    color: #ffaaaa;
+    line-height: 1.5;
+  }
+
+  .cold-start-notice {
+    background: rgba(124, 111, 255, 0.07);
+    border: 1px solid rgba(124, 111, 255, 0.25);
+    border-radius: 3px;
+    padding: 0.75rem 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: rgba(124, 111, 255, 0.8);
+    line-height: 1.6;
+    margin-top: 1rem;
+    display: none;
+  }
+
+  .cold-start-notice.visible { display: block; }
+
+  .idle-state {
+    margin-top: 1.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--border-bright);
+    line-height: 1.8;
+    padding: 1.5rem;
+    border: 1px dashed var(--border);
+    border-radius: 4px;
+    text-align: center;
+  }
+
+  footer {
+    position: relative;
+    z-index: 1;
+    padding: 1.25rem 2.5rem;
+    border-top: 1px solid var(--border);
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    main { grid-template-columns: 1fr; padding: 2rem 1.25rem; }
+    .form-section { padding-right: 0; border-right: none; border-bottom: 1px solid var(--border); padding-bottom: 2rem; }
+    .result-panel { padding-left: 0; padding-top: 2rem; position: static; }
+    .field-row { grid-template-columns: 1fr; }
+    header { padding: 1.25rem; }
+    footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-title">Salary Predictor</div>
+  <div class="header-sub">AUS · Ridge Regression · TF-IDF</div>
+  <div class="header-dot"></div>
+</header>
+
+<main>
+  <div class="form-section">
+    <div class="section-label">Job Details</div>
+
+    <div class="field-group">
+      <div class="field-group-title">Role</div>
+      <div class="field full">
+        <label for="job_title">Job Title *</label>
+        <input type="text" id="job_title" placeholder="e.g. Senior Data Scientist" value="Senior Data Scientist">
+      </div>
+      <div class="field full">
+        <label for="description">Description</label>
+        <textarea id="description" placeholder="Paste the job description here (optional but improves accuracy)">Lead machine learning initiatives across the business. Design and deploy production models.</textarea>
+      </div>
+    </div>
+
+    <div class="field-group">
+      <div class="field-group-title">Contract</div>
+      <div class="field-row">
+        <div class="field">
+          <label for="contract_type">Contract Type</label>
+          <select id="contract_type">
+            <option value="">Unknown</option>
+            <option value="permanent" selected>Permanent</option>
+            <option value="contract">Contract</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="contract_time">Contract Time</label>
+          <select id="contract_time">
+            <option value="">Unknown</option>
+            <option value="full_time" selected>Full Time</option>
+            <option value="part_time">Part Time</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="field-group">
+      <div class="field-group-title">Category</div>
+      <div class="field full">
+        <label for="category_label">Job Category *</label>
+        <select id="category_label">
+          <option value="Healthcare & Nursing Jobs">Healthcare &amp; Nursing Jobs</option>
+          <option value="Trade & Construction Jobs">Trade &amp; Construction Jobs</option>
+          <option value="IT Jobs" selected>IT Jobs</option>
+          <option value="Engineering Jobs">Engineering Jobs</option>
+          <option value="Accounting & Finance Jobs">Accounting &amp; Finance Jobs</option>
+          <option value="Hospitality & Catering Jobs">Hospitality &amp; Catering Jobs</option>
+          <option value="Admin Jobs">Admin Jobs</option>
+          <option value="Teaching Jobs">Teaching Jobs</option>
+          <option value="Sales Jobs">Sales Jobs</option>
+          <option value="Logistics & Warehouse Jobs">Logistics &amp; Warehouse Jobs</option>
+          <option value="Social work Jobs">Social Work Jobs</option>
+          <option value="Legal Jobs">Legal Jobs</option>
+          <option value="Retail Jobs">Retail Jobs</option>
+          <option value="PR, Advertising & Marketing Jobs">PR, Advertising &amp; Marketing Jobs</option>
+          <option value="HR & Recruitment Jobs">HR &amp; Recruitment Jobs</option>
+          <option value="Consultancy Jobs">Consultancy Jobs</option>
+          <option value="Customer Services Jobs">Customer Services Jobs</option>
+          <option value="Property Jobs">Property Jobs</option>
+          <option value="Manufacturing Jobs">Manufacturing Jobs</option>
+          <option value="Maintenance Jobs">Maintenance Jobs</option>
+          <option value="Scientific & QA Jobs">Scientific &amp; QA Jobs</option>
+          <option value="Domestic help & Cleaning Jobs">Domestic Help &amp; Cleaning Jobs</option>
+          <option value="Part time Jobs">Part Time Jobs</option>
+          <option value="Creative & Design Jobs">Creative &amp; Design Jobs</option>
+          <option value="Graduate Jobs">Graduate Jobs</option>
+          <option value="Other/General Jobs">Other/General Jobs</option>
+          <option value="Travel Jobs">Travel Jobs</option>
+          <option value="Energy, Oil & Gas Jobs">Energy, Oil &amp; Gas Jobs</option>
+          <option value="Charity & Voluntary Jobs">Charity &amp; Voluntary Jobs</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="field-group">
+      <div class="field-group-title">Location</div>
+
+      <label style="margin-bottom:0.6rem; display:block;">Quick Presets</label>
+      <div class="location-presets">
+        <button class="preset-btn" onclick="setPreset('sydney', event)">Sydney</button>
+        <button class="preset-btn" onclick="setPreset('melbourne', event)">Melbourne</button>
+        <button class="preset-btn" onclick="setPreset('brisbane', event)">Brisbane</button>
+        <button class="preset-btn" onclick="setPreset('perth', event)">Perth</button>
+        <button class="preset-btn" onclick="setPreset('adelaide', event)">Adelaide</button>
+        <button class="preset-btn" onclick="setPreset('canberra', event)">Canberra</button>
+        <button class="preset-btn" onclick="setPreset('darwin', event)">Darwin</button>
+        <button class="preset-btn" onclick="setPreset('hobart', event)">Hobart</button>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="location_state">State</label>
+          <select id="location_state" onchange="onStateChange()">
+            <option value="New South Wales" selected>New South Wales</option>
+            <option value="Queensland">Queensland</option>
+            <option value="Victoria">Victoria</option>
+            <option value="Western Australia">Western Australia</option>
+            <option value="South Australia">South Australia</option>
+            <option value="Australian Capital Territory">Australian Capital Territory</option>
+            <option value="Northern Territory">Northern Territory</option>
+            <option value="Tasmania">Tasmania</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="location_region">Region</label>
+          <select id="location_region">
+            <option value="Other" selected>Other</option>
+            <option value="Sydney Region">Sydney Region</option>
+            <option value="Melbourne Region">Melbourne Region</option>
+            <option value="Brisbane Region">Brisbane Region</option>
+            <option value="Perth Region">Perth Region</option>
+            <option value="Adelaide Region">Adelaide Region</option>
+            <option value="Newcastle Region">Newcastle Region</option>
+            <option value="Canberra Region">Canberra Region</option>
+            <option value="Gold Coast Region">Gold Coast Region</option>
+            <option value="Sunshine Coast Region">Sunshine Coast Region</option>
+            <option value="Darwin Region">Darwin Region</option>
+            <option value="Port Macquarie Region">Port Macquarie Region</option>
+            <option value="Illawarra">Illawarra</option>
+            <option value="Toowoomba Region">Toowoomba Region</option>
+            <option value="Rockhampton Region">Rockhampton Region</option>
+            <option value="Mackay Region">Mackay Region</option>
+            <option value="Lismore Region">Lismore Region</option>
+            <option value="Cairns Region">Cairns Region</option>
+            <option value="Wagga Wagga Region">Wagga Wagga Region</option>
+            <option value="Townsville Region">Townsville Region</option>
+            <option value="Bathurst-Orange Region">Bathurst-Orange Region</option>
+            <option value="Dubbo Region">Dubbo Region</option>
+            <option value="Hervey Bay Region">Hervey Bay Region</option>
+            <option value="Tamworth Region">Tamworth Region</option>
+            <option value="Central Coast NSW Region">Central Coast NSW Region</option>
+            <option value="Hobart Region">Hobart Region</option>
+            <option value="Shepparton Region">Shepparton Region</option>
+            <option value="Geelong Region">Geelong Region</option>
+            <option value="La Trobe Region">La Trobe Region</option>
+            <option value="Bendigo Region">Bendigo Region</option>
+            <option value="Goulburn Region">Goulburn Region</option>
+            <option value="Bunbury Region">Bunbury Region</option>
+            <option value="Ipswich Region">Ipswich Region</option>
+            <option value="South Coast NSW Region">South Coast NSW Region</option>
+            <option value="Central QLD Region">Central QLD Region</option>
+            <option value="Ballarat Region">Ballarat Region</option>
+            <option value="Coffs Harbour Region">Coffs Harbour Region</option>
+            <option value="Launceston Region">Launceston Region</option>
+            <option value="Broome Region">Broome Region</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="location_city">City / Area</label>
+        <select id="location_city">
+          <option value="Other" selected>Other</option>
+          <option value="Sydney">Sydney</option>
+          <option value="Brisbane">Brisbane</option>
+          <option value="Melbourne">Melbourne</option>
+          <option value="Western Sydney">Western Sydney</option>
+          <option value="Perth">Perth</option>
+          <option value="Adelaide">Adelaide</option>
+          <option value="Newcastle Area">Newcastle Area</option>
+          <option value="Wollongong Area">Wollongong Area</option>
+          <option value="Gold Coast">Gold Coast</option>
+          <option value="North Shore">North Shore</option>
+          <option value="Inner West">Inner West</option>
+          <option value="Port Macquarie">Port Macquarie</option>
+          <option value="Port Phillip">Port Phillip</option>
+          <option value="Eastern Suburbs">Eastern Suburbs</option>
+          <option value="Southern Sydney">Southern Sydney</option>
+          <option value="Lismore Area">Lismore Area</option>
+          <option value="Northern Beaches">Northern Beaches</option>
+          <option value="Townsville">Townsville</option>
+          <option value="Northern Suburbs">Northern Suburbs</option>
+          <option value="The Hills District">The Hills District</option>
+          <option value="Greater Dandenong">Greater Dandenong</option>
+          <option value="Toowoomba">Toowoomba</option>
+          <option value="Darwin">Darwin</option>
+          <option value="Mackay">Mackay</option>
+          <option value="Cairns">Cairns</option>
+          <option value="Logan Area">Logan Area</option>
+          <option value="Monash Area">Monash Area</option>
+          <option value="Dubbo Area">Dubbo Area</option>
+          <option value="Gosford Area">Gosford Area</option>
+          <option value="Gold Coast North">Gold Coast North</option>
+          <option value="Rockhampton">Rockhampton</option>
+          <option value="Ipswich">Ipswich</option>
+          <option value="Hume Area">Hume Area</option>
+          <option value="Cockburn Area">Cockburn Area</option>
+          <option value="Gladstone">Gladstone</option>
+          <option value="Wyndham Area">Wyndham Area</option>
+          <option value="Melton Area">Melton Area</option>
+          <option value="Boroondara Area">Boroondara Area</option>
+          <option value="Hobart">Hobart</option>
+          <option value="Geelong">Geelong</option>
+          <option value="Maroochydore Area">Maroochydore Area</option>
+          <option value="Caboolture Area">Caboolture Area</option>
+        </select>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="latitude">Latitude</label>
+          <input type="number" id="latitude" step="0.0001" value="-33.8688">
+        </div>
+        <div class="field">
+          <label for="longitude">Longitude</label>
+          <input type="number" id="longitude" step="0.0001" value="151.2093">
+        </div>
+      </div>
+    </div>
+
+    <button class="submit-btn" id="submitBtn" onclick="submitPrediction()">
+      <div class="spinner"></div>
+      <span class="btn-text">Predict Salary</span>
+    </button>
+
+    <div class="cold-start-notice" id="coldStartNotice">
+      ⏳ First request may take up to 12 seconds — the API is warming up from idle.
+    </div>
+  </div>
+
+  <div class="result-panel">
+    <div class="section-label">Prediction</div>
+
+    <div class="idle-state" id="idleState">
+      Fill in role details<br>and click Predict Salary
+    </div>
+
+    <div class="result-card" id="resultCard">
+      <div class="result-label">Estimated Annual Salary</div>
+      <div class="result-amount" id="resultAmount">—</div>
+      <div class="result-currency" id="resultCurrency">AUD / year</div>
+      <div class="result-meta" id="resultMeta"></div>
+    </div>
+
+    <div class="error-card" id="errorCard">
+      <div class="error-title">Error</div>
+      <div class="error-msg" id="errorMsg"></div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <span>RIDGE REGRESSION · TF-IDF · TRAINED ON ADZUNA AU</span>
+  <span id="footerTimestamp"></span>
+</footer>
+
+<script>
+const API = 'https://salary-predictor-app.wittysky-2997a03d.australiaeast.azurecontainerapps.io/predict';
+
+const STATE_COORDS = {
+  'New South Wales':              { lat: -33.8688, lng: 151.2093 },
+  'Queensland':                   { lat: -27.4698, lng: 153.0251 },
+  'Victoria':                     { lat: -37.8136, lng: 144.9631 },
+  'Western Australia':            { lat: -31.9505, lng: 115.8605 },
+  'South Australia':              { lat: -34.9285, lng: 138.6007 },
+  'Australian Capital Territory': { lat: -35.2809, lng: 149.1300 },
+  'Northern Territory':           { lat: -12.4634, lng: 130.8456 },
+  'Tasmania':                     { lat: -42.8821, lng: 147.3272 },
+};
+
+const PRESETS = {
+  sydney:    { state: 'New South Wales',              region: 'Sydney Region',    city: 'Sydney',    lat: -33.8688, lng: 151.2093 },
+  melbourne: { state: 'Victoria',                     region: 'Melbourne Region', city: 'Melbourne', lat: -37.8136, lng: 144.9631 },
+  brisbane:  { state: 'Queensland',                   region: 'Brisbane Region',  city: 'Brisbane',  lat: -27.4698, lng: 153.0251 },
+  perth:     { state: 'Western Australia',            region: 'Perth Region',     city: 'Perth',     lat: -31.9505, lng: 115.8605 },
+  adelaide:  { state: 'South Australia',              region: 'Adelaide Region',  city: 'Adelaide',  lat: -34.9285, lng: 138.6007 },
+  canberra:  { state: 'Australian Capital Territory', region: 'Canberra Region',  city: 'Other',     lat: -35.2809, lng: 149.1300 },
+  darwin:    { state: 'Northern Territory',           region: 'Darwin Region',    city: 'Darwin',    lat: -12.4634, lng: 130.8456 },
+  hobart:    { state: 'Tasmania',                     region: 'Hobart Region',    city: 'Hobart',    lat: -42.8821, lng: 147.3272 },
+};
+
+function setPreset(key, e) {
+  const p = PRESETS[key];
+  document.getElementById('location_state').value = p.state;
+  document.getElementById('location_region').value = p.region;
+  document.getElementById('location_city').value = p.city;
+  document.getElementById('latitude').value = p.lat;
+  document.getElementById('longitude').value = p.lng;
+  document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('active'));
+  e.target.classList.add('active');
+}
+
+function onStateChange() {
+  const state = document.getElementById('location_state').value;
+  const coords = STATE_COORDS[state];
+  if (coords) {
+    document.getElementById('latitude').value = coords.lat;
+    document.getElementById('longitude').value = coords.lng;
+  }
+  // Clear preset highlight since user is now in manual mode
+  document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('active'));
+}
+
+function formatCurrency(amount) {
+  return new Intl.NumberFormat('en-AU', {
+    style: 'currency', currency: 'AUD',
+    minimumFractionDigits: 0, maximumFractionDigits: 0
+  }).format(amount);
+}
+
+let lastPredictTime = null;
+
+async function submitPrediction() {
+  const title = document.getElementById('job_title').value.trim();
+  if (!title) { showError('Job title is required.'); return; }
+
+  const btn = document.getElementById('submitBtn');
+  const coldNotice = document.getElementById('coldStartNotice');
+
+  btn.disabled = true;
+  btn.classList.add('loading');
+  btn.querySelector('.btn-text').textContent = 'Predicting...';
+  hideResults();
+
+  const coldTimer = setTimeout(() => coldNotice.classList.add('visible'), 2000);
+
+  const payload = {
+    job_title: title,
+    description: document.getElementById('description').value.trim(),
+    contract_type: document.getElementById('contract_type').value || null,
+    contract_time: document.getElementById('contract_time').value || null,
+    category_label: document.getElementById('category_label').value,
+    location_area_length: 3,
+    location_state: document.getElementById('location_state').value,
+    location_region: document.getElementById('location_region').value,
+    location_city: document.getElementById('location_city').value,
+    missing_long_lat: false,
+    longitude: parseFloat(document.getElementById('longitude').value) || 0.0,
+    latitude: parseFloat(document.getElementById('latitude').value) || 0.0,
+  };
+
+  const start = Date.now();
+
+  try {
+    const res = await fetch(API, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+
+    clearTimeout(coldTimer);
+    coldNotice.classList.remove('visible');
+
+    if (!res.ok) {
+      const errData = await res.json().catch(() => ({}));
+      throw new Error(errData.detail || `HTTP ${res.status}`);
+    }
+
+    const data = await res.json();
+    const elapsed = ((Date.now() - start) / 1000).toFixed(1);
+    lastPredictTime = new Date().toLocaleTimeString('en-AU');
+    showResult(data, payload, elapsed);
+
+  } catch (err) {
+    clearTimeout(coldTimer);
+    coldNotice.classList.remove('visible');
+    showError(err.message || 'Request failed. Check the API is reachable.');
+  } finally {
+    btn.disabled = false;
+    btn.classList.remove('loading');
+    btn.querySelector('.btn-text').textContent = 'Predict Salary';
+  }
+}
+
+function showResult(data, payload, elapsed) {
+  document.getElementById('idleState').style.display = 'none';
+  document.getElementById('errorCard').classList.remove('visible');
+  const card = document.getElementById('resultCard');
+  card.classList.add('visible');
+  document.getElementById('resultAmount').textContent = formatCurrency(data.predicted_salary);
+  document.getElementById('resultCurrency').textContent = `${data.currency} · annual estimate`;
+  document.getElementById('resultMeta').innerHTML = `
+    ROLE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>${payload.job_title}</span><br>
+    STATE&nbsp;&nbsp;&nbsp;&nbsp; <span>${payload.location_state}</span><br>
+    CATEGORY <span>${payload.category_label}</span><br>
+    CONTRACT <span>${payload.contract_type || 'unknown'} · ${payload.contract_time || 'unknown'}</span><br>
+    LATENCY&nbsp;&nbsp; <span>${elapsed}s</span><br>
+    PREDICTED <span>${lastPredictTime}</span>
+  `;
+}
+
+function showError(msg) {
+  document.getElementById('idleState').style.display = 'none';
+  document.getElementById('resultCard').classList.remove('visible');
+  document.getElementById('errorCard').classList.add('visible');
+  document.getElementById('errorMsg').textContent = msg;
+}
+
+function hideResults() {
+  document.getElementById('resultCard').classList.remove('visible');
+  document.getElementById('errorCard').classList.remove('visible');
+}
+
+document.getElementById('footerTimestamp').textContent = new Date().toLocaleDateString('en-AU', {
+  day: '2-digit', month: 'short', year: 'numeric'
+});
+</script>
+</body>
+</html>
