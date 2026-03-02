@@ -2,6 +2,7 @@ from fastapi import FastAPI, HTTPException
 
 from src.api.schemas import PredictionRequest, PredictionResponse
 from src.models.predict import predict
+from fastapi.middleware.cors import CORSMiddleware
 
 
 app = FastAPI(
@@ -10,6 +11,12 @@ app = FastAPI(
     version="0.1.0",
 )
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/health")
 def health():
