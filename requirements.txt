@@ -4,3 +4,5 @@ pydantic
 scikit-learn
 numpy
 joblib
+typer
+mlflow

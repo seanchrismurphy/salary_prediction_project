@@ -8,6 +8,8 @@ from datetime import datetime
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
+import typer
+import shutil
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:121.0) Gecko/20100101 Firefox/121.0",
@@ -15,6 +17,11 @@ HEADERS = {
     "Accept-Language": "en-AU,en;q=0.5",
 }
 
+
+def safe_save_csv(df, path):
+    temp_path = path.with_suffix(".tmp")
+    df.to_csv(temp_path, index=False)
+    shutil.move(temp_path, path)
 
 def find_project_root(marker="README.md"):
     p = Path.cwd()
@@ -39,19 +46,17 @@ def get_full_description(url):
                 data = data[0]
             if "description" in data:
                 return data.get("description")
-
         return None
 
     except Exception as e:
         print(f"Error fetching {url[:70]}: {e}")
         return None
 
-
-if __name__ == "__main__":
+def scrape_descriptions(test: bool = False):
     PROJECT_ROOT = find_project_root()
-    urls_source = PROJECT_ROOT / "data/processed/redirect_urls.json"
+    urls_source = PROJECT_ROOT / "data/raw/redirect_urls.json"
     output_file = PROJECT_ROOT / "data/raw/urls_with_descriptions.csv"
-    checkpoint_file = PROJECT_ROOT / "data/progress_tracking/urls_with_descriptions.csv"
+    # checkpoint_file = PROJECT_ROOT / "data/progress_tracking/urls_with_descriptions.csv"
     save_interval = 50
 
     # Load all redirect URLs and filter to adzuna detail pages
@@ -64,8 +69,8 @@ if __name__ == "__main__":
     print(f"Loaded {len(urls)} /details/ URLs from {urls_source}")
 
     # Load previously scraped results and exclude already-done URLs
-    if os.path.exists(checkpoint_file):
-        existing = pd.read_csv(checkpoint_file)
+    if os.path.exists(output_file):
+        existing = pd.read_csv(output_file)
         already_scraped = set(existing["redirect_url"])
         urls = urls[~urls["redirect_url"].isin(already_scraped)].reset_index(drop=True)
         print(f"Skipping {len(already_scraped)} already-scraped URLs, {len(urls)} remaining")
@@ -74,7 +79,11 @@ if __name__ == "__main__":
 
     if len(urls) == 0:
         print("Nothing new to scrape.")
-        exit(0)
+        return
+    
+    if test:
+        print('Running in test mode')
+        urls = urls[:5]
 
     urls["description"] = None
     total = len(urls)
@@ -91,7 +100,7 @@ if __name__ == "__main__":
         # Save checkpoint
         if (i + 1) % save_interval == 0:
             combined = pd.concat([existing, urls.iloc[:i+1]], ignore_index=True)
-            combined.to_csv(checkpoint_file, index=False)
+            safe_save_csv(combined, output_file)
             
 
             elapsed = datetime.now() - start_time
@@ -104,6 +113,9 @@ if __name__ == "__main__":
 
     # Final save
     combined = pd.concat([existing, urls], ignore_index=True)
-    combined.to_csv(output_file, index=False)
-    combined.to_csv(checkpoint_file, index=False)
+    safe_save_csv(combined, output_file)
+    # combined.to_csv(checkpoint_file, index=False)
     print(f"Done. {len(combined)} total URLs with descriptions.")
+
+if __name__ == "__main__":
+    typer.run(scrape_descriptions)

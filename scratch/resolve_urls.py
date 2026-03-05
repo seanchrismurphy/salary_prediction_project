@@ -195,12 +195,12 @@ async def process_redirect_urls(redirect_urls, save_interval=50):
 
 
 if __name__ == "__main__":
-    urls_file = "data/processed/redirect_urls.json"
+    urls_file = "data/raw/redirect_urls.json"
     if not os.path.exists(urls_file):
         print(f"URL file not found: {urls_file}")
         print("Save your redirect_urls list as JSON first:")
         print("  import json")
-        print("  with open('data/processed/redirect_urls.json', 'w') as f:")
+        print("  with open('data/raw/redirect_urls.json', 'w') as f:")
         print("      json.dump(redirect_urls, f)")
         exit(1)
 
