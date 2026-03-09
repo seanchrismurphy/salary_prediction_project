@@ -1,43 +1,24 @@
-from dotenv import load_dotenv
+import json
 import os
-import requests
 import time
 from datetime import datetime
-from pathlib import Path
-import json
-import typer
-import shutil
+
 import mlflow
+import requests
+import typer
+from dotenv import load_dotenv
 
-def safe_save(data, path):
-    temp_path = path.with_suffix(".tmp")
-    with open(temp_path, "w") as f:
-        json.dump(data, f)
-    shutil.move(temp_path, path)
+from utils import find_project_root, safe_save_json
 
-
-# Find the root directory, no matter where we are. 
-def find_project_root(marker="README.md"):
-    p = Path.cwd()
-    while p != p.parent:
-        if (p / marker).exists():
-            return p
-        p = p.parent
-    raise RuntimeError("Project root not found")
 
 def collect_data(test: bool = False):
-    start_time = datetime.now()
-    
+
     load_dotenv()
 
     app_id = os.getenv("ADZUNA_APP_ID")
     app_key = os.getenv("ADZUNA_APP_KEY")
-    
-
 
     PROJECT_ROOT = find_project_root()
-    
-    
 
     search_terms = [
         # Data & Analytics
@@ -55,7 +36,6 @@ def collect_data(test: bool = False):
         "computer vision engineer",
         "MLOps engineer",
         "research scientist",
-
         # Software & Engineering (Technical)
         "software engineer",
         "backend engineer",
@@ -78,7 +58,6 @@ def collect_data(test: bool = False):
         "QA engineer",
         "database administrator",
         "network engineer",
-
         # Product & Design
         "product manager",
         "product designer",
@@ -92,7 +71,6 @@ def collect_data(test: bool = False):
         "design director",
         "content strategist",
         "information architect",
-
         # Project & Operations Management
         "project manager",
         "program manager",
@@ -105,7 +83,6 @@ def collect_data(test: bool = False):
         "facilities manager",
         "change management consultant",
         "chief of staff",
-
         # Business & Strategy
         "business analyst",
         "strategy consultant",
@@ -118,7 +95,6 @@ def collect_data(test: bool = False):
         "private equity associate",
         "investment analyst",
         "mergers and acquisitions analyst",
-
         # Finance & Accounting
         "accountant",
         "financial analyst",
@@ -136,7 +112,6 @@ def collect_data(test: bool = False):
         "financial planner",
         "insurance underwriter",
         "mortgage broker",
-
         # Sales & Marketing
         "sales manager",
         "account executive",
@@ -157,7 +132,6 @@ def collect_data(test: bool = False):
         "revenue operations manager",
         "category manager",
         "e-commerce manager",
-
         # People & Culture
         "human resources manager",
         "HR business partner",
@@ -169,7 +143,6 @@ def collect_data(test: bool = False):
         "workforce planning analyst",
         "diversity and inclusion manager",
         "employee relations specialist",
-
         # Legal & Compliance
         "lawyer",
         "solicitor",
@@ -180,7 +153,6 @@ def collect_data(test: bool = False):
         "contract manager",
         "intellectual property analyst",
         "regulatory affairs specialist",
-
         # Engineering (Physical Disciplines)
         "civil engineer",
         "mechanical engineer",
@@ -195,7 +167,6 @@ def collect_data(test: bool = False):
         "process engineer",
         "project engineer",
         "systems engineer",
-
         # Healthcare & Allied Health
         "nurse",
         "registered nurse",
@@ -214,7 +185,6 @@ def collect_data(test: bool = False):
         "health economist",
         "health informatician",
         "hospital administrator",
-
         # Education & Research
         "teacher",
         "principal",
@@ -228,7 +198,6 @@ def collect_data(test: bool = False):
         "urban planner",
         "archivist",
         "librarian",
-
         # Executive & Leadership
         "CEO",
         "COO",
@@ -243,7 +212,6 @@ def collect_data(test: bool = False):
         "head of data",
         "head of finance",
         "head of marketing",
-
         # Sustainability & ESG
         "sustainability manager",
         "ESG analyst",
@@ -251,7 +219,6 @@ def collect_data(test: bool = False):
         "environmental consultant",
         "climate risk analyst",
         "corporate social responsibility manager",
-
         # Architecture & Built Environment
         "architect",
         "interior designer",
@@ -263,7 +230,6 @@ def collect_data(test: bool = False):
         "property manager",
         "real estate analyst",
         "valuer",
-
         # Media, Publishing & Creative
         "journalist",
         "editor",
@@ -273,7 +239,6 @@ def collect_data(test: bool = False):
         "photographer",
         "illustrator",
         "game designer",
-
         # Science & Research
         "biologist",
         "chemist",
@@ -285,7 +250,6 @@ def collect_data(test: bool = False):
         "biostatistician",
         "laboratory manager",
         "clinical psychologist",
-
         # Trades & Construction
         "electrician",
         "plumber",
@@ -315,7 +279,6 @@ def collect_data(test: bool = False):
         "gardener",
         "landscaper",
         "pool technician",
-
         # Retail & Customer Service
         "retail assistant",
         "store manager",
@@ -330,7 +293,6 @@ def collect_data(test: bool = False):
         "baker",
         "deli assistant",
         "petrol station attendant",
-
         # Hospitality & Food Service
         "chef",
         "head chef",
@@ -348,7 +310,6 @@ def collect_data(test: bool = False):
         "housekeeper",
         "event coordinator",
         "catering manager",
-
         # Care & Domestic
         "nanny",
         "au pair",
@@ -365,7 +326,6 @@ def collect_data(test: bool = False):
         "commercial cleaner",
         "office cleaner",
         "laundry attendant",
-
         # Transport & Logistics
         "truck driver",
         "delivery driver",
@@ -382,7 +342,6 @@ def collect_data(test: bool = False):
         "inventory controller",
         "freight coordinator",
         "customs broker",
-
         # Security & Emergency Services
         "security guard",
         "loss prevention officer",
@@ -392,7 +351,6 @@ def collect_data(test: bool = False):
         "paramedic",
         "ambulance officer",
         "corrections officer",
-
         # Personal Services
         "hairdresser",
         "barber",
@@ -404,7 +362,6 @@ def collect_data(test: bool = False):
         "swim instructor",
         "dog groomer",
         "veterinary nurse",
-
         # Administration
         "receptionist",
         "office administrator",
@@ -416,10 +373,10 @@ def collect_data(test: bool = False):
         "legal secretary",
         "court registrar",
     ]
-    
+
     if test:
-        print('Running in test mode')
-        search_terms = ['data scientist']
+        print("Running in test mode")
+        search_terms = ["data scientist"]
 
     progress_file = PROJECT_ROOT / "data/raw/api_progress_fixed.json"
 
@@ -429,11 +386,13 @@ def collect_data(test: bool = False):
         print(f"Loaded {len(all_data)} existing results")
     else:
         all_data = []
-        
+
     initial_count = len(all_data)
 
     seen_ids = {job["id"] for job in all_data}
     api_calls = 0
+
+    start_time = datetime.now()
 
     for term in search_terms:
         for page in range(1, 6):  # 5 pages per term = 250 results per term
@@ -453,7 +412,7 @@ def collect_data(test: bool = False):
                 for job in new:
                     job["search_term"] = term
                     seen_ids.add(job["id"])
-                
+
                 all_data.extend(new)
 
                 if len(new) == 0:
@@ -461,7 +420,9 @@ def collect_data(test: bool = False):
                     break
 
                 api_calls += 1
-                print(f"[{api_calls}] '{term}' page {page}: {len(new)} new ({len(all_data)} total)")
+                print(
+                    f"[{api_calls}] '{term}' page {page}: {len(new)} new ({len(all_data)} total)"
+                )
 
                 time.sleep(1.5)
 
@@ -471,27 +432,34 @@ def collect_data(test: bool = False):
 
             # Save every 10 calls
             if api_calls % 10 == 0:
-                safe_save(all_data, progress_file)
+                safe_save_json(all_data, progress_file)
                 print(f"Saved {len(all_data)} results")
 
         # Final save
-        safe_save(all_data, progress_file)
+        safe_save_json(all_data, progress_file)
 
     final_count = len(all_data)
     new_records = final_count - initial_count
     elapsed = (datetime.now() - start_time).total_seconds()
-    
-    has_salary = [job for job in all_data if job.get("salary_min") or job.get("salary_max")]
-    print(f"\nTotal: {len(all_data)} jobs, {len(has_salary)} with salary data ({len(has_salary)/len(all_data)*100:.1f}%)")
+
+    has_salary = [
+        job for job in all_data if job.get("salary_min") or job.get("salary_max")
+    ]
+    print(
+        f"\nTotal: {len(all_data)} jobs, {len(has_salary)} with salary data ({len(has_salary)/len(all_data)*100:.1f}%)"
+    )
     print(f"\nStarted with {initial_count} jobs, ended with {final_count} jobs!")
-    
-    mlflow.log_metrics({
-        "collect/initial_count": initial_count,
-        "collect/final_count": final_count,
-        "collect/new_records": new_records,
-        "collect/elapsed_seconds": elapsed,
-        "collect/pct_with_salary": (len(has_salary) / final_count * 100)
-    })
-    
+
+    mlflow.log_metrics(
+        {
+            "collect/initial_count": initial_count,
+            "collect/final_count": final_count,
+            "collect/new_records": new_records,
+            "collect/elapsed_seconds": elapsed,
+            "collect/pct_with_salary": (len(has_salary) / final_count * 100),
+        }
+    )
+
+
 if __name__ == "__main__":
     typer.run(collect_data)

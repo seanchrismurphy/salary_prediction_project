@@ -1,9 +1,8 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 
 from src.api.schemas import PredictionRequest, PredictionResponse
 from src.models.predict import predict
-from fastapi.middleware.cors import CORSMiddleware
-
 
 app = FastAPI(
     title="Salary Predictor",

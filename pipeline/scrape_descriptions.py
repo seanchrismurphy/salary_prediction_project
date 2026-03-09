@@ -1,35 +1,22 @@
-import time
-import random
 import json
 import os
-from pathlib import Path
+import random
+import time
 from datetime import datetime
 
-import requests
+import mlflow
 import pandas as pd
-from bs4 import BeautifulSoup
+import requests
 import typer
-import shutil
+from bs4 import BeautifulSoup
+
+from utils import find_project_root, safe_save_csv
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:121.0) Gecko/20100101 Firefox/121.0",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "en-AU,en;q=0.5",
 }
-
-
-def safe_save_csv(df, path):
-    temp_path = path.with_suffix(".tmp")
-    df.to_csv(temp_path, index=False)
-    shutil.move(temp_path, path)
-
-def find_project_root(marker="README.md"):
-    p = Path.cwd()
-    while p != p.parent:
-        if (p / marker).exists():
-            return p
-        p = p.parent
-    raise RuntimeError("Project root not found")
 
 
 def get_full_description(url):
@@ -52,6 +39,7 @@ def get_full_description(url):
         print(f"Error fetching {url[:70]}: {e}")
         return None
 
+
 def scrape_descriptions(test: bool = False):
     PROJECT_ROOT = find_project_root()
     urls_source = PROJECT_ROOT / "data/raw/redirect_urls.json"
@@ -73,17 +61,25 @@ def scrape_descriptions(test: bool = False):
         existing = pd.read_csv(output_file)
         already_scraped = set(existing["redirect_url"])
         urls = urls[~urls["redirect_url"].isin(already_scraped)].reset_index(drop=True)
-        print(f"Skipping {len(already_scraped)} already-scraped URLs, {len(urls)} remaining")
+        print(
+            f"Skipping {len(already_scraped)} already-scraped URLs, {len(urls)} remaining"
+        )
     else:
         existing = pd.DataFrame(columns=["redirect_url", "description"])
 
     if len(urls) == 0:
         print("Nothing new to scrape.")
+        mlflow.log_metric("scrape/urls_to_scrape", 0)
+        mlflow.log_metric("scrape/success_pct", 0)
         return
-    
+
     if test:
-        print('Running in test mode')
+        print("Running in test mode")
         urls = urls[:5]
+
+    start_time = datetime.now()
+
+    mlflow.log_metric("scrape/urls_to_scrape", len(urls))
 
     urls["description"] = None
     total = len(urls)
@@ -99,9 +95,8 @@ def scrape_descriptions(test: bool = False):
 
         # Save checkpoint
         if (i + 1) % save_interval == 0:
-            combined = pd.concat([existing, urls.iloc[:i+1]], ignore_index=True)
+            combined = pd.concat([existing, urls.iloc[: i + 1]], ignore_index=True)
             safe_save_csv(combined, output_file)
-            
 
             elapsed = datetime.now() - start_time
             avg = elapsed.total_seconds() / (i + 1)
@@ -115,7 +110,19 @@ def scrape_descriptions(test: bool = False):
     combined = pd.concat([existing, urls], ignore_index=True)
     safe_save_csv(combined, output_file)
     # combined.to_csv(checkpoint_file, index=False)
-    print(f"Done. {len(combined)} total URLs with descriptions.")
+
+    # log success rate of this batch only
+    success_pct = round(urls["description"].notna().mean() * 100, 1)
+    elapsed = (datetime.now() - start_time).total_seconds()
+
+    mlflow.log_metrics(
+        {"scrape/success_pct": success_pct, "scrape/elapsed_seconds": elapsed}
+    )
+
+    print(
+        f"Done. {len(combined)} total URLs with descriptions. Success rate: {success_pct}%"
+    )
+
 
 if __name__ == "__main__":
     typer.run(scrape_descriptions)

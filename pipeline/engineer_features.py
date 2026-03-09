@@ -1,29 +1,12 @@
-from pathlib import Path
 import json
-import pandas as pd
+import shutil
+
 import mlflow
-import shutil 
+import pandas as pd
 
-# Find the root directory, no matter where we are. 
-def find_project_root(marker="README.md"):
-    p = Path.cwd()
-    while p != p.parent:
-        if (p / marker).exists():
-            return p
-        p = p.parent
-    raise RuntimeError("Project root not found")
+from utils import find_project_root, safe_save_csv
 
-def safe_save_csv(df, path):
-    temp_path = path.with_suffix(".tmp")
-    df.to_csv(temp_path, index=False)
-    shutil.move(temp_path, path)
-    
-def safe_save(data, path):
-    temp_path = path.with_suffix(".tmp")
-    with open(temp_path, "w") as f:
-        json.dump(data, f)
-    shutil.move(temp_path, path)
-    
+
 def gini(values):
     values = sorted(values)
     n = len(values)
