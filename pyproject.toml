@@ -1,0 +1,2 @@
+[tool.isort]
+known_first_party = ["collect_data", "engineer_features", "scrape_descriptions", "train_model", "utils"]

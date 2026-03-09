@@ -48,6 +48,13 @@ data/**/*.xlsx
 models/*
 !models/.gitkeep
 
+*.joblib
+mlflow.db
+mlruns/
+conda.yaml
+python_env.yaml
+python_model.pkl
+
 # Environment
 .env
 *.env
