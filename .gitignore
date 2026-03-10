@@ -54,6 +54,7 @@ mlruns/
 conda.yaml
 python_env.yaml
 python_model.pkl
+pipeline.lock
 
 # Environment
 .env
