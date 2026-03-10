@@ -1,60 +1,35 @@
-import joblib
-import numpy as np
-from pathlib import Path
+import os
+import mlflow
+import pandas as pd
 
-_bundle = None
-
-
-def _load_bundle():
-    global _bundle
-    if _bundle is None:
-        model_path = Path(__file__).resolve().parents[2] / "models" / "salary_pipeline.joblib"
-        _bundle = joblib.load(model_path)
-    return _bundle
+_model = None
 
 
-def predict(
-    job_title: str,
-    description: str,
-    contract_type: str | None,
-    contract_time: str | None,
-    category_label: str,
-    location_area_length: int,
-    location_state: str,
-    location_region: str,
-    location_city: str,
-    missing_long_lat: bool,
-    longitude: float,
-    latitude: float,
-) -> float:
-    b = _load_bundle()
+def _load_model():
+    global _model
+    if _model is None:
+        mlflow.set_tracking_uri(os.environ.get("MLFLOW_TRACKING_URI"))
+        _model = mlflow.pyfunc.load_model("models:/salary-predictor@production")
+    return _model
 
-    title_features = b['title_tfidf'].transform([job_title or ''])
 
-    desc_sparse = b['desc_tfidf'].transform([description or ''])
-    desc_features = b['desc_svd'].transform(desc_sparse)
-
-    cat_input = [[
-        contract_type,
-        contract_time,
-        category_label,
-        location_area_length,
-        location_state,
-        location_region,
-        location_city,
-        missing_long_lat,
-    ]]
-    cat_features = b['ohe'].transform(cat_input)
-
-    num_input = [[longitude, latitude]]
-    num_imputed = b['imputer'].transform(num_input)
-    num_features = b['scaler'].transform(num_imputed)
-
-    X = np.hstack([
-        title_features.toarray(),
-        desc_features,
-        cat_features,
-        num_features,
-    ])
-
-    return round(float(b['model'].predict(X)[0]), 2)
+def predict(request) -> float:
+    model = _load_model()
+    
+    df = pd.DataFrame([{
+        'title': request.job_title,
+        'full_description': request.description,
+        'contract_type': request.contract_type,
+        'contract_time': request.contract_time,
+        'category.label': request.category_label,
+        'location.area_length': request.location_area_length,
+        'location_state': request.location_state,
+        'location_region_abridged': request.location_region,
+        'location_city_abridged': request.location_city,
+        'missing_long_lat': request.missing_long_lat,
+        'longitude': request.longitude,
+        'latitude': request.latitude,
+    }])
+    
+    result = model.predict(df)
+    return round(float(result[0]), 2)
