@@ -80,6 +80,12 @@ def engineer_features(lower = 50000, upper = 300000, min_location_count = 50):
         # Create new column for the abridged versions of the location 
         df[f'{col}_abridged'] = df[col].where(df[col].map(counts) >= min_location_count, 'Other')
     
+    # Rename the location.area_length column to location_area_length
+    df = df.rename(columns={
+        'category.label': 'category_label',
+        'location.area_length': 'location_area_length',
+    })
+    
     output_path = PROJECT_ROOT / "data/processed/feature_engineered_data.csv"
     safe_save_csv(df, output_path)
     
@@ -99,7 +105,8 @@ def engineer_features(lower = 50000, upper = 300000, min_location_count = 50):
         if col.endswith('_abridged'):
             mlflow.log_metric(f"engineer/{level}_other_pct", 
                             round(proportions.get("Other", 0) * 100, 1))
-            
+    
+
     # Store parameters around the feature engineering process. 
     mlflow.log_metrics({
         "engineer/original_count": original_count,

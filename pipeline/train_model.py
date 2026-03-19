@@ -1,9 +1,12 @@
 import logging
+import sys
+from pathlib import Path
 
 import joblib
 import mlflow
 import numpy as np
 import pandas as pd
+from mlflow.models import infer_signature
 from sklearn.decomposition import TruncatedSVD
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.impute import SimpleImputer
@@ -14,9 +17,15 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 from utils import find_project_root
 
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from model_wrapper import SalaryPipelineWrapper, predict_pipeline
+
 PROJECT_ROOT = find_project_root()
 
 logging.getLogger("mlflow.pyfunc").setLevel(logging.ERROR)
+logging.getLogger("azure.core.pipeline.policies.http_logging_policy").setLevel(logging.WARNING)
+logging.getLogger("azure.identity").setLevel(logging.WARNING)
 
 
 def evaluate(y_true, y_pred):
@@ -80,29 +89,23 @@ def fit_pipeline(df, cat_vars, num_vars):
     )
 
 
-def predict_pipeline(bundle, df):
-    """Transform df using fitted bundle and return predictions."""
-    X_title = bundle["title_tfidf"].transform(df["title"].fillna(""))
-    X_desc = bundle["desc_svd"].transform(
-        bundle["desc_tfidf"].transform(df["full_description"].fillna(""))
-    )
-    X_structured = np.hstack(
-        [
-            bundle["ohe"].transform(df[bundle["cat_vars"]]),
-            bundle["scaler"].transform(
-                bundle["imputer"].transform(df[bundle["num_vars"]])
-            ),
-        ]
-    )
-    X = np.hstack([X_title.toarray(), X_desc, X_structured])
-    return bundle["model"].predict(X)
+
 
 
 def get_production_val_mae(client):
     try:
-        version = client.get_model_version_by_alias("salary-predictor", "production")
-        run = client.get_run(version.run_id)
-        return run.data.metrics.get("model/val_mae")
+        versions = client.search_model_versions("name='salary-predictor'")
+        production_versions = [v for v in versions if v.current_stage == "Production"]
+        production_versions = sorted(production_versions, key=lambda v: int(v.version), reverse=True)
+        previous_version = production_versions[0] if production_versions else None
+
+        if previous_version:
+            run = client.get_run(previous_version.run_id)
+            previous_mae = run.data.metrics.get("model/val_mae")
+        else:
+            print(f"Warning: could not retrieve previous MAE")
+            previous_mae = None
+        return(previous_mae)
     except Exception as e:
         print(f"Warning: could not retrieve previous MAE: {e}")
         return None
@@ -126,8 +129,8 @@ def train_model():
     cat_vars = [
         "contract_type",
         "contract_time",
-        "category.label",
-        "location.area_length",
+        "category_label",
+        "location_area_length",
         "location_state",
         "location_region_abridged",
         "location_city_abridged",
@@ -184,18 +187,9 @@ def train_model():
 
     run_id = mlflow.active_run().info.run_id
 
-    # THis step actually registers the model so that it will show up on the 'Models' page of MLflow.
-    class SalaryPipelineWrapper(mlflow.pyfunc.PythonModel):
-        def load_context(self, context):
-            import joblib
-
-            self.bundle = joblib.load(context.artifacts["pipeline_bundle"])
-
-        def predict(self, context, model_input: pd.DataFrame) -> pd.Series:
-            return predict_pipeline(self.bundle, model_input)
-
     joblib.dump(final_bundle, output_path)
 
+    # Note currently not used as it's breaking the version of mlflow we're using. 
     input_example = train_df[["title", "full_description"] + cat_vars + num_vars].iloc[
         :3
     ]
@@ -204,12 +198,16 @@ def train_model():
         input_example[col] = input_example[col].astype("float64")
         input_example[cat_vars] = input_example[cat_vars].fillna("unknown")
 
+    sample_predictions = predict_pipeline(final_bundle, input_example)
+    signature = infer_signature(input_example, sample_predictions)
+    
     # log the full bundle as a registered model
     model_info = mlflow.pyfunc.log_model(
-        name="salary_pipeline",
+        artifact_path="salary_pipeline",
         python_model=SalaryPipelineWrapper(),
         artifacts={"pipeline_bundle": str(output_path)},
         registered_model_name="salary-predictor",
+        signature = signature,
         input_example=input_example,
     )
 
@@ -221,7 +219,12 @@ def train_model():
 
     # We deploy the model to production so long as MAE is not more than 5% worse than our previous model.
     if previous_mae is None or val_metrics["mae"] < previous_mae * 1.05:
-        client.set_registered_model_alias("salary-predictor", "production", version)
+        client.transition_model_version_stage(
+            name="salary-predictor",
+            version=version,
+            stage="Production",
+            archive_existing_versions=True
+        )
 
         mlflow.set_tag("deployment", "promoted")
 

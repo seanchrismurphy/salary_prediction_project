@@ -3,11 +3,12 @@ FROM python:3.11-slim
 WORKDIR /app
 
 COPY requirements.txt .
+COPY model_wrapper.py .
+
 RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir azure-common==1.1.28
 
 COPY src/ src/
-COPY config/ config/
-COPY models/ models/
 
 EXPOSE 8000
 

@@ -1,4 +1,5 @@
 import fcntl
+import os
 
 import mlflow
 import typer
@@ -12,6 +13,8 @@ from utils import find_project_root
 PROJECT_ROOT = find_project_root()
 lock_file = PROJECT_ROOT / "pipeline.lock"
 
+from dotenv import load_dotenv
+load_dotenv()
 
 def run_pipeline(test: bool = False):
 
@@ -30,7 +33,9 @@ def run_pipeline(test: bool = False):
 
         # Point our tracking writing at the mlruns folder - this is where the dashboard will read from
         # we point at the SQL database because MLflow seems to really want that.
-        mlflow.set_tracking_uri(f"sqlite:///{PROJECT_ROOT}/mlflow.db")
+        print(f'MLflow database at: {os.environ.get("MLFLOW_TRACKING_URI")}')
+        
+        mlflow.set_tracking_uri(os.environ.get("MLFLOW_TRACKING_URI"))
         # mlflow.set_tracking_uri(str(PROJECT_ROOT / "mlruns"))
         # mlflow.set_tracking_uri("http://localhost:5000")
         mlflow.set_experiment("salary-predictor")

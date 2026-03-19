@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+pydantic
+scikit-learn
+numpy
+joblib
+typer
+mlflow==2.22.0
+azure-common==1.1.28
+azure-core==1.38.2
+azure-identity==1.25.2
+azure-mgmt-core==1.6.0
+azure-storage-blob==12.27.1
+azureml-mlflow==1.62.0
+pandas

@@ -5,4 +5,5 @@ scikit-learn
 numpy
 joblib
 typer
-mlflow
+mlflow==2.22.0
+azureml-mlflow==1.62.0
