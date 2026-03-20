@@ -39,6 +39,8 @@ def run_pipeline(test: bool = False):
         # mlflow.set_tracking_uri(str(PROJECT_ROOT / "mlruns"))
         # mlflow.set_tracking_uri("http://localhost:5000")
         mlflow.set_experiment("salary-predictor")
+        
+        print(f"Tracking URI at: {mlflow.get_tracking_uri()}")
 
         with mlflow.start_run():
 

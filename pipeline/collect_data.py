@@ -8,7 +8,9 @@ import requests
 import typer
 from dotenv import load_dotenv
 
-from utils import find_project_root, safe_save_json
+from utils import save_parquet_to_blob, blob_exists, load_parquet_from_blob, find_project_root
+import pandas as pd
+import json
 
 
 def collect_data(test: bool = False):
@@ -18,7 +20,7 @@ def collect_data(test: bool = False):
     app_id = os.getenv("ADZUNA_APP_ID")
     app_key = os.getenv("ADZUNA_APP_KEY")
 
-    PROJECT_ROOT = find_project_root()
+    # PROJECT_ROOT = find_project_root()
 
     search_terms = [
         # Data & Analytics
@@ -378,14 +380,26 @@ def collect_data(test: bool = False):
         print("Running in test mode")
         search_terms = ["data scientist"]
 
-    progress_file = PROJECT_ROOT / "data/raw/api_progress_fixed.json"
+    # progress_file = PROJECT_ROOT / "data/raw/api_raw_data.json"
 
-    if os.path.exists(progress_file):
-        with open(progress_file, "r") as f:
-            all_data = json.load(f)
-        print(f"Loaded {len(all_data)} existing results")
+    if blob_exists("raw/api_raw_data.parquet"):
+        all_data = load_parquet_from_blob("raw/api_raw_data.parquet").to_dict(orient="records")
+        print(f"Loaded {len(all_data)} existing results from blob storage")
     else:
-        all_data = []
+        # Fallback to local JSON file for initial seeding
+        try:
+            PROJECT_ROOT = find_project_root()
+            local_json_path = PROJECT_ROOT / "data/raw/api_raw_data.json"
+            if os.path.exists(local_json_path):
+                with open(local_json_path, "r") as f:
+                    all_data = json.load(f)
+                print(f"Loaded {len(all_data)} existing results from local JSON file (seeding pipeline)")
+            else:
+                all_data = []
+                print("No existing data found, starting fresh")
+        except Exception as e:
+            print(f"Could not load local seed data: {e}. Starting fresh.")
+            all_data = []
 
     initial_count = len(all_data)
 
@@ -408,7 +422,7 @@ def collect_data(test: bool = False):
                 response.raise_for_status()
                 results = response.json()["results"]
 
-                new = [job for job in results if job["id"] not in seen_ids]
+                new = [job for job in results if int(job["id"]) not in seen_ids]
                 for job in new:
                     job["search_term"] = term
                     seen_ids.add(job["id"])
@@ -432,11 +446,15 @@ def collect_data(test: bool = False):
 
             # Save every 10 calls
             if api_calls % 10 == 0:
-                safe_save_json(all_data, progress_file)
+                df = pd.json_normalize(all_data)
+                df['id'] = df['id'].astype(int)
+                save_parquet_to_blob(df, 'raw/api_raw_data.parquet')
                 print(f"Saved {len(all_data)} results")
 
-        # Final save
-        safe_save_json(all_data, progress_file)
+    # Final save
+    df = pd.json_normalize(all_data)
+    df['id'] = df['id'].astype(int)
+    save_parquet_to_blob(df, 'raw/api_raw_data.parquet')
 
     final_count = len(all_data)
     new_records = final_count - initial_count

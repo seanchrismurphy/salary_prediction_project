@@ -1,5 +1,4 @@
 import json
-import os
 import random
 import time
 from datetime import datetime
@@ -10,7 +9,7 @@ import requests
 import typer
 from bs4 import BeautifulSoup
 
-from utils import find_project_root, safe_save_csv
+from utils import blob_exists, load_parquet_from_blob, save_parquet_to_blob, find_project_root
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:121.0) Gecko/20100101 Firefox/121.0",
@@ -18,6 +17,8 @@ HEADERS = {
     "Accept-Language": "en-AU,en;q=0.5",
 }
 
+PROJECT_ROOT = find_project_root()
+output_file = PROJECT_ROOT / "data/raw/urls_with_descriptions.csv"
 
 def get_full_description(url):
     try:
@@ -41,31 +42,36 @@ def get_full_description(url):
 
 
 def scrape_descriptions(test: bool = False):
-    PROJECT_ROOT = find_project_root()
-    urls_source = PROJECT_ROOT / "data/raw/redirect_urls.json"
-    output_file = PROJECT_ROOT / "data/raw/urls_with_descriptions.csv"
-    # checkpoint_file = PROJECT_ROOT / "data/progress_tracking/urls_with_descriptions.csv"
     save_interval = 50
 
-    # Load all redirect URLs and filter to adzuna detail pages
-    with open(urls_source, "r") as f:
-        redirect_urls = json.load(f)
-
-    urls = pd.DataFrame({"redirect_url": redirect_urls})
+    # Load redirect URLs from blob storage
+    try:
+        urls = load_parquet_from_blob("raw/redirect_urls.parquet")
+        print(f"Loaded {len(urls)} redirect URLs from blob storage")
+    except Exception as e:
+        print(f"ERROR: Failed to load redirect URLs from blob storage: {e}")
+        raise
     urls = urls[urls["redirect_url"].str.contains("details")]
     urls = urls.reset_index(drop=True)
-    print(f"Loaded {len(urls)} /details/ URLs from {urls_source}")
+    print(f"Loaded {len(urls)} /details/ URLs")
 
-    # Load previously scraped results and exclude already-done URLs
-    if os.path.exists(output_file):
-        existing = pd.read_csv(output_file)
-        already_scraped = set(existing["redirect_url"])
-        urls = urls[~urls["redirect_url"].isin(already_scraped)].reset_index(drop=True)
-        print(
-            f"Skipping {len(already_scraped)} already-scraped URLs, {len(urls)} remaining"
-        )
+    # Load previously scraped results from blob storage and exclude already-done URLs
+    if blob_exists("raw/urls_with_descriptions.parquet"):
+        try:
+            existing = load_parquet_from_blob("raw/urls_with_descriptions.parquet")
+            already_scraped = set(existing["redirect_url"])
+            urls = urls[~urls["redirect_url"].isin(already_scraped)].reset_index(drop=True)
+            print(
+                f"Skipping {len(already_scraped)} already-scraped URLs, {len(urls)} remaining"
+            )
+        except Exception as e:
+            print(f"ERROR: Failed to load existing descriptions from blob storage: {e}")
+            raise
+    
     else:
         existing = pd.DataFrame(columns=["redirect_url", "description"])
+        print("No existing descriptions found, starting fresh")
+
 
     if len(urls) == 0:
         print("Nothing new to scrape.")
@@ -96,20 +102,28 @@ def scrape_descriptions(test: bool = False):
         # Save checkpoint
         if (i + 1) % save_interval == 0:
             combined = pd.concat([existing, urls.iloc[: i + 1]], ignore_index=True)
-            safe_save_csv(combined, output_file)
-
-            elapsed = datetime.now() - start_time
-            avg = elapsed.total_seconds() / (i + 1)
-            remaining = (total - i - 1) * avg / 3600
-            print(f"Saved. {elapsed} elapsed, ~{remaining:.1f}h remaining")
+            try:
+                save_parquet_to_blob(combined, "raw/urls_with_descriptions.parquet")
+                elapsed = datetime.now() - start_time
+                avg = elapsed.total_seconds() / (i + 1)
+                remaining = (total - i - 1) * avg / 3600
+                print(f"Saved to blob storage. {elapsed} elapsed, ~{remaining:.1f}h remaining")
+            except Exception as e:
+                print(f"ERROR: Failed to save checkpoint to blob storage: {e}")
+                # Continue scraping even if save fails
+                pass
 
         if i + 1 < total:
             time.sleep(random.uniform(2, 3))
 
     # Final save
     combined = pd.concat([existing, urls], ignore_index=True)
-    safe_save_csv(combined, output_file)
-    # combined.to_csv(checkpoint_file, index=False)
+    try:
+        save_parquet_to_blob(combined, "raw/urls_with_descriptions.parquet")
+        print(f"Final save to blob storage successful: {len(combined)} total URLs")
+    except Exception as e:
+        print(f"ERROR: Failed to save final results to blob storage: {e}")
+        raise
 
     # log success rate of this batch only
     success_pct = round(urls["description"].notna().mean() * 100, 1)

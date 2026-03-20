@@ -1,10 +1,7 @@
-import json
-import shutil
-
 import mlflow
 import pandas as pd
 
-from utils import find_project_root, safe_save_csv
+from utils import load_parquet_from_blob, save_parquet_to_blob
 
 
 def gini(values):
@@ -14,15 +11,13 @@ def gini(values):
     return (2 * cumsum) / (n * sum(values)) - (n + 1) / n
 
 def engineer_features(lower = 50000, upper = 300000, min_location_count = 50):
-    PROJECT_ROOT = find_project_root()
-
-    path = PROJECT_ROOT / "data/raw/api_progress_fixed.json"
-    print(path) 
-    
-    with path.open("r") as f:
-        all_data = json.load(f)
-    
-    df = pd.json_normalize(all_data)    
+    # Load data from blob storage as parquet
+    try:
+        df = load_parquet_from_blob("raw/api_raw_data.parquet")
+        print(f"Loaded {len(df)} records from blob storage")
+    except Exception as e:
+        print(f"ERROR: Failed to load raw data from blob storage: {e}")
+        raise    
     
     df = df.drop(columns=["adref"])
     # Drop any column that contains __CLASS__
@@ -33,7 +28,11 @@ def engineer_features(lower = 50000, upper = 300000, min_location_count = 50):
     # create location_1, location_2, location_3 by splitting location.area lists into components, 
     # accounting for the fact that not all lists have all 5 components
     location_cols = ['location_country', 'location_state', 'location_region', 'location_city', 'location_area', 'location_suburb']
-    location_df = df['location.area'].apply(lambda x: pd.Series(x + [None] * (6 - len(x))))
+    
+    location_df = df['location.area'].apply(
+        lambda x: pd.Series((list(x) + [None] * 6)[:6] if x is not None else [None] * 6)
+    )  
+    
     location_df.columns = location_cols
     df = pd.concat([df, location_df], axis=1)
     
@@ -86,8 +85,13 @@ def engineer_features(lower = 50000, upper = 300000, min_location_count = 50):
         'location.area_length': 'location_area_length',
     })
     
-    output_path = PROJECT_ROOT / "data/processed/feature_engineered_data.csv"
-    safe_save_csv(df, output_path)
+    # Save to blob storage as parquet
+    try:
+        save_parquet_to_blob(df, "processed/feature_engineered_data.parquet")
+        print(f"Saved {len(df)} processed records to blob storage")
+    except Exception as e:
+        print(f"ERROR: Failed to save processed data to blob storage: {e}")
+        raise
     
     
     # For the locations, we log the gini coefficient (gets the distribution in one number), proportoin in the top 1, and proportion "Other" (except for State)
@@ -125,10 +129,14 @@ def engineer_features(lower = 50000, upper = 300000, min_location_count = 50):
         "engineer/min_location_count": min_location_count,
     })
     
-    # Also save just the redirect URLs in JSON format
-    temp_path = (PROJECT_ROOT / "data/raw/redirect_urls.json").with_suffix(".tmp")
-    df['redirect_url'].to_json(temp_path, orient='records')
-    shutil.move(temp_path, PROJECT_ROOT / "data/raw/redirect_urls.json")
+    # Save redirect URLs to blob storage as parquet
+    redirect_df = df[['redirect_url']].copy()
+    try:
+        save_parquet_to_blob(redirect_df, "raw/redirect_urls.parquet")
+        print(f"Saved {len(redirect_df)} redirect URLs to blob storage")
+    except Exception as e:
+        print(f"ERROR: Failed to save redirect URLs to blob storage: {e}")
+        raise
     
 if __name__ == "__main__":
     engineer_features()

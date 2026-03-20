@@ -1,5 +1,6 @@
 import logging
 import sys
+import tempfile
 from pathlib import Path
 
 import joblib
@@ -12,16 +13,15 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import Ridge
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-from sklearn.model_selection import KFold
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
-from utils import find_project_root
+from utils import blob_exists, load_parquet_from_blob
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from model_wrapper import SalaryPipelineWrapper, predict_pipeline
 
-PROJECT_ROOT = find_project_root()
+# PROJECT_ROOT = find_project_root()
 
 logging.getLogger("mlflow.pyfunc").setLevel(logging.ERROR)
 logging.getLogger("azure.core.pipeline.policies.http_logging_policy").setLevel(logging.WARNING)
@@ -89,9 +89,6 @@ def fit_pipeline(df, cat_vars, num_vars):
     )
 
 
-
-
-
 def get_production_val_mae(client):
     try:
         versions = client.search_model_versions("name='salary-predictor'")
@@ -114,9 +111,16 @@ def get_production_val_mae(client):
 def train_model():
 
     # --- Load and merge data ---
-    df = pd.read_csv(PROJECT_ROOT / "data/processed/feature_engineered_data.csv")
-    descriptions = pd.read_csv(PROJECT_ROOT / "data/raw/urls_with_descriptions.csv")
-    descriptions.rename(columns={"description": "full_description"}, inplace=True)
+    # Try to load from blob storage first, fallback to local files
+    try:
+        df = load_parquet_from_blob("processed/feature_engineered_data.parquet")
+        descriptions = load_parquet_from_blob("raw/urls_with_descriptions.parquet")
+        descriptions.rename(columns={"description": "full_description"}, inplace=True)
+        print(f"Loaded {len(df)} records and {len(descriptions)} descriptions from blob storage")
+    except Exception as e:
+        print(f"ERROR: Failed to load data from blob storage: {e}")
+        raise
+    
     df = df.merge(
         descriptions[["redirect_url", "full_description"]],
         on="redirect_url",
@@ -162,11 +166,7 @@ def train_model():
     print("Refitting on full dataset...")
     final_bundle, _, _ = fit_pipeline(df, cat_vars, num_vars)
 
-    # --- Save ---
-    output_path = PROJECT_ROOT / "models/salary_pipeline.joblib"
-    output_path.parent.mkdir(exist_ok=True)
-    joblib.dump(final_bundle, output_path)
-    print(f"Pipeline saved to {output_path}")
+
 
     # --- MLflow logging ---
     mlflow.log_param("model_type", "Ridge")
@@ -187,8 +187,6 @@ def train_model():
 
     run_id = mlflow.active_run().info.run_id
 
-    joblib.dump(final_bundle, output_path)
-
     # Note currently not used as it's breaking the version of mlflow we're using. 
     input_example = train_df[["title", "full_description"] + cat_vars + num_vars].iloc[
         :3
@@ -201,15 +199,20 @@ def train_model():
     sample_predictions = predict_pipeline(final_bundle, input_example)
     signature = infer_signature(input_example, sample_predictions)
     
-    # log the full bundle as a registered model
-    model_info = mlflow.pyfunc.log_model(
-        artifact_path="salary_pipeline",
-        python_model=SalaryPipelineWrapper(),
-        artifacts={"pipeline_bundle": str(output_path)},
-        registered_model_name="salary-predictor",
-        signature = signature,
-        input_example=input_example,
-    )
+    
+    # Dump the model bundle to a tempfile rather than the models directory so it works in the cloud.
+    with tempfile.TemporaryDirectory() as tmp_dir:
+        tmp_path = Path(tmp_dir) / "salary_pipeline.joblib"
+        joblib.dump(final_bundle, tmp_path)
+        
+        model_info = mlflow.pyfunc.log_model(
+            artifact_path="salary_pipeline",
+            python_model=SalaryPipelineWrapper(),
+            artifacts={"pipeline_bundle": str(tmp_path)},
+            registered_model_name="salary-predictor",
+            signature=signature,
+            input_example=input_example,
+        )
 
     version = model_info.registered_model_version
 
