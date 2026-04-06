@@ -1,0 +1,20 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install Azure CLI so authentication works in the image locally 
+RUN apt-get update && apt-get install -y curl && \
+    curl -sL https://aka.ms/InstallAzureCLIDeb | bash && \
+    rm -rf /var/lib/apt/lists/*
+
+COPY requirements_pipeline.txt .
+COPY model_wrapper.py .
+
+RUN pip install --no-cache-dir -r requirements_pipeline.txt
+RUN pip install --no-cache-dir azure-common==1.1.28
+
+# Copy pipeline code
+COPY pipeline/ pipeline/
+COPY model_wrapper.py .
+ 
+CMD ["python", "pipeline/run_pipeline.py"]

@@ -7,13 +7,16 @@ import joblib
 import mlflow
 import numpy as np
 import pandas as pd
+import scipy
 from mlflow.models import infer_signature
+from scipy.sparse import hstack as sparse_hstack
 from sklearn.decomposition import TruncatedSVD
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import Ridge
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
+from xgboost import XGBRegressor
 
 from utils import blob_exists, load_parquet_from_blob
 
@@ -66,7 +69,7 @@ def fit_pipeline(df, cat_vars, num_vars):
         ]
     )
 
-    X = np.hstack([X_title.toarray(), X_desc, X_structured])
+    X = sparse_hstack([X_title, scipy.sparse.csr_matrix(X_desc), scipy.sparse.csr_matrix(X_structured)])
     y = df["avg_salary"].values
 
     model = Ridge(alpha=1.0)

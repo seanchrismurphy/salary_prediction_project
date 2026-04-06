@@ -9,7 +9,7 @@ import requests
 import typer
 from bs4 import BeautifulSoup
 
-from utils import blob_exists, load_parquet_from_blob, save_parquet_to_blob, find_project_root
+from utils import blob_exists, load_parquet_from_blob, save_parquet_to_blob
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:121.0) Gecko/20100101 Firefox/121.0",
@@ -17,8 +17,6 @@ HEADERS = {
     "Accept-Language": "en-AU,en;q=0.5",
 }
 
-PROJECT_ROOT = find_project_root()
-output_file = PROJECT_ROOT / "data/raw/urls_with_descriptions.csv"
 
 def get_full_description(url):
     try:

@@ -1,0 +1,29 @@
+# Azure
+azure-identity==1.25.2
+azure-storage-blob==12.27.1
+azure-common==1.1.28
+azure-core==1.38.2
+azure-mgmt-core==1.6.0
+azureml-mlflow==1.62.0
+ 
+# MLflow
+mlflow==2.22.0
+mlflow-skinny==2.22.0
+ 
+# ML
+scikit-learn
+numpy
+joblib
+pyarrow
+scipy
+xgboost
+ 
+# Data
+pandas
+requests
+beautifulsoup4
+ 
+# Utils
+python-dotenv
+typer
+ 
