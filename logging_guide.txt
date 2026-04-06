@@ -1,0 +1,85 @@
+LOGGING REFERENCE
+=================
+ 
+Two sources of logs: container stdout (Log Analytics) and ML experiment data (MLflow/Azure ML).
+ 
+ 
+1. CONTAINER LOGS (Log Analytics)
+----------------------------------
+Captures all print statements and errors from pipeline runs.
+ 
+Workspace: workspace-salarypredictorrgxnpB
+Location: portal.azure.com > Log Analytics workspaces > workspace-salarypredictorrgxnpB > Logs
+ 
+Query for recent pipeline runs:
+    ContainerAppConsoleLogs_CL
+    | where ContainerJobName_s == "salary-predictor-pipeline-job"
+    | order by TimeGenerated desc
+    | take 100
+ 
+Query for errors only:
+    ContainerAppConsoleLogs_CL
+    | where ContainerJobName_s == "salary-predictor-pipeline-job"
+    | where Log_s contains "Error" or Log_s contains "Exception"
+    | order by TimeGenerated desc
+ 
+Note: There is a second Log Analytics workspace (salayprloga lyti9ba02345) that was 
+auto-provisioned but is not receiving container logs. Ignore it.
+ 
+ 
+2. MLFLOW EXPERIMENT LOGS (Azure ML)
+--------------------------------------
+Captures structured ML data: metrics, parameters, tags, and registered models.
+ 
+Location: ml.azure.com > Experiments > salary-predictor
+ 
+What's logged per run:
+    Metrics:  collect/elapsed_seconds, collect/new_records, collect/final_count,
+              collect/pct_with_salary, engineer/* (gini coefficients, record counts),
+              model/train_mae, model/val_mae
+    Params:   model_type, title_tfidf_max_features, desc_tfidf_max_features,
+              desc_svd_components, alpha, engineer/lower_bound, engineer/upper_bound,
+              engineer/min_location_count
+    Tags:     deployment (promoted/not promoted), mlflow.user, run_type
+ 
+Model registry: ml.azure.com > Models > salary-predictor
+    - Each run registers a new version
+    - Production version is what the API loads at cold start
+    - Use 'Compare' in the UI to diff runs
+ 
+CLI — check current Production model version:
+    python -c "
+    import mlflow, os
+    from dotenv import load_dotenv
+    load_dotenv()
+    client = mlflow.tracking.MlflowClient()
+    versions = client.search_model_versions(\"name='salary-predictor'\")
+    prod = [v for v in versions if v.current_stage == 'Production']
+    print(prod)
+    "
+ 
+ 
+3. CONTAINER JOB EXECUTION HISTORY
+-------------------------------------
+Quick status check (succeeded/failed) for each scheduled run.
+ 
+Location: portal.azure.com > Container Apps Jobs > salary-predictor-pipeline-job > Execution History
+ 
+CLI trigger manual run:
+    az containerapp job start \
+      --name salary-predictor-pipeline-job \
+      --resource-group salary-predictor-rg
+ 
+CLI check latest execution status:
+    az containerapp job execution list \
+      --name salary-predictor-pipeline-job \
+      --resource-group salary-predictor-rg \
+      --query "[0].{name:name, status:properties.status}" \
+      -o table
+ 
+ 
+4. SCHEDULE
+------------
+CRON: 0 18 * * * (UTC) = 4:00 AM AEST daily
+Timeout: 36000 seconds (10 hours)
+Retry limit: 1
