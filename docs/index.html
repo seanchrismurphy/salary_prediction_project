@@ -441,7 +441,7 @@
       </div>
       <div class="field full">
         <label for="description">Description</label>
-        <textarea id="description" placeholder="Paste the job description here (optional but improves accuracy)">Lead machine learning initiatives across the business. Design and deploy production models.</textarea>
+        <textarea id="description" placeholder="Paste the job description here">Lead machine learning initiatives across the business. Design and deploy production models.</textarea>
       </div>
     </div>
 
@@ -673,7 +673,7 @@
 </main>
 
 <footer>
-  <span>RIDGE REGRESSION · TF-IDF · TRAINED ON ADZUNA AU</span>
+  <span>XGBoost Model · TF-IDF · TRAINED ON ADZUNA AU</span>
   <span id="footerTimestamp"></span>
 </footer>
 
@@ -735,7 +735,9 @@ let lastPredictTime = null;
 
 async function submitPrediction() {
   const title = document.getElementById('job_title').value.trim();
+  const description = document.getElementById('description').value.trim();
   if (!title) { showError('Job title is required.'); return; }
+  if (!description) { showError('Job description is required — the model needs description text to make a reliable prediction.'); return; }
 
   const btn = document.getElementById('submitBtn');
   const coldNotice = document.getElementById('coldStartNotice');
