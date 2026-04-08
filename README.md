@@ -17,7 +17,7 @@ Adzuna API → Pipeline (collect → engineer → scrape → train)
            FastAPI (Azure Container Apps) ← Frontend (GitHub Pages)
 ```
 
-The pipeline runs daily on a CRON schedule via Azure Container Apps Jobs. New models are only promoted to Production if validation MAE is within 5% of the previous run.
+The pipeline runs daily on a CRON schedule via Azure Container Apps Jobs. New models are only promoted to Production if validation MAE is better or within 5% of the previous run.
 
 ---
 
