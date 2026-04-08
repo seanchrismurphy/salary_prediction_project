@@ -1,5 +1,7 @@
 import mlflow
 import numpy as np
+from scipy.sparse import hstack as sparse_hstack
+import scipy
 
 def predict_pipeline(bundle, df):
     """Transform df using fitted bundle and return predictions."""
@@ -15,7 +17,7 @@ def predict_pipeline(bundle, df):
             ),
         ]
     )
-    X = np.hstack([X_title.toarray(), X_desc, X_structured])
+    X = sparse_hstack([X_title, scipy.sparse.csr_matrix(X_desc), scipy.sparse.csr_matrix(X_structured)])
     return bundle["model"].predict(X)
 
 # THis step actually registers the model so that it will show up on the 'Models' page of MLflow.

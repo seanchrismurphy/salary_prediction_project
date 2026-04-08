@@ -1,23 +1,24 @@
 import fcntl
 import os
+from datetime import datetime
 
 import mlflow
 import typer
+from dotenv import load_dotenv
 
 from collect_data import collect_data
 from engineer_features import engineer_features
 from scrape_descriptions import scrape_descriptions
 from train_model import train_model
-from utils import find_project_root
 
 # PROJECT_ROOT = find_project_root()
 # lock_file = PROJECT_ROOT / "pipeline.lock"
 
-from dotenv import load_dotenv
 load_dotenv()
 
 def run_pipeline(test: bool = False):
 
+    start_time = datetime.now()
     # Check if pipeline is already running
     # lock = open(lock_file, "w")
     # try:
@@ -62,9 +63,14 @@ def run_pipeline(test: bool = False):
 
         train_model()
         print("Model training complete.")
+        
+        elapsed = (datetime.now() - start_time).total_seconds()
+        mlflow.log_metric(
+                "overall/total_total_time_elapsed", elapsed
+                )
 
     print("Pipeline run finished.")
-
+    
     # finally:
     #    fcntl.flock(lock, fcntl.LOCK_UN)
     #    lock.close()

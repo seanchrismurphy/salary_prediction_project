@@ -72,7 +72,12 @@ def fit_pipeline(df, cat_vars, num_vars):
     X = sparse_hstack([X_title, scipy.sparse.csr_matrix(X_desc), scipy.sparse.csr_matrix(X_structured)])
     y = df["avg_salary"].values
 
-    model = Ridge(alpha=1.0)
+    # model = Ridge(alpha=1.0)
+    model = XGBRegressor(
+        n_estimators=500, learning_rate=0.05, max_depth=6, random_state=42, subsample=0.8,
+        colsample_bytree=0.8, min_child_weight=10
+        )
+    
     model.fit(X, y)
 
     return (
@@ -169,11 +174,16 @@ def train_model():
     print("Refitting on full dataset...")
     final_bundle, _, _ = fit_pipeline(df, cat_vars, num_vars)
 
-
+    mlflow.set_tag("model_type", "XGBRegressor")
 
     # --- MLflow logging ---
-    mlflow.log_param("model_type", "Ridge")
-    mlflow.log_param("alpha", 1.0)
+    mlflow.log_param("n_estimators", 500)
+    mlflow.log_param("learning_rate", 0.05)
+    mlflow.log_param("max_depth", 6)
+    mlflow.log_param("subsample", 0.8)
+    mlflow.log_param("colsample_bytree", 0.8)
+    mlflow.log_param("min_child_weight", 10)
+    
     mlflow.log_param("title_tfidf_max_features", 10_000)
     mlflow.log_param("desc_tfidf_max_features", 10_000)
     mlflow.log_param("desc_svd_components", 100)
