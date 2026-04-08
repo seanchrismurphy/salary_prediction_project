@@ -136,7 +136,7 @@ Final model: XGBoost (n_estimators=500, learning_rate=0.05, max_depth=6, subsamp
 Automate the build/tag/push/deploy sequence on commits to main. Currently done manually after each code change. Would require a service principal with ACR push and Container Apps update roles, stored as GitHub secrets.
 
 **Model error over time (frontend)**
-Surface val MAE trend from MLflow experiment history on the frontend. Shows the system is live and improving as data accumulates — high portfolio signal, low implementation effort.
+Surface val MAE trend from MLflow experiment history on the frontend. Shows the system is live and improving as data accumulates - low implementation effort. 
 
 **Seniority and recruiter flags**
 Known model weakness: bigram TF-IDF cannot learn "Senior Data Scientist" as a phrase, and sparse training data for specific senior titles limits accuracy. Extracting explicit seniority (senior/lead/principal/head) and recruiter flags from titles would likely improve MAE meaningfully.
@@ -144,6 +144,4 @@ Known model weakness: bigram TF-IDF cannot learn "Senior Data Scientist" as a ph
 **SHAP feature importance dashboard**
 Visualise which features drive predictions. Useful for understanding model behaviour and explaining predictions to non-technical users.
 
-**Data quality checks**
-Validate pipeline inputs before training — salary distribution bounds, minimum new record count, description scrape success rate. Fail fast with a clear error rather than training on bad data silently.
 
